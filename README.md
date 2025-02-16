@@ -1,3 +1,3 @@
-VSC LAB Homepage
+V-LAB Homepage
 
-[link](https://ubin108.github.io/VSC_LAB/)
+[link](https://V-Laboratory.github.io)

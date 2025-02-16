@@ -120,7 +120,7 @@ const App = () => {
     );
 
     return (
-        <Router basename="/VSC_LAB">
+        <Router basename="/">
             <div className="App">
                 <nav className="navbar">
                     <div className="title">
