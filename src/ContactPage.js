@@ -17,7 +17,7 @@ const ContactPage = () => {
             </ul>
             <div className="map-container">
                 <iframe
-                    title="Yonsei University VSC Lab Location"
+                    title="Yonsei University V-Lab Location"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1581.2724654698009!2d126.93779818386135!3d37.565784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c988ea13e280f%3A0xb7b75243ec5a638e!2z7Jew7IS464yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1644474075580!5m2!1sko!2skr"
                     width="100%"
                     height="400"

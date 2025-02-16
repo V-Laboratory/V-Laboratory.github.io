@@ -2,7 +2,7 @@
   "name": "vsc",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ubin108.github.io/VSC_LAB",
+  "homepage": "https://v-laboratory.github.io",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
     "@testing-library/jest-dom": "^5.17.0",
