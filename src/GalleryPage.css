@@ -1,0 +1,161 @@
+/* GalleryPage.css */
+.gallery-page {
+    text-align: center;
+    margin: 20px;
+    padding: 110px 0px 40px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.gallery-item {
+    cursor: pointer;
+    text-align: center;
+    
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.album-thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.album-title {
+    font-size: 17px;
+    margin: 5px;
+}
+
+.album-description {
+    font-size: 13px;
+    color: #1f1f1f;
+    margin: 5px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    width: 70%;
+    height: 90%;
+    background-color: rgb(233, 233, 233);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-content button {
+    transition: scale 0.3s ease;
+}
+
+.modal-content button:hover{
+    scale: 1.1;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-image {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    margin: auto;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+.nav-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.image-caption {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.year-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.year-navigation img {
+    margin: 0 10px;
+    padding: 10px 20px;
+    width: 2%;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: scale 0.3s ease;
+}
+
+.year-navigation img:hover {
+    scale: 1.2;
+}
+
+.year-navigation h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+

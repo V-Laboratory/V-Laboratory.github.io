@@ -1,0 +1,222 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css');
+.team-page {
+    padding: 110px 20px 0px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.team-page h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.team-page section {
+    margin-bottom: 40px;
+}
+
+.team-page h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #000000;
+    /* border-bottom: 2px solid #5e5e5e; */
+    padding-bottom: 5px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.details {
+    max-width: 100%;
+}
+
+.prof-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.prof-intro {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.prof-intro a {
+    color: #5582d6;
+    text-decoration: none;
+}
+
+.bio {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.students {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    gap: 20px;
+    
+}
+
+.member {
+    flex: 0 0 23%; /* 4 columns */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+}
+
+
+.member p#desc {
+    font-size: 0.8rem;
+    color: #666666;
+    font-style: italic;
+    margin: 0;
+}
+
+.member p {
+    font-size: 1rem;
+    color: #000000;
+    margin: 0;
+}
+
+
+.member a {
+    font-size: 1rem;
+    color: #000000;
+    margin: 0;
+    text-decoration: none;
+}
+
+.member a:hover {
+    text-decoration: underline;
+}
+
+.student-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.student-links i {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.student-links i:hover {
+    transform: scale(1.2);
+    color: #007bff;
+}
+
+
+.alumnus-info {
+    /* margin: 10px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.alumni {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    text-align: left;
+}
+
+.alumnus {
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+
+.alumnus strong {
+    font-size: 1rem;
+    color: #333;
+}
+
+.desc {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #555;
+    margin-left: 10px;
+}
+
+.current {
+    font-size: 1rem;
+    margin-left: auto;
+    text-align: right;
+    font-style: normal;
+    /* color: #5582d6; */
+}
+
+
+@media (max-width: 768px) {
+    .member img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .member p {
+        font-size: 0.7rem;
+    }
+    .member p#desc {
+        font-size: 0.6rem;
+    }
+    .member a{
+        font-size: 0.5rem;
+    }
+
+    .member i {
+        font-size: 1rem !important;
+    }
+    .profile {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .alumnus {
+        font-size: 0.7rem;
+    }
+    .desc {
+        font-size: 0.4rem;
+        margin-left: 0px;
+    }
+    .current {
+        font-size: 0.4rem;
+    }
+    .details {
+        font-size: 0.8rem;
+    }
+}

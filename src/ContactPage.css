@@ -1,0 +1,47 @@
+/* ContactPage.css */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contact-page {
+    flex: 1;
+    padding: 110px 0px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.contact-page p{
+    font-size: 16px;
+    text-align: justify;
+}
+
+.contact-page ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-page li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.map-container {
+    margin-top: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
