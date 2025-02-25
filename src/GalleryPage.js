@@ -1,16 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './GalleryPage.css';
 
 const albums = [
+    {
+        year: 2025,
+        title: '2025 Summer Graduation Ceremony',
+        description: '2025.02.15.',
+        images: [
+            { src: process.env.PUBLIC_URL + '/gallery/2025_winter_ceremony_1.jpeg', alt: '2025_winter_ceremony_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_winter_ceremony_2.jpeg', alt: '2025_winter_ceremony_2' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_winter_ceremony_3.jpeg', alt: '2025_winter_ceremony_3' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_winter_ceremony_4.jpeg', alt: '2025_winter_ceremony_4' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_winter_ceremony_5.jpeg', alt: '2025_winter_ceremony_5' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_winter_ceremony_6.jpeg', alt: '2025_winter_ceremony_6' },
+        ],
+    },
     {
         year: 2024,
         title: 'ACCV 2024 Oral Presentation',
         description: '2024.12.10.',
         images: [
-            { src: process.env.PUBLIC_URL + '/gallery/2024_accv_1.jpeg', alt: 'Album 1 - Image 1' },
-            { src: process.env.PUBLIC_URL + '/gallery/2024_accv_2.jpeg', alt: 'Album 1 - Image 1' },
-            { src: process.env.PUBLIC_URL + '/gallery/2024_accv_3.jpeg', alt: 'Album 1 - Image 1' },
-            { src: process.env.PUBLIC_URL + '/gallery/2024_accv_4.jpeg', alt: 'Album 1 - Image 1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_accv_1.jpeg', alt: '2024_accv_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_accv_2.jpeg', alt: '2024_accv_2' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_accv_3.jpeg', alt: '2024_accv_3' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_accv_4.jpeg', alt: '2024_accv_4' },
         ],
     },    
     {
@@ -18,9 +31,9 @@ const albums = [
         title: 'JKAIA 2024',
         description: '2024.11.22.',
         images: [
-            { src: process.env.PUBLIC_URL + '/gallery/2024_jkaia_1.jpeg', alt: 'Album 1 - Image 1' },
-            { src: process.env.PUBLIC_URL + '/gallery/2024_jkaia_2.jpeg', alt: 'Album 1 - Image 1' },
-            { src: process.env.PUBLIC_URL + '/gallery/2024_jkaia_3.jpeg', alt: 'Album 1 - Image 1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_jkaia_1.jpeg', alt: '2024_jkaia_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_jkaia_2.jpeg', alt: '2024_jkaia_2' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_jkaia_3.jpeg', alt: '2024_jkaia_3' },
         ],
     },
     {
@@ -28,7 +41,7 @@ const albums = [
         title: 'CVPR 2025 Deadline Celebration',
         description: '4:05pm KST, 2024.11.15.',
         images: [
-            { src: process.env.PUBLIC_URL + '/gallery/2024_cvpr_deadline.jpg', alt: 'Album 1 - Image 1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_cvpr_deadline.jpg', alt: '2024_cvpr_deadline' },
         ],
     },
     {
@@ -36,11 +49,11 @@ const albums = [
         title: '2024 Summer Graduation Ceremony',
         description: '2024.08.23.',
         images: [
-            { src: process.env.PUBLIC_URL + '/gallery/2024_summer_ceremony_1.JPG', alt: 'Album 2 - Image 1' },
-            { src: process.env.PUBLIC_URL + '/gallery/2024_summer_ceremony_2.JPG', alt: 'Album 2 - Image 2' },
-            { src: process.env.PUBLIC_URL + '/gallery/2024_summer_ceremony_3.JPG', alt: 'Album 2 - Image 3' },
-            { src: process.env.PUBLIC_URL + '/gallery/2024_summer_ceremony_4.JPG', alt: 'Album 2 - Image 4' },
-            { src: process.env.PUBLIC_URL + '/gallery/2024_summer_ceremony_5.JPG', alt: 'Album 2 - Image 5' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_summer_ceremony_1.JPG', alt: '2024_summer_ceremony_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_summer_ceremony_2.JPG', alt: '2024_summer_ceremony_2' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_summer_ceremony_3.JPG', alt: '2024_summer_ceremony_3' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_summer_ceremony_4.JPG', alt: '2024_summer_ceremony_4' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_summer_ceremony_5.JPG', alt: '2024_summer_ceremony_5' },
         ],
     },
     {
@@ -48,9 +61,9 @@ const albums = [
         title: 'KCCV 2024',
         description: '2024.08.12.',
         images: [
-            { src: process.env.PUBLIC_URL + '/gallery/2024_kccv_1.jpeg', alt: 'Album 2 - Image 1' },
-            { src: process.env.PUBLIC_URL + '/gallery/2024_kccv_2.jpeg', alt: 'Album 2 - Image 2' },
-            { src: process.env.PUBLIC_URL + '/gallery/2024_kccv_3.jpeg', alt: 'Album 2 - Image 3' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_kccv_1.jpeg', alt: '2024_kccv_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_kccv_2.jpeg', alt: '2024_kccv_2' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_kccv_3.jpeg', alt: '2024_kccv_3' },
         ],
     },
     {
@@ -58,10 +71,10 @@ const albums = [
         title: 'BBQ Party',
         description: '2024.03.15.',
         images: [
-            { src: process.env.PUBLIC_URL + '/gallery/2024_bbq_party_1.jpg', alt: 'Album 3 - Image 1' },
-            { src: process.env.PUBLIC_URL + '/gallery/2024_bbq_party_2.jpeg', alt: 'Album 3 - Image 2' },
-            { src: process.env.PUBLIC_URL + '/gallery/2024_bbq_party_3.jpeg', alt: 'Album 3 - Image 3' },
-            { src: process.env.PUBLIC_URL + '/gallery/2024_bbq_party_4.jpeg', alt: 'Album 3 - Image 4' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_bbq_party_1.jpg', alt: '2024_bbq_party_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_bbq_party_2.jpeg', alt: '2024_bbq_party_2' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_bbq_party_3.jpeg', alt: '2024_bbq_party_3' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_bbq_party_4.jpeg', alt: '2024_bbq_party_4' },
         ],
     },
     {
@@ -69,7 +82,7 @@ const albums = [
         title: '2024 Winter Graduation Ceremony',
         description: '2024.02.23.',
         images: [
-            { src: process.env.PUBLIC_URL + '/gallery/2024_winter_ceremony.jpg', alt: 'Album 4 - Image 1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_winter_ceremony.jpg', alt: '2024_winter_ceremony' },
         ],
     },
     {
@@ -77,8 +90,8 @@ const albums = [
         title: '2023 Year-end Party',
         description: '2023.11.29.',
         images: [
-            { src: process.env.PUBLIC_URL + '/gallery/2023_year_end_party_1.jpg', alt: 'Album 1 - Image 1' },
-            { src: process.env.PUBLIC_URL + '/gallery/2023_year_end_party_2.jpeg', alt: 'Album 1 - Image 1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2023_year_end_party_1.jpg', alt: '2023_year_end_party_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2023_year_end_party_2.jpeg', alt: '2023_year_end_party_2' },
         ],
     },
     {
@@ -86,17 +99,28 @@ const albums = [
         title: '2023 Summer Graduation Ceremony',
         description: '2023.08.25.',
         images: [
-            { src: process.env.PUBLIC_URL + '/gallery/2023_summer_ceremony_1.jpg', alt: 'Album 1 - Image 1' },
-            { src: process.env.PUBLIC_URL + '/gallery/2023_summer_ceremony_2.jpeg', alt: 'Album 1 - Image 1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2023_summer_ceremony_1.jpg', alt: '2023_summer_ceremony_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2023_summer_ceremony_2.jpeg', alt: '2023_summer_ceremony_2' },
         ],
     },
 ];
 
 const GalleryPage = () => {
-    const years = [...new Set(albums.map((album) => album.year))].sort((a, b) => b - a);
-    const [currentYear, setCurrentYear] = useState(years[0]);
+    const distinctYears = [...new Set(albums.map((album) => album.year))].sort((a, b) => b - a);
+    const [yearPage, setYearPage] = useState(0);
+    const totalPages = Math.ceil(distinctYears.length / 5);
+    const visibleYears = distinctYears.slice(yearPage * 5, yearPage * 5 + 5);
+
+    const [currentCategory, setCurrentCategory] = useState("ALL");
     const [selectedAlbum, setSelectedAlbum] = useState(null);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    const [albumPage, setAlbumPage] = useState(0);
+    const pageSize = 20;
+
+    useEffect(() => {
+        setAlbumPage(0);
+    }, [currentCategory]);
 
     const openAlbum = (album) => {
         setSelectedAlbum(album);
@@ -119,52 +143,83 @@ const GalleryPage = () => {
         );
     };
 
-    const handlePrevYear = () => {
-        const currentIndex = years.indexOf(currentYear);
-        if (currentIndex < years.length - 1) {
-            setCurrentYear(years[currentIndex + 1]);
-        }
-    };
+    const filteredAlbums =
+        currentCategory === "ALL"
+            ? albums
+            : albums.filter((album) => album.year === currentCategory);
 
-    const handleNextYear = () => {
-        const currentIndex = years.indexOf(currentYear);
-        if (currentIndex > 0) {
-            setCurrentYear(years[currentIndex - 1]);
-        }
-    };
+    let currentAlbums = filteredAlbums;
+    let totalAlbumPages = 1;
+    if (currentCategory === "ALL") {
+        totalAlbumPages = Math.ceil(filteredAlbums.length / pageSize);
+        currentAlbums = filteredAlbums.slice(albumPage * pageSize, albumPage * pageSize + pageSize);
+    }
 
     return (
         <div className="gallery-page">
             <div className="year-navigation">
-                <img
-                    src={process.env.PUBLIC_URL + '/icon/left-arrow.png'}
-                    alt="Previous Year"
-                    className={`year-nav-icon ${years.indexOf(currentYear) === 0 ? 'disabled' : ''}`}
-                    onClick={handlePrevYear}
-                />
-                <h2>{currentYear}</h2>
-                <img
-                    src={process.env.PUBLIC_URL + '/icon/right-arrow.png'}
-                    alt="Next Year"
-                    className={`year-nav-icon ${
-                        years.indexOf(currentYear) === years.length - 1 ? 'disabled' : ''
-                    }`}
-                    onClick={handleNextYear}
-                />
+                <button
+                    className={`category-button ${currentCategory === "ALL" ? "active" : ""}`}
+                    onClick={() => setCurrentCategory("ALL")}
+                >
+                    ALL
+                </button>
+                {yearPage > 0 && (
+                    <button className="year-pagination-button" onClick={() => setYearPage(yearPage - 1)}>
+                        {"<"}
+                    </button>
+                )}
+                {visibleYears.map((year) => (
+                    <button
+                        key={year}
+                        className={`category-button ${currentCategory === year ? "active" : ""}`}
+                        onClick={() => setCurrentCategory(year)}
+                    >
+                        {year}
+                    </button>
+                ))}
+                {yearPage < totalPages - 1 && (
+                    <button className="year-pagination-button" onClick={() => setYearPage(yearPage + 1)}>
+                        {">"}
+                    </button>
+                )}
             </div>
+
             <div className="gallery-grid">
-                {albums
-                    .filter((album) => album.year === currentYear)
-                    .map((album, index) => (
-                        <div key={index} className="gallery-item" onClick={() => openAlbum(album)}>
-                            <div className="album-thumbnail">
-                                <img src={album.images[0].src} alt={album.title} />
-                            </div>
-                            <h3 className="album-title">{album.title}</h3>
-                            <h4 className="album-description">{album.description}</h4>
+                {currentAlbums.map((album, index) => (
+                    <div key={index} className="gallery-item" onClick={() => openAlbum(album)}>
+                        <div className="album-thumbnail">
+                            <img src={album.images[0].src} alt={album.title} />
                         </div>
-                    ))}
+                        <h3 className="album-title">{album.title}</h3>
+                        <h4 className="album-description">{album.description}</h4>
+                    </div>
+                ))}
             </div>
+
+            {/* {currentCategory === "ALL" && totalAlbumPages > 1 && (
+                <div className="album-pagination">
+                    {albumPage > 0 && (
+                        <button className="prev-button" onClick={() => setAlbumPage(albumPage - 1)}>
+                            <img
+                                src={process.env.PUBLIC_URL + '/icon/left-arrow.png'}
+                                alt="Previous"
+                                className="nav-icon"
+                            />
+                        </button>              
+                    )}
+                    <span>{albumPage + 1} / {totalAlbumPages}</span>
+                    {albumPage < totalAlbumPages - 1 && (
+                        <button className="next-button" onClick={() => setAlbumPage(albumPage + 1)}>
+                            <img
+                                src={process.env.PUBLIC_URL + '/icon/right-arrow.png'}
+                                alt="Next"
+                                className="nav-icon"
+                            />
+                        </button>
+                    )}
+                </div>
+            )} */}
 
             {selectedAlbum && (
                 <div className="modal">
@@ -174,7 +229,7 @@ const GalleryPage = () => {
                         </button>
                         <button className="prev-button" onClick={handlePrevImage}>
                             <img
-                                src={process.env.PUBLIC_URL + '/left_button.png'}
+                                src={process.env.PUBLIC_URL + '/icon/left-arrow.png'}
                                 alt="Previous"
                                 className="nav-icon"
                             />
@@ -188,7 +243,7 @@ const GalleryPage = () => {
                         </div>
                         <button className="next-button" onClick={handleNextImage}>
                             <img
-                                src={process.env.PUBLIC_URL + '/right_button.png'}
+                                src={process.env.PUBLIC_URL + '/icon/right-arrow.png'}
                                 alt="Next"
                                 className="nav-icon"
                             />

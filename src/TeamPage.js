@@ -46,7 +46,7 @@ const TeamPage = () => {
         },
         { 
             name: 'Byeonghyeon Lee', 
-            img: process.env.PUBLIC_URL + '/team/temp.jpg', 
+            img: process.env.PUBLIC_URL + '/team/BHL.jpg', 
             desc: '2022.09 - Present',
             email: 'leebh0102@skku.edu', 
             scholar: 'https://scholar.google.com/citations?user=_PhPccYAAAAJ&hl=en',

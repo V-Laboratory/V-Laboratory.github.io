@@ -14,7 +14,11 @@
     align-items: center;
 
 }
-
+@media (max-width: 768px) {
+    .publication-page {
+        padding-top: 90px;
+    }
+}
 
 
 .year-section {

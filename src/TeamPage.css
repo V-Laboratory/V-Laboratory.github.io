@@ -10,6 +10,12 @@
     font-style: normal;
 }
 
+@media (max-width: 768px) {
+    .team-page {
+        padding-top: 90px;
+    }
+}
+
 .team-page h1 {
     text-align: center;
     margin-bottom: 30px;

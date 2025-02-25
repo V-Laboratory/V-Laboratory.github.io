@@ -6,7 +6,7 @@ const ContactPage = () => {
     return (
         <div className="contact-page">
             <p>
-                We are a group of passionate people from various backgrounds to pursue cutting-edge research on visual and scientific computing. You can find our research focus in the recently published papers. 
+                We are a group of passionate people from various backgrounds to pursue cutting-edge research on visual computing. You can find our research focus in the recently published papers. 
                 We are proud of having built a collaborative, friendly, and horizontal culture, aiming for high-quality research. 
                 If you think you are a good fit for our team, feel free to reach out, visit, and talk to us!
             </p>
