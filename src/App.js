@@ -45,8 +45,9 @@ const App = () => {
     const extendedImages = [images[images.length - 1], ...images, images[0]]; // Add last and first image for smooth looping
 
     const newsItems = [
+        "[2025.02] Three papers accepted to CVPR 2025!",
         "[2024.12] Two papers got accepted to ICLR 2025!",
-        "[2024.12] Three papers got accepted to AAAI 2025! (DiffuseHigh, CodecNeRF and SequenceMatters)",
+        "[2024.12] Three papers got accepted to AAAI 2025!",
         "[2024.11] DiffuseHigh received the best paper award at JKAIA 2024!",
         "[2024.10] Invited talk at SKKU AI Colloqium 2024 Recorded talk (Korean)",
         "[2024.09] PEFT Video Compression work was selected as an oral presentation in ACCV 2024!",

@@ -2,31 +2,7 @@ import React, { useState } from "react";
 import "./PublicationPage.css";
 
 const publications = [
-    { 
-        year: "Preprints", 
-        title: "EditSplat: Multi-View Fusion and Attention-Guided Optimization for View-Consistent 3D Scene Editing with 3D Gaussian Splatting", 
-        journal: "arXiv:2412.11520", 
-        authors: "Dong In Lee, Hyeongcheol Park, Jiyoung Seo, Eunbyung Park, Hyunje Park, Ha Dam Baek, Shin Sangheon, Sangmin kim, Sangpil Kim",
-        links: {
-            paper: "https://arxiv.org/abs/2412.11520",
-            project: "https://kuai-lab.github.io/editsplat2024/",
-            code: "Coming soon",
-            thumbs: process.env.PUBLIC_URL + '/thumb/EditSplat.jpg'
-        }
-    },
-    { 
-        year: "Preprints", 
-        title: "Generative Densification: Learning to Densify Gaussians for High-Fidelity Generalizable 3D Reconstruction", 
-        journal: "arXiv:2412.06234", 
-        authors: "Seungtae Nam*, Xiangyu Sun*, Gyeongjin Kang, Younggeun Lee, Seungjun Oh, Eunbyung Park",
-        links: {
-            paper: "https://arxiv.org/abs/2412.06234",
-            project: "https://stnamjef.github.io/GenerativeDensification/",
-            code: "https://github.com/stnamjef/GenerativeDensification",
-            thumbs: process.env.PUBLIC_URL + '/thumb/GenerativeDensification.jpg'
-        }
-    },
-    
+        
     { 
         year: "Preprints", 
         title: "MetaFormer: High-fidelity Metalens Imaging via Aberration Correcting Transformers", 
@@ -40,10 +16,35 @@ const publications = [
         } 
     },
     { 
-        year: "Preprints", 
+        year: "2025", 
+        title: "EditSplat: Multi-View Fusion and Attention-Guided Optimization for View-Consistent 3D Scene Editing with 3D Gaussian Splatting", 
+        journal: "CVPR 2025", 
+        authors: "Dong In Lee, Hyeongcheol Park, Jiyoung Seo, Eunbyung Park, Hyunje Park, Ha Dam Baek, Shin Sangheon, Sangmin kim, Sangpil Kim",
+        links: {
+            paper: "https://arxiv.org/abs/2412.11520",
+            project: "https://kuai-lab.github.io/editsplat2024/",
+            code: "Coming soon",
+            thumbs: process.env.PUBLIC_URL + '/thumb/EditSplat.jpg'
+        }
+    },
+    { 
+        year: "2025", 
+        title: "Generative Densification: Learning to Densify Gaussians for High-Fidelity Generalizable 3D Reconstruction", 
+        journal: "CVPR 2025", 
+        authors: "Seungtae Nam*, Xiangyu Sun*, Gyeongjin Kang, Younggeun Lee, Seungjun Oh, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2412.06234",
+            project: "https://stnamjef.github.io/GenerativeDensification/",
+            code: "https://github.com/stnamjef/GenerativeDensification",
+            thumbs: process.env.PUBLIC_URL + '/thumb/GenerativeDensification.jpg'
+        }
+    },
+
+    { 
+        year: "2025", 
         title: "SelfSplat: Pose-Free and 3D Prior-Free Generalizable 3D Gaussian Splatting", 
-        journal: "arXiv:2411.17190", 
-        authors: "Gyeongjin Kang, Jisang Yoo, Jihyeon Park, Seungtae Nam, Hyeonsoo Im, Sangheon Shin, Sangpil Kim, Eunbyung Park",
+        journal: "CVPR 2025", 
+        authors: "Gyeongjin Kang*, Jisang Yoo*, Jihyeon Park, Seungtae Nam, Hyeonsoo Im, Sangheon Shin, Sangpil Kim, Eunbyung Park",
         links: {
             paper: "https://arxiv.org/abs/2411.17190",
             project: "https://gynjn.github.io/selfsplat/",
