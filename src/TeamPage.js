@@ -302,7 +302,8 @@ const TeamPage = () => {
                             </ul>
                             <strong>Work Experience</strong>
                             <ul>
-                                <li>Associate Professor, <a href="https://ice.skku.edu/eng_ice/programs/departments/elec_intro.do" target="_blank">SKKU</a>, 2021.02 - Present</li>
+                                <li>Assistant Professor, <a href="https://cs.yonsei.ac.kr/csai/faculty/AI.do" target='_blank'>Yonsei University</a>, 2025.03 - Present </li>
+                                <li>Assistant Professor, <a href="https://ice.skku.edu/eng_ice/programs/departments/elec_intro.do" target="_blank">Sungkyunkwan University</a>, 2021.02 - 2025.02</li>
                                 <li>Applied Scientist, <a href="https://msturing.org" target="_blank">Microsoft Project Turing</a>, 2020.09 - 2021.02</li>
                                 <li>Research Scientist, <a href="http://nuro.ai/" target="_blank">Nuro</a>, 2019.06 - 2020.08</li>
                                 <li>Research Intern, <a href="https://deepmind.com/" target="_blank">Google DeepMind</a>, 2018.06 - 2018.10 </li>
