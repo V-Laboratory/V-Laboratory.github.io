@@ -272,16 +272,9 @@ const TeamPage = () => {
                             alt="Prof. Eunbyung Park"
                             className="profile-img"
                         />
-                        
-                        
-                    </div>
-
-                    
-                    <div className="details">
-                        <p className="prof-intro">
-                            <a className='prof-name' href='https://silverbottlep.github.io/'>Eunbyung Park</a>
-                            <div className='bio'>
-                                <a href="mailto:epark@skku.edu">
+                        <a className='prof-name' href='https://silverbottlep.github.io/'>Eunbyung Park</a>
+                        <div className='bio'>
+                                <a href="epark@yonsei.ac.kr">
                                     <i className="fa fa-envelope-o" style={{ fontSize: '24px', color: 'black' }}></i>
                                 </a>
                                 <a href="https://silverbottlep.github.io/index.html">
@@ -297,7 +290,14 @@ const TeamPage = () => {
                                     <i className="fa fa-twitter" style={{ fontSize: '24px', color: 'black' }}></i>
                                 </a>
                             </div>
-                            {/* <strong>Education</strong>
+                    </div>
+
+                    
+                    {/* <div className="details">
+                        <p className="prof-intro">
+                            
+                            
+                            <strong>Education</strong>
                             <ul>
                                 <li>Ph.D., Computer Science at University of North Carolina at Chapel Hill, 2014.09 - 2019.12</li>
                                 <li>M.S., Computer Science at Seoul National University, 2009.03 - 2011.02</li>
@@ -313,10 +313,10 @@ const TeamPage = () => {
                                 <li>Research Intern, <a href="https://www.microsoft.com/en-us/research/" target="_blank">Microsoft Research</a>, 2017.06 - 2017.08</li>
                                 <li>Research Intern, <a href="http://www.adobe.com/technology.html" target="_blank">Adobe Research</a>, 2016.06 - 2016.08</li>
                                 <li>Research Intern, <a href="https://www.hp.com/us-en/hp-labs.html"  target="_blank">HP Labs</a>, 2015.06 - 2015.08</li>
-                            </ul> */}
+                            </ul>
                         </p>
                         
-                    </div>
+                    </div> */}
                 </div>
             </section>
 
