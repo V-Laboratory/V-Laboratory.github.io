@@ -272,7 +272,7 @@ const TeamPage = () => {
                             alt="Prof. Eunbyung Park"
                             className="profile-img"
                         />
-                        <a className='prof-name' href='https://silverbottlep.github.io/'>Eunbyung Park</a>
+                        <a className='prof-name' href='https://silverbottlep.github.io/' style={{ fontSize: '1em' }}>Eunbyung Park</a>
                         <div className='bio'>
                                 <a href="epark@yonsei.ac.kr">
                                     <i className="fa fa-envelope-o" style={{ fontSize: '24px', color: 'black' }}></i>
@@ -375,7 +375,7 @@ const TeamPage = () => {
 
             <section>
                 <h2>Undergraduate Students</h2>
-                <div className="students">
+                <div className="under_students">
                     {undergraduateStudents.map((student, index) => (
                         <div key={index} className="member">
                             <img src={student.img} alt={student.name} className="profile-img" />
