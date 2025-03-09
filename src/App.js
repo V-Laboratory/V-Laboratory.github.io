@@ -45,36 +45,37 @@ const App = () => {
     const extendedImages = [images[images.length - 1], ...images, images[0]]; // Add last and first image for smooth looping
 
     const newsItems = [
-        "[2025.02] Three papers accepted to CVPR 2025!",
-        "[2024.12] Two papers got accepted to ICLR 2025!",
-        "[2024.12] Three papers got accepted to AAAI 2025!",
-        "[2024.11] DiffuseHigh received the best paper award at JKAIA 2024!",
-        "[2024.10] Invited talk at SKKU AI Colloqium 2024 Recorded talk (Korean)",
-        "[2024.09] PEFT Video Compression work was selected as an oral presentation in ACCV 2024!",
-        "[2024.09] Freq-Mip-AA is considered as a best paper candidate in ICIP 2024!",
-        "[2024.07] Two papers accepted to ECCV 2024!",
-        "[2024.05] Our lab received the outstanding young scientist grant from National Research Foundation!",
-        "[2024.05] Our lab (with Prof Inki Kim) won the grant from Samsung Science & Technology Foundation!",
-        "[2024.04] Two CVPR 2024 papers selected as highlight!",
-        "[2024.02] Two papers accepted to CVPR 2024!",
-        "[2024.01] CAM was accepted to ICLR 2024 as a spotlight!",
-        "[2023.11] Invited talk at GIST Colloquium",
-        "[2023.09] SPINN was accepted to NeurIPS 2023 as a spotlight!",
-        "[2023.09] Two papers accepted to NeurIPS 2023!",
-        "[2023.05] Invited talk at UNIST AI graduate seminar",
-        "[2023.02] Two papers accepted to CVPR 2023!",
-        "[2023.02] Invited talk about SPINN at CRUNCH Seminars at Brown University [Recorded talk]",
-        "[2022.11] Invited talk at 2022 KSIAM Annual Meeting",
-        "[2022.11] PIXEL was accepted to AAAI 2023",
-        "[2022.09] NRFF was accepted to ACCV 2022",
-        "[2022.08] PIXEL was selected as a spotlight in DLDE-II (NeurIPS 2022 Workshop)",
-        "[2022.08] SPINN received the best paper award in CKAIA 2022",
-        "[2022.07] Streamable Neural Fields was accepted to ECCV 2022",
-        "[2022.05] Our lab received the Basic Research Lab (BRL) grant from the NRF",
-        "[2022.03] Invited talk at Samsung Research",
-        "[2021.09] Honor to be selected as a EIRIC rising star",
-        "[2021.06] Lab was founded",
-        "[2021.05] Invited talk at AI Frontiers Summit 2021",
+        { text: "[2025.02] Three papers accepted to CVPR 2025!"},
+        { text: "[2025.01] Invited talk at", linkText: "Joint JPEG/MPEG Workshop", url: "https://jpeg.org" },
+        { text: "[2024.12] Two papers got accepted to ICLR 2025!" },
+        { text: "[2024.12] Three papers got accepted to AAAI 2025!"},
+        { text: "[2024.11]", linkText: "DiffuseHigh", url: "https://arxiv.org/abs/2406.18459", extraText: " received the best paper award at JKAIA 2024!"},
+        { text: "[2024.10] Invited talk at SKKU AI Colloqium", linkText: "2024 Recorded talk (Korean)", url: "https://www.youtube.com/watch?v=ooPSDSNikz4" },
+        { text: "[2024.09]", linkText: "PEFT Video Compression", url: "https://arxiv.org/abs/2405.08530", Experience: "work was selected as an oral presentation in ACCV 2024!"},
+        { text: "[2024.09]", linkText: "Freq-Mip-AA", url: "https://arxiv.org/abs/2406.13251", extraText: " is considered as a best paper candidate in ICIP 2024!"},
+        { text: "[2024.07] Two papers accepted to ECCV 2024!"},
+        { text: "[2024.05] Our lab received the outstanding young scientist grant from National Research Foundation!"},
+        { text: "[2024.05] Our lab (with Prof ", linkText: "Inki Kim", url: "https://www.bionanophotonics-skku.com/pi", extraText: ") won the grant from Samsung Science & Technology Foundation!"},
+        { text: "[2024.04] Two CVPR 2024 papers selected as highlight!"},
+        { text: "[2024.02] Two papers accepted to CVPR 2024!"},
+        { text: "[2024.01] CAM was accepted to ICLR 2024 as a spotlight!"},
+        { text: "[2023.11] Invited talk at GIST Colloquium"},
+        { text: "[2023.09] SPINN was accepted to NeurIPS 2023 as a spotlight!"},
+        { text: "[2023.09] Two papers accepted to NeurIPS 2023!"},
+        { text: "[2023.05] Invited talk at UNIST AI graduate seminar"},
+        { text: "[2023.02] Two papers accepted to CVPR 2023!"},
+        { text: "[2023.02] Invited talk about SPINN at CRUNCH Seminars at Brown University [Recorded talk]"},
+        { text: "[2022.11] Invited talk at 2022 KSIAM Annual Meeting"},
+        { text: "[2022.11] PIXEL was accepted to AAAI 2023"},
+        { text: "[2022.09] NRFF was accepted to ACCV 2022"},
+        { text: "[2022.08] PIXEL was selected as a spotlight in DLDE-II (NeurIPS 2022 Workshop)"},
+        { text: "[2022.08] SPINN received the best paper award in CKAIA 2022"},
+        { text: "[2022.07] Streamable Neural Fields was accepted to ECCV 2022"},
+        { text: "[2022.05] Our lab received the Basic Research Lab (BRL) grant from the NRF"},
+        { text: "[2022.03] Invited talk at Samsung Research"},
+        { text: "[2021.09] Honor to be selected as a EIRIC rising star"},
+        { text: "[2021.06] Lab was founded"},
+        { text: "[2021.05] Invited talk at AI Frontiers Summit 2021"},
     ];
 
     const itemsPerPage = 10;
@@ -200,7 +201,10 @@ const App = () => {
                                     <h2>News</h2>
                                     <ul className="news-list">
                                         {currentNewsItems.map((item, index) => (
-                                            <li key={index}>{item}</li>
+                                            <li key={index}>
+                                                {item.text} <a href={item.url} target="_blank" rel="noopener noreferrer">{item.linkText}</a>
+                                                {item.extraText}
+                                            </li>
                                         ))}
                                     </ul>
                                     <div className="pagination">

@@ -6,7 +6,7 @@ const TeamPage = () => {
         { 
             name: 'Joo Chan Lee', 
             img: process.env.PUBLIC_URL + '/team/JCL.png',
-            desc: '2020.03 - Present',
+            desc: "2020.03 - Present\nCo-supervised by Jong-Hwan Ko",
             email: 'maincold2@skku.edu', 
             homepage: 'https://maincold2.github.io/',
             scholar: 'https://scholar.google.com/citations?user=WKCHKk8AAAAJ&hl=en',
@@ -222,7 +222,7 @@ const TeamPage = () => {
         { 
             name: 'Hyunmo Yang', 
             desc: 'MS, 2022.03 - 2024.02',
-            current: ''
+            current: 'Inbody'
         },
         { 
             name: 'Namgyu Kang', 
@@ -257,7 +257,7 @@ const TeamPage = () => {
         { 
             name: 'Geunmin Hwang', 
             desc: 'MS, 2023.03 - 2025.02',
-            current: ''
+            current: 'ReconLabs'
         }
     ];
 
@@ -273,28 +273,31 @@ const TeamPage = () => {
                             className="profile-img"
                         />
                         
-                        <p>Eunbyung Park</p>
-                        <div className='bio'>
-                            <a href="mailto:epark@skku.edu">
-                                <i className="fa fa-envelope-o" style={{ fontSize: '24px', color: 'black' }}></i>
-                            </a>
-                            <a href="https://silverbottlep.github.io/index.html">
-                                <i className="fa fa-home" style={{ fontSize: '24px', color: 'black' }}></i>
-                            </a>
-                            <a href="https://scholar.google.com/citations?user=iPyuJmQAAAAJ&hl=en">
-                                <i className="ai ai-google-scholar" style={{ fontSize: '24px', color: 'black' }}></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/eunbyung-park-286384b4/">
-                                <i className="fa fa-linkedin" style={{ fontSize: '24px', color: 'black' }}></i>
-                            </a>
-                            <a href="https://twitter.com/silverbottlep">
-                                <i className="fa fa-twitter" style={{ fontSize: '24px', color: 'black' }}></i>
-                            </a>
-                        </div>
+                        
                     </div>
+
+                    
                     <div className="details">
                         <p className="prof-intro">
-                            <strong>Education</strong>
+                            <a className='prof-name' href='https://silverbottlep.github.io/'>Eunbyung Park</a>
+                            <div className='bio'>
+                                <a href="mailto:epark@skku.edu">
+                                    <i className="fa fa-envelope-o" style={{ fontSize: '24px', color: 'black' }}></i>
+                                </a>
+                                <a href="https://silverbottlep.github.io/index.html">
+                                    <i className="fa fa-home" style={{ fontSize: '24px', color: 'black' }}></i>
+                                </a>
+                                <a href="https://scholar.google.com/citations?user=iPyuJmQAAAAJ&hl=en">
+                                    <i className="ai ai-google-scholar" style={{ fontSize: '24px', color: 'black' }}></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/eunbyung-park-286384b4/">
+                                    <i className="fa fa-linkedin" style={{ fontSize: '24px', color: 'black' }}></i>
+                                </a>
+                                <a href="https://twitter.com/silverbottlep">
+                                    <i className="fa fa-twitter" style={{ fontSize: '24px', color: 'black' }}></i>
+                                </a>
+                            </div>
+                            {/* <strong>Education</strong>
                             <ul>
                                 <li>Ph.D., Computer Science at University of North Carolina at Chapel Hill, 2014.09 - 2019.12</li>
                                 <li>M.S., Computer Science at Seoul National University, 2009.03 - 2011.02</li>
@@ -310,7 +313,7 @@ const TeamPage = () => {
                                 <li>Research Intern, <a href="https://www.microsoft.com/en-us/research/" target="_blank">Microsoft Research</a>, 2017.06 - 2017.08</li>
                                 <li>Research Intern, <a href="http://www.adobe.com/technology.html" target="_blank">Adobe Research</a>, 2016.06 - 2016.08</li>
                                 <li>Research Intern, <a href="https://www.hp.com/us-en/hp-labs.html"  target="_blank">HP Labs</a>, 2015.06 - 2015.08</li>
-                            </ul>
+                            </ul> */}
                         </p>
                         
                     </div>
@@ -325,13 +328,20 @@ const TeamPage = () => {
                         <div key={index} className="member">
                             <img src={student.img} alt={student.name} className="profile-img" />
                             <p>{student.name}</p>
-                            <p id='desc'>{student.desc}</p>
                             <div className="student-links">
                                 {student.email && <a href={`mailto:${student.email}`}><i className="fa fa-envelope-o" style={{ fontSize: '24px', color: 'black' }}></i></a>}
                                 {student.homepage && <a href={student.homepage}><i className="fa fa-home" style={{ fontSize: '24px', color: 'black' }}></i></a>}
                                 {student.scholar && <a href={student.scholar}><i className="ai ai-google-scholar" style={{ fontSize: '24px', color: 'black' }}></i></a>}
                                 {student.github && <a href={student.github}><i className="fa fa-github" style={{ fontSize: '24px', color: 'black' }}></i></a>}
                             </div>
+                            <p id='desc'>
+                                {student.desc.split("\n").map((line, i) => (
+                                    <React.Fragment key={i}>
+                                        {line}
+                                        <br />
+                                    </React.Fragment>
+                                ))}
+                            </p>
                         </div>
                     ))}
                 </div>
@@ -344,13 +354,20 @@ const TeamPage = () => {
                         <div key={index} className="member">
                             <img src={student.img} alt={student.name} className="profile-img" />
                             <p>{student.name}</p>
-                            <p id='desc'>{student.desc}</p>
                             <div className="student-links">
                                 {student.email && <a href={`mailto:${student.email}`}><i className="fa fa-envelope-o" style={{ fontSize: '24px', color: 'black' }}></i></a>}
                                 {student.homepage && <a href={student.homepage}><i className="fa fa-home" style={{ fontSize: '24px', color: 'black' }}></i></a>}
                                 {student.scholar && <a href={student.scholar}><i className="ai ai-google-scholar" style={{ fontSize: '24px', color: 'black' }}></i></a>}
                                 {student.github && <a href={student.github}><i className="fa fa-github" style={{ fontSize: '24px', color: 'black' }}></i></a>}
                             </div>
+                            <p id='desc'>
+                                {student.desc.split("\n").map((line, i) => (
+                                    <React.Fragment key={i}>
+                                        {line}
+                                        <br />
+                                    </React.Fragment>
+                                ))}
+                            </p>
                         </div>
                     ))}
                 </div>
