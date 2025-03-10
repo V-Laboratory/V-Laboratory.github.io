@@ -4,6 +4,20 @@ import './GalleryPage.css';
 const albums = [
     {
         year: 2025,
+        title: 'AAAI 2025',
+        description: '2025.02.26.',
+        images: [
+            { src: process.env.PUBLIC_URL + '/gallery/2025_aaai_1.jpg', alt: '2025_aaai_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_aaai_2.jpg', alt: '2025_aaai_2' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_aaai_6.jpg', alt: '2025_aaai_6' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_aaai_3.jpg', alt: '2025_aaai_3' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_aaai_4.jpg', alt: '2025_aaai_4' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_aaai_5.jpg', alt: '2025_aaai_5' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_aaai_7.jpg', alt: '2025_aaai_7' },
+        ],
+    },
+    {
+        year: 2025,
         title: '2025 Summer Graduation Ceremony',
         description: '2025.02.15.',
         images: [

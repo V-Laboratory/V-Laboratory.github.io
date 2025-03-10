@@ -98,7 +98,7 @@ const TeamPage = () => {
         },
         { 
             name: 'Hyun-kyu Ko', 
-            img: process.env.PUBLIC_URL + '/team/HKK.jpeg',
+            img: process.env.PUBLIC_URL + '/team/HKK.jpg',
             desc: '2024.03 - Present',
             email: 'laniko@skku.edu', 
             scholar: 'https://scholar.google.com/citations?hl=ko&user=lsi-8-QAAAAJ',
