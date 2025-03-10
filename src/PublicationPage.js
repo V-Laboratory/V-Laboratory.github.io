@@ -5,7 +5,7 @@ const publications = [
         
     { 
         year: "Preprints", 
-        title: "MetaFormer: High-fidelity Metalens Imaging via Aberration Correcting Transformers", 
+        title: "Aberration Correcting Vision Transformers for High-Fidelity Metalens Imaging", 
         journal: "arXiv:2412.04591", 
         authors: "Byeonghyeon Lee, Youbin Kim, Yongjae Jo, Hyunsu Kim, Hyemi Park, Yangkyu Kim, Debabrata Mandal, Praneeth Chakravarthula, Inki Kim, Eunbyung Park" ,
         links: {
@@ -14,18 +14,6 @@ const publications = [
             code: "https://github.com/benhenryL/MetaFormer",
             thumbs: process.env.PUBLIC_URL + '/thumb/MetaFormer.jpg'
         } 
-    },
-    { 
-        year: "2025", 
-        title: "EditSplat: Multi-View Fusion and Attention-Guided Optimization for View-Consistent 3D Scene Editing with 3D Gaussian Splatting", 
-        journal: "CVPR 2025", 
-        authors: "Dong In Lee, Hyeongcheol Park, Jiyoung Seo, Eunbyung Park, Hyunje Park, Ha Dam Baek, Shin Sangheon, Sangmin kim, Sangpil Kim",
-        links: {
-            paper: "https://arxiv.org/abs/2412.11520",
-            project: "https://kuai-lab.github.io/editsplat2024/",
-            code: "Coming soon",
-            thumbs: process.env.PUBLIC_URL + '/thumb/EditSplat.jpg'
-        }
     },
     { 
         year: "2025", 
@@ -51,6 +39,18 @@ const publications = [
             code: "https://github.com/Gynjn/selfsplat",
             thumbs: process.env.PUBLIC_URL + '/thumb/SelfSplat.jpg'
         } 
+    },
+    { 
+        year: "2025", 
+        title: "EditSplat: Multi-View Fusion and Attention-Guided Optimization for View-Consistent 3D Scene Editing with 3D Gaussian Splatting", 
+        journal: "CVPR 2025", 
+        authors: "Dong In Lee, Hyeongcheol Park, Jiyoung Seo, Eunbyung Park, Hyunje Park, Ha Dam Baek, Shin Sangheon, Sangmin kim, Sangpil Kim",
+        links: {
+            paper: "https://arxiv.org/abs/2412.11520",
+            project: "https://kuai-lab.github.io/editsplat2024/",
+            code: "Coming soon",
+            thumbs: process.env.PUBLIC_URL + '/thumb/EditSplat.jpg'
+        }
     },
     { 
         year: 2025, 
