@@ -33,7 +33,7 @@ const App = () => {
     const images = [
         { src: process.env.PUBLIC_URL + '/home/GenerativeDensification.jpg', alt: 'GenerativeDensification' },
         { src: process.env.PUBLIC_URL + '/home/SelfSplat.jpg', alt: 'SelfSplat' },
-        { src: process.env.PUBLIC_URL + '/home/EditSplat.jpg', alt: 'EditSplat' },
+        // { src: process.env.PUBLIC_URL + '/home/EditSplat.jpg', alt: 'EditSplat' },
         { src: process.env.PUBLIC_URL + '/home/Anti.jpg', alt: 'AntiExposure' },
         { src: process.env.PUBLIC_URL + '/home/PIG.jpg', alt: 'PIG' },
         { src: process.env.PUBLIC_URL + '/home/DiffuseHigh.jpg', alt: 'DiffuseHigh' },
