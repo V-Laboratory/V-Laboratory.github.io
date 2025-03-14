@@ -5,7 +5,7 @@ const albums = [
     {
         year: 2025,
         title: 'V-Lab at Yonsei University',
-        description: '2025.03.15.',
+        description: '2025.03.14.',
         images: [
             { src: process.env.PUBLIC_URL + '/gallery/2025_yonsei_3.jpeg', alt: '2025_yonsei_1' },
             { src: process.env.PUBLIC_URL + '/gallery/2025_yonsei_2.jpeg', alt: '2025_yonsei_2' },
