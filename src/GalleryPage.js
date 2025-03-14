@@ -4,6 +4,17 @@ import './GalleryPage.css';
 const albums = [
     {
         year: 2025,
+        title: 'V-Lab at Yonsei University',
+        description: '2025.03.15.',
+        images: [
+            { src: process.env.PUBLIC_URL + '/gallery/2025_yonsei_3.jpeg', alt: '2025_aaai_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_yonsei_2.jpeg', alt: '2025_aaai_7' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_yonsei_4.jpeg', alt: '2025_aaai_7' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_yonsei_1.jpg', alt: '2025_aaai_1' },
+        ],
+    },
+    {
+        year: 2025,
         title: 'AAAI 2025',
         description: '2025.02.26.',
         images: [
