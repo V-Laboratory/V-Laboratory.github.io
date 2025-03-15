@@ -59,7 +59,7 @@ const publications = [
         authors: "Junyu Zhang, Daochang Liu, Eunbyung Park, Shichao Zhang, Chang Xu",
         links: {
             paper: "https://openreview.net/pdf?id=MtDd7rWok1",
-            code: "Coming soon",
+            code: "https://github.com/BestJunYu/ANTI_EXPOSURE_BIAS",
             thumbs: process.env.PUBLIC_URL + '/thumb/AntiExposure.jpg'
         } 
     },

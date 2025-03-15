@@ -4,6 +4,7 @@ import TeamPage from './TeamPage';
 import PublicationPage from './PublicationPage';
 import GalleryPage from './GalleryPage';
 import ContactPage from './ContactPage';
+import Carousel from './Carousel';
 import './App.css';
 
 const App = () => {
@@ -31,16 +32,17 @@ const App = () => {
         setIsMenuOpen((prev) => !prev);
     };
     const images = [
-        { src: process.env.PUBLIC_URL + '/home/GenerativeDensification.jpg', alt: 'GenerativeDensification' },
-        { src: process.env.PUBLIC_URL + '/home/SelfSplat.jpg', alt: 'SelfSplat' },
-        // { src: process.env.PUBLIC_URL + '/home/EditSplat.jpg', alt: 'EditSplat' },
-        { src: process.env.PUBLIC_URL + '/home/Anti.jpg', alt: 'AntiExposure' },
-        { src: process.env.PUBLIC_URL + '/home/PIG.jpg', alt: 'PIG' },
-        { src: process.env.PUBLIC_URL + '/home/DiffuseHigh.jpg', alt: 'DiffuseHigh' },
-        { src: process.env.PUBLIC_URL + '/home/CodecNerf.jpg', alt: 'CodecNerf' },
-        { src: process.env.PUBLIC_URL + '/home/SequenceMatters.jpg', alt: 'SequenceMatters' },
+        // { src: process.env.PUBLIC_URL + '/home/GenerativeDensification.jpg', alt: 'GenerativeDensification' },
+        // { src: process.env.PUBLIC_URL + '/home/SelfSplat.jpg', alt: 'SelfSplat' },
+        // // { src: process.env.PUBLIC_URL + '/home/EditSplat.jpg', alt: 'EditSplat' },
+        // { src: process.env.PUBLIC_URL + '/home/Anti.jpg', alt: 'AntiExposure' },
+        // { src: process.env.PUBLIC_URL + '/home/PIG.jpg', alt: 'PIG' },
+        // { src: process.env.PUBLIC_URL + '/home/DiffuseHigh.jpg', alt: 'DiffuseHigh' },
+        // { src: process.env.PUBLIC_URL + '/home/CodecNerf.jpg', alt: 'CodecNerf' },
+        // { src: process.env.PUBLIC_URL + '/home/SequenceMatters.jpg', alt: 'SequenceMatters' },
         // { src: process.env.PUBLIC_URL + '/home/PEVC.jpg', alt: 'PEVC' },
-        // { src: process.env.PUBLIC_URL + '/home/pair_01.jpg', alt: 'pair01' },
+        { src: process.env.PUBLIC_URL + '/home/main_img_1.jpg', alt: 'pair01' },
+        { src: process.env.PUBLIC_URL + '/home/main_img_2.jpg', alt: 'pair02' },
         // { src: process.env.PUBLIC_URL + '/home/pair_02.jpg', alt: 'pair02' },
         // { src: process.env.PUBLIC_URL + '/home/pair_03.jpg', alt: 'pair03' },
     ];
@@ -157,48 +159,44 @@ const App = () => {
                         path="/"
                         element={
                             <>
-                                <main className="main">
+                                {/* <main className="main">
                                     <div className="carousel">
-                                        <button className="carousel-button prev" onClick={handlePrev}>
-                                            <img src={process.env.PUBLIC_URL + '/left_button.png'} alt="Previous" />
-                                        </button>
-                                        <div
-                                            className="carousel-images"
-                                            style={{
-                                                transform: `translateX(-${currentIndex * 100}%)`,
-                                                transition: isTransitioning
-                                                    ? 'transform 0.5s ease-in-out'
-                                                    : 'none',
-                                            }}
-                                        >
-                                            {extendedImages.map((image, index) => (
+                                        <div className="carousel-images">
+                                            {images.map((image, index) => (
                                                 <img
                                                     key={index}
                                                     src={image.src}
                                                     alt={image.alt}
                                                     className="carousel-image"
+                                                    style={{
+                                                        opacity: index === currentIndex ? 1 : 0,
+                                                        transition: 'opacity 0.5s ease-in-out',
+                                                        position: 'absolute',
+                                                        width: '100%',
+                                                        height: '100%',
+                                                    }}
                                                 />
                                             ))}
                                         </div>
-                                        <button className="carousel-button next" onClick={handleNext}>
-                                            <img src={process.env.PUBLIC_URL + '/right_button.png'} alt="Next" />
-                                        </button>
                                         <div className="carousel-indicators">
                                             {images.map((_, index) => (
                                                 <span
                                                     key={index}
-                                                    className={`indicator ${index + 1 === currentIndex ? 'active' : ''}`}
+                                                    className={`indicator ${index === currentIndex ? 'active' : ''}`}
                                                     onClick={() => {
-                                                        if (index + 1 !== currentIndex) {
-                                                            setIsTransitioning(true);
-                                                            setCurrentIndex(index + 1);
-                                                        }
+                                                        setIsTransitioning(true);
+                                                        setTimeout(() => {
+                                                            setCurrentIndex(index);
+                                                            setIsTransitioning(false);
+                                                        }, 500);
                                                     }}
                                                 ></span>
                                             ))}
                                         </div>
                                     </div>
-                                </main>
+                                </main> */}
+                                <Carousel images={images} />
+
 
                                 <section className="news">
                                     <h2>News</h2>
