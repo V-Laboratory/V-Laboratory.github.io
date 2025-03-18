@@ -11,7 +11,7 @@ const Carousel = ({ images }) => {
                 setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
                 setIsTransitioning(false);
             }, 500);
-        }, 4000); // 4초마다 변경
+        }, 4000);
 
         return () => clearInterval(interval);
     }, [images.length]);

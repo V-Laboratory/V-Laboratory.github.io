@@ -29,7 +29,7 @@ const albums = [
     },
     {
         year: 2025,
-        title: '2025 Summer Graduation Ceremony',
+        title: '2025 Winter Graduation Ceremony',
         description: '2025.02.15.',
         images: [
             { src: process.env.PUBLIC_URL + '/gallery/2025_winter_ceremony_1.jpeg', alt: '2025_winter_ceremony_1' },
