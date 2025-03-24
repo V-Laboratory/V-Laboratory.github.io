@@ -18,7 +18,7 @@ const Carousel = ({ images }) => {
 
     return (
         <main className="main" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100vw', minHeight: '70vh', justifyContent: 'flex-start', paddingTop: '4vh' }}>
-            <div className="carousel" style={{ width: '100%', maxWidth: '1200px', height: '70vh', maxHeight: '1000px', overflow: 'hidden', position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <div className="carousel" style={{ width: '100%', maxWidth: '1200px', height: '87vh', maxHeight: '1000px', overflow: 'hidden', position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <div className="carousel-images" style={{ width: '100%', height: '100%', position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     {images.map((image, index) => (
                         <img

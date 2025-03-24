@@ -2,7 +2,29 @@ import React, { useState } from "react";
 import "./PublicationPage.css";
 
 const publications = [
-        
+    
+    { 
+        year: "Preprints", 
+        title: "Optimized Minimal 3D Gaussian Splatting", 
+        journal: "arXiv:2503.16924", 
+        authors: "Joo Chan Lee, Jong Hwan Ko, Eunbyung Park" ,
+        links: {
+            paper: "https://arxiv.org/abs/2503.16924",
+            project: "https://maincold2.github.io/omg/",
+            code: "https://github.com/maincold2/OMG",
+            thumbs: process.env.PUBLIC_URL + '/thumb/OMG.jpg'
+        } 
+    },
+    { 
+        year: "Preprints", 
+        title: "CompMarkGS: Robust Watermarking for Compression 3D Gaussian Splatting", 
+        journal: "arXiv:2503.12836", 
+        authors: "Sumin In, Youngdong Jang, Utae Jeong, MinHyuk Jang, Hyeongcheol Park, Eunbyung Park, Sangpil Kim" ,
+        links: {
+            paper: "https://arxiv.org/abs/2503.12836",
+            thumbs: process.env.PUBLIC_URL + '/thumb/CompMarkGS.jpg'
+        } 
+    },
     { 
         year: "Preprints", 
         title: "Aberration Correcting Vision Transformers for High-Fidelity Metalens Imaging", 
