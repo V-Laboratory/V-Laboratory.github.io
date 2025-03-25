@@ -32,8 +32,8 @@ const publications = [
         authors: "Byeonghyeon Lee, Youbin Kim, Yongjae Jo, Hyunsu Kim, Hyemi Park, Yangkyu Kim, Debabrata Mandal, Praneeth Chakravarthula, Inki Kim, Eunbyung Park" ,
         links: {
             paper: "https://arxiv.org/abs/2412.04591",
-            project: "https://benhenryl.github.io/MetaFormer/",
-            code: "https://github.com/benhenryL/MetaFormer",
+            project: "https://benhenryl.github.io/Metalens-Transformer",
+            code: "https://github.com/benhenryL/Metalens-Transformer",
             thumbs: process.env.PUBLIC_URL + '/thumb/MetaFormer.jpg'
         } 
     },
