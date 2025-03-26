@@ -34,7 +34,7 @@ const publications = [
             paper: "https://arxiv.org/abs/2412.04591",
             project: "https://benhenryl.github.io/Metalens-Transformer",
             code: "https://github.com/benhenryL/Metalens-Transformer",
-            thumbs: process.env.PUBLIC_URL + '/thumb/MetaFormer.jpg'
+            thumbs: process.env.PUBLIC_URL + '/thumb/Metalens-Transformer.jpg'
         } 
     },
     { 
