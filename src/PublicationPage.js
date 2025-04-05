@@ -40,7 +40,7 @@ const publications = [
     { 
         year: "2025", 
         title: "Generative Densification: Learning to Densify Gaussians for High-Fidelity Generalizable 3D Reconstruction", 
-        journal: "CVPR 2025", 
+        journal: "CVPR 2025 Highlight (acceptance rate = 3.7%)", 
         authors: "Seungtae Nam*, Xiangyu Sun*, Gyeongjin Kang, Younggeun Lee, Seungjun Oh, Eunbyung Park",
         links: {
             paper: "https://arxiv.org/abs/2412.06234",
@@ -204,7 +204,7 @@ const publications = [
     { 
         year: 2024, 
         title: "Compact 3D Gaussian Representation for Radiance Field", 
-        journal: "CVPR 2024 Highlight (acceptance rate = 2.8%)", 
+        journal: "CVPR 2024 Highlight (acceptance rate = 3.6%)", 
         authors: "Joo Chan Lee, Daniel Rho, Xiangyu Sun, Jong Hwan Ko, Eunbyung Park",
         links: {
             paper: "https://arxiv.org/abs/2311.13681",
@@ -217,7 +217,7 @@ const publications = [
     { 
         year: 2024, 
         title: "Residual Learning in Diffusion Models", 
-        journal: "CVPR 2024 Highlight (acceptance rate = 2.8%)", 
+        journal: "CVPR 2024 Highlight (acceptance rate = 3.6%)", 
         authors: "Junyu Zhang, Daochang Liu, Eunbyung Park, Shichao Zhang, Chang Xu",
         links: {
             paper: "https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_Residual_Learning_in_Diffusion_Models_CVPR_2024_paper.html",
@@ -228,7 +228,7 @@ const publications = [
     { 
         year: 2024, 
         title: "Coordinate-Aware Modulation for Neural Fields", 
-        journal: "ICLR 2024 Spotlight (acceptance rate = 5.01%)", 
+        journal: "ICLR 2024 Spotlight (acceptance rate = 6.2%)", 
         authors: "Joo Chan Lee, Daniel Rho, Seungtae Nam, Jong Hwan Ko, Eunbyung Park",
         links: {
             paper: "https://openreview.net/forum?id=4UiLqimGm5&noteId=4UiLqimGm5",
@@ -285,7 +285,7 @@ const publications = [
     { 
         year: 2023, 
         title: "Separable Physics-Informed Neural Networks", 
-        journal: "NeurIPS 2023 Spotlight (acceptance rate = 3.06%)", 
+        journal: "NeurIPS 2023 Spotlight (acceptance rate = 3.6%)", 
         authors: "Junwoo Cho*, Seungtae Nam*, Hyunmo Yang, Seok-Bae Yun, Youngjoon Hong, Eunbyung Park",
         links: {
             paper: "https://arxiv.org/abs/2306.15969",
