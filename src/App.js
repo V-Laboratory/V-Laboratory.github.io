@@ -58,7 +58,7 @@ const App = () => {
         { text: "[2024.12] Three papers got accepted to AAAI 2025!"},
         { text: "[2024.11]", linkText: "DiffuseHigh", url: "https://arxiv.org/abs/2406.18459", extraText: " received the best paper award at JKAIA 2024!"},
         { text: "[2024.10] Prof. Eunbyung Park gave an invited talk at SKKU AI Colloqium", linkText: "2024 Recorded talk (Korean)", url: "https://www.youtube.com/watch?v=ooPSDSNikz4" },
-        { text: "[2024.09]", linkText: "PEFT Video Compression", url: "https://arxiv.org/abs/2405.08530", extraText: "work was selected as an oral presentation in ACCV 2024!"},
+        { text: "[2024.09]", linkText: "PEFT Video Compression", url: "https://arxiv.org/abs/2405.08530", extraText: " work was selected as an oral presentation in ACCV 2024!"},
         { text: "[2024.09]", linkText: "Freq-Mip-AA", url: "https://arxiv.org/abs/2406.13251", extraText: " is considered as a best paper candidate in ICIP 2024!"},
         { text: "[2024.07] Two papers accepted to ECCV 2024!"},
         { text: "[2024.05] Our lab received the outstanding young scientist grant from National Research Foundation!"},
