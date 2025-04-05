@@ -50,7 +50,7 @@ const App = () => {
     const extendedImages = [images[images.length - 1], ...images, images[0]]; // Add last and first image for smooth looping
 
     const newsItems = [
-        { text: "[2025.06] Invited talk at an RSS 2025 Workshop ", linkText: "Gaussian Representations for Robot Autonomy: Challenges and Opportunities", url: "https://sites.google.com/view/gmm-workshop-rss25/home" },
+        { text: "[2025.06] Eunbyung Park will give an invited talk at an RSS 2025 Workshop ", linkText: "Gaussian Representations for Robot Autonomy: Challenges and Opportunities", url: "https://sites.google.com/view/gmm-workshop-rss25/home" },
         { text: "[2025.04]", linkText: "Generative Densification", url: "https://stnamjef.github.io/GenerativeDensification/", extraText: " was selected as a CVPR 2025 highlight!"},
         { text: "[2025.02] Three papers accepted to CVPR 2025!"},
         { text: "[2025.01] Invited talk at", linkText: "Joint JPEG/MPEG Workshop", url: "https://jpeg.org" },
