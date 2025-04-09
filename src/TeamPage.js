@@ -24,7 +24,7 @@ const TeamPage = () => {
             name: 'Seungtae Nam', 
             img: process.env.PUBLIC_URL + '/team/STN.png',
             desc: '2022.03 - Present',
-            email: 'stnamjef@skku.edu', 
+            email: 'stnamjef@yonsei.ac.kr', 
             scholar: 'https://scholar.google.com/citations?user=8NKPmmwCmrAC&hl=en',
             github: 'https://github.com/stnamjef'
         },
@@ -40,7 +40,7 @@ const TeamPage = () => {
             name: 'Namgyu Kang', 
             img: process.env.PUBLIC_URL + '/team/NGK.jpg', 
             desc: '2022.03 - Present',
-            email: 'kangnamgyu27@skku.edu', 
+            email: 'nkang@yonsei.ac.kr', 
             scholar: 'https://scholar.google.com/citations?hl=en&user=yb9y9k8AAAAJ',
             github: 'https://github.com/NamGyuKang' 
         },
@@ -48,7 +48,7 @@ const TeamPage = () => {
             name: 'Byeonghyeon Lee', 
             img: process.env.PUBLIC_URL + '/team/BHL.jpg', 
             desc: '2022.09 - Present',
-            email: 'leebh0102@skku.edu', 
+            email: 'bhl@yonsei.ac.kr', 
             scholar: 'https://scholar.google.com/citations?user=_PhPccYAAAAJ&hl=en',
             github: 'https://github.com/benhenryL' 
         },        
@@ -64,7 +64,7 @@ const TeamPage = () => {
             name: 'Younghyun Kim', 
             img: process.env.PUBLIC_URL + '/team/YHL.jpg',
             desc: '2023.03 - Present',
-            email: 'yhyun225@skku.edu', 
+            email: 'yhyun225@yonsei.ac.kr', 
             scholar: 'https://scholar.google.com/citations?hl=en&user=4M-6X7MAAAAJ',
             github: 'https://github.com/yhyun225'  
         },
@@ -164,14 +164,14 @@ const TeamPage = () => {
             name: 'Seungkwon Yang', 
             img: process.env.PUBLIC_URL + '/team/SKY.jpg',
             desc: '2025.03 - Present',
-            email: 'hkjo0908@skku.edu', 
+            email: 'skyang@yonsei.ac.kr', 
             scholar: '',
             github: 'https://github.com/yang-gwon2'
         },
         { 
             name: 'Woojeong Baek', 
             img: process.env.PUBLIC_URL + '/team/WJB.jpeg',
-            email: 'bwj2800@skku.edu',
+            email: 'bwj2800@yonsei.ac.kr',
             desc: '2025.03 - Present', 
             scholar: '',
             github: 'https://github.com/bwj2800'   
