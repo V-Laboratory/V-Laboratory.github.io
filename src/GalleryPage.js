@@ -4,6 +4,14 @@ import './GalleryPage.css';
 const albums = [
     {
         year: 2025,
+        title: 'ICLR 2025',
+        description: '2025.04.27.',
+        images: [
+            { src: process.env.PUBLIC_URL + '/gallery/2025_iclr_1.jpeg', alt: '2025_iclr_1' },
+        ],
+    },
+    {
+        year: 2025,
         title: 'V-Lab at Yonsei University',
         description: '2025.03.14.',
         images: [
