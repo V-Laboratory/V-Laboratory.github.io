@@ -8,6 +8,7 @@ const albums = [
         description: '2025.04.27.',
         images: [
             { src: process.env.PUBLIC_URL + '/gallery/2025_iclr_1.jpeg', alt: '2025_iclr_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_iclr_2.jpg', alt: '2025_iclr_2' },
         ],
     },
     {
