@@ -70,7 +70,7 @@ const publications = [
         links: {
             paper: "https://arxiv.org/abs/2412.11520",
             project: "https://kuai-lab.github.io/editsplat2024/",
-            code: "Coming soon",
+            code: "https://github.com/kuai-lab/cvpr25_EditSplat",
             thumbs: process.env.PUBLIC_URL + '/thumb/EditSplat.jpg'
         }
     },
@@ -221,7 +221,6 @@ const publications = [
         authors: "Junyu Zhang, Daochang Liu, Eunbyung Park, Shichao Zhang, Chang Xu",
         links: {
             paper: "https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_Residual_Learning_in_Diffusion_Models_CVPR_2024_paper.html",
-            code: "Coming soon",
             thumbs: process.env.PUBLIC_URL + '/thumb/ResDiff.jpg'
         }  
     },
@@ -255,7 +254,6 @@ const publications = [
         authors: "Hanbit Yoon, Usman Ali, Joonhee Choi, Eunbyung Park",
         links: {
             paper: "https://www.sciencedirect.com/science/article/abs/pii/S0031320324006344",
-            code: "Coming soon",
             thumbs: process.env.PUBLIC_URL + '/thumb/RethinkingCNN.jpg'
         } 
     },
