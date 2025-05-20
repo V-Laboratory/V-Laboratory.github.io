@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { HashRouter as Router, Route, Routes, Link, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Link, Navigate, useLocation } from 'react-router-dom';
 import TeamPage from './TeamPage';
 import PublicationPage from './PublicationPage';
 import GalleryPage from './GalleryPage';
@@ -46,6 +46,17 @@ const App = () => {
         // { src: process.env.PUBLIC_URL + '/home/pair_02.jpg', alt: 'pair02' },
         // { src: process.env.PUBLIC_URL + '/home/pair_03.jpg', alt: 'pair03' },
     ];
+
+    function ScrollToTop() {
+        const { pathname } = useLocation();
+
+        useEffect(() => {
+            window.scrollTo(0, 0);
+        }, [pathname]);
+
+        return null;
+    }
+
 
     const extendedImages = [images[images.length - 1], ...images, images[0]]; // Add last and first image for smooth looping
 
@@ -132,6 +143,7 @@ const App = () => {
 
     return (
         <Router basename="/">
+            <ScrollToTop />
             <div className="App">
                 <nav className="navbar">
                     <div className="title">
