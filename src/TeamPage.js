@@ -268,7 +268,7 @@ const TeamPage = () => {
                 <div className="profile">
                     <div className="member">
                         <img
-                            src={process.env.PUBLIC_URL + '/team/epark.jpg'}
+                            src={process.env.PUBLIC_URL + '/team/epark3.jpg'}
                             alt="Prof. Eunbyung Park"
                             className="profile-img"
                         />
