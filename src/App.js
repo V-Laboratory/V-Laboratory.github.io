@@ -1,11 +1,27 @@
-import React, { useState, useEffect } from 'react';
-import { HashRouter as Router, Route, Routes, Link, Navigate, useLocation, useNavigationType } from 'react-router-dom';
+import React, { useState, useEffect, useRef } from 'react';
+import { HashRouter as Router, Route, Routes, Link, Navigate, useLocation } from 'react-router-dom';
 import TeamPage from './TeamPage';
 import PublicationPage from './PublicationPage';
 import GalleryPage from './GalleryPage';
 import ContactPage from './ContactPage';
 import Carousel from './Carousel';
 import './App.css';
+
+
+const ScrollToTopOnRouteChange = () => {
+  const location = useLocation();
+  const prevPathRef = useRef(location.pathname);
+
+  useEffect(() => {
+    if (prevPathRef.current !== location.pathname) {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+      prevPathRef.current = location.pathname;
+    }
+  }, [location.pathname]);
+
+  return null;
+};
+
 
 const App = () => {
     const [currentIndex, setCurrentIndex] = useState(1); // Start at the first image in the extended array
@@ -14,7 +30,7 @@ const App = () => {
 
     const [isSmallScreen, setIsSmallScreen] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+    
     useEffect(() => {
         const handleResize = () => {
             setIsSmallScreen(window.innerWidth <= 768);
@@ -133,6 +149,7 @@ const App = () => {
 
     return (
         <Router basename="/">
+            <ScrollToTopOnRouteChange />
             <div className="App">
                 <nav className="navbar">
                     <div className="title">
