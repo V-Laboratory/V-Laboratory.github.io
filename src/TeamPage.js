@@ -142,7 +142,7 @@ const TeamPage = () => {
             desc: '2024.09 - Present',
             email: 'leejicb@skku.edu', 
             scholar: '',
-            github: 'https://github.com/lms20031'  
+            github: 'https://github.com/twowindragon'  
         },
         { 
             name: 'Eunsoo Lee', 

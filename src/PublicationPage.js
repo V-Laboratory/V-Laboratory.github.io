@@ -2,7 +2,18 @@ import React, { useState } from "react";
 import "./PublicationPage.css";
 
 const publications = [
-    
+    { 
+        year: "Preprints", 
+        title: "Hybrid 3D-4D Gaussian Splatting for Fast Dynamic Scene Representation", 
+        journal: "arXiv:2505.13215", 
+        authors: "Seungjun Oh, Younggeun Lee, Hyejin Jeon, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2505.13215",
+            project: "https://ohsngjun.github.io/3D-4DGS/",
+            code: "https://github.com/ohsngjun/3D-4DGS",
+            thumbs: process.env.PUBLIC_URL + '/thumb/3D-4DGS.jpg'
+        } 
+    },
     { 
         year: "Preprints", 
         title: "Optimized Minimal 3D Gaussian Splatting", 
