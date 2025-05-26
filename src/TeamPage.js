@@ -186,6 +186,20 @@ const TeamPage = () => {
             scholar: '',
             github: 'https://github.com/lms20031'   
         },
+        { 
+            name: 'Jungwoo Kim', 
+            img: process.env.PUBLIC_URL + '/team/JWK.jpeg',
+            email: 'sug51689@gmail.com', 
+            scholar: '',
+            github: 'https://github.com/jungcow'   
+        },
+        { 
+            name: 'Joonhyuk Park', 
+            img: process.env.PUBLIC_URL + '/team/JoonhyukPark.jpg',
+            email: 'rchkl2380@gmail.com', 
+            scholar: '',
+            github: 'https://github.com/onyuc'   
+        },
     ];
 
     const alumni = [
@@ -375,7 +389,7 @@ const TeamPage = () => {
 
             <section>
                 <h2>Undergraduate Students</h2>
-                <div className="under_students">
+                <div className="students">
                     {undergraduateStudents.map((student, index) => (
                         <div key={index} className="member">
                             <img src={student.img} alt={student.name} className="profile-img" />
