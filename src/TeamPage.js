@@ -109,7 +109,7 @@ const TeamPage = () => {
             img: process.env.PUBLIC_URL + '/team/JSY.jpg',
             desc: '2024.03 - Present',
             email: 'jisang1528@skku.edu', 
-            scholar: '',
+            scholar: 'https://scholar.google.com/citations?user=0mCLz_sAAAAJ&hl=ko&oi=sra',
             github: 'https://github.com/Yoo-jisang'  
         },
         { 

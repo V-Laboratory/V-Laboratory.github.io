@@ -97,7 +97,7 @@ const App = () => {
         { text: "[2022.08] PIXEL was selected as a spotlight in", linkText: "DLDE-II (NeurIPS 2022 Workshop)", url: "https://dlde-2022.github.io/"},
         { text: "[2022.08] SPINN received the best paper award in ", linkText: "CKAIA 2022", url: "http://aiassociation.kr/Conference/ConferenceView.asp?AC=0&CODE=CC20220601&B_CATE=BBC1"},
         { text: "[2022.07] Streamable Neural Fields was accepted to ECCV 2022"},
-        { text: "[2022.05] Our lab received the", linkText: "Basic Research Lab (BRL)", url: "https://www.brlskku.com/", extraText: " grant from the NRF"},
+        { text: "[2022.05] Our lab received the ", linkText: "Basic Research Lab (BRL)", url: "https://www.brlskku.com/", extraText: " grant from the NRF"},
         { text: "[2022.03] Prof. Eunbyung Park gave an invited talk at Samsung Research"},
         { text: "[2021.09] Honor to be selected as a ", linkText: "EIRIC rising star", url: "https://www.eiric.or.kr/manpower/rising_view.php?Seq=34"},
         { text: "[2021.06] Lab was founded"},
