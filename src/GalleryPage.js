@@ -4,6 +4,15 @@ import './GalleryPage.css';
 const albums = [
     {
         year: 2025,
+        title: 'Lab Dinner',
+        description: '2025.05.30.',
+        images: [
+            { src: process.env.PUBLIC_URL + '/gallery/2025_party_1.jpeg', alt: '2025_party_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_party_2.jpeg', alt: '2025_party_2' },
+        ],
+    },
+    {
+        year: 2025,
         title: 'ICLR 2025',
         description: '2025.04.27.',
         images: [
