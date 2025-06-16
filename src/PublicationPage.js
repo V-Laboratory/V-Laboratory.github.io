@@ -4,6 +4,18 @@ import "./PublicationPage.css";
 const publications = [
     { 
         year: "Preprints", 
+        title: "DiffuseSlide: Training-Free High Frame Rate Video Generation Diffusion", 
+        journal: "arXiv:2506.01454", 
+        authors: "Geunmin Hwang, Hyun-kyu Ko, Younghyun Kim, Seungryong Lee, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2506.01454",
+            project: "https://geunminhwang.github.io/DiffuseSlide/",
+            code: "https://github.com/GeunminHwang/DiffuseSlide",
+            thumbs: process.env.PUBLIC_URL + '/thumb/DiffuseSlide.jpg'
+        } 
+    },
+    { 
+        year: "Preprints", 
         title: "Hybrid 3D-4D Gaussian Splatting for Fast Dynamic Scene Representation", 
         journal: "arXiv:2505.13215", 
         authors: "Seungjun Oh, Younggeun Lee, Hyejin Jeon, Eunbyung Park",
