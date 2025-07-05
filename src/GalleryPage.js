@@ -5,7 +5,7 @@ const albums = [
     {
         year: 2025,
         title: 'Jeju MT',
-        description: '2025.07.02.',
+        description: '2025.07.02. - 07.04.',
         images: [
             { src: process.env.PUBLIC_URL + '/gallery/2025_jeju_2.jpg', alt: '2025_jeju_2' },
             { src: process.env.PUBLIC_URL + '/gallery/2025_jeju_1.jpg', alt: '2025_jeju_1' },
