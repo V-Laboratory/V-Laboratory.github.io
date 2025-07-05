@@ -4,6 +4,19 @@ import './GalleryPage.css';
 const albums = [
     {
         year: 2025,
+        title: 'Jeju MT',
+        description: '2025.07.02.',
+        images: [
+            { src: process.env.PUBLIC_URL + '/gallery/2025_jeju_2.jpg', alt: '2025_jeju_2' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_jeju_1.jpg', alt: '2025_jeju_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_jeju_3.jpg', alt: '2025_jeju_3' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_jeju_4.jpg', alt: '2025_jeju_4' },            
+            { src: process.env.PUBLIC_URL + '/gallery/2025_jeju_6.jpg', alt: '2025_jeju_5' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_jeju_5.jpg', alt: '2025_jeju_6' },
+        ],
+    },
+    {
+        year: 2025,
         title: 'Lab Dinner',
         description: '2025.05.30.',
         images: [

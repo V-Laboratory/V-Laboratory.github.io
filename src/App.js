@@ -48,19 +48,10 @@ const App = () => {
         setIsMenuOpen((prev) => !prev);
     };
     const images = [
-        // { src: process.env.PUBLIC_URL + '/home/GenerativeDensification.jpg', alt: 'GenerativeDensification' },
-        // { src: process.env.PUBLIC_URL + '/home/SelfSplat.jpg', alt: 'SelfSplat' },
-        // // { src: process.env.PUBLIC_URL + '/home/EditSplat.jpg', alt: 'EditSplat' },
-        // { src: process.env.PUBLIC_URL + '/home/Anti.jpg', alt: 'AntiExposure' },
-        // { src: process.env.PUBLIC_URL + '/home/PIG.jpg', alt: 'PIG' },
-        // { src: process.env.PUBLIC_URL + '/home/DiffuseHigh.jpg', alt: 'DiffuseHigh' },
-        // { src: process.env.PUBLIC_URL + '/home/CodecNerf.jpg', alt: 'CodecNerf' },
-        // { src: process.env.PUBLIC_URL + '/home/SequenceMatters.jpg', alt: 'SequenceMatters' },
-        // { src: process.env.PUBLIC_URL + '/home/PEVC.jpg', alt: 'PEVC' },
+        { src: process.env.PUBLIC_URL + '/gallery/2025_jeju_2.jpg', alt: 'pair01' },
+        { src: process.env.PUBLIC_URL + '/gallery/2025_jeju_1.jpg', alt: 'pair01' },
         { src: process.env.PUBLIC_URL + '/home/main_img_1.jpg', alt: 'pair01' },
         { src: process.env.PUBLIC_URL + '/home/main_img_2.jpg', alt: 'pair02' },
-        // { src: process.env.PUBLIC_URL + '/home/pair_02.jpg', alt: 'pair02' },
-        // { src: process.env.PUBLIC_URL + '/home/pair_03.jpg', alt: 'pair03' },
     ];
 
 
