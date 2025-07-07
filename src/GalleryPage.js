@@ -7,12 +7,24 @@ const albums = [
         title: 'Jeju MT',
         description: '2025.07.02. - 07.04.',
         images: [
-            { src: process.env.PUBLIC_URL + '/gallery/2025_jeju_2.jpg', alt: '2025_jeju_2' },
-            { src: process.env.PUBLIC_URL + '/gallery/2025_jeju_1.jpg', alt: '2025_jeju_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_jeju_2.jpg', alt: '2025_jeju_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_jeju_1.jpg', alt: '2025_jeju_2' },
             { src: process.env.PUBLIC_URL + '/gallery/2025_jeju_3.jpg', alt: '2025_jeju_3' },
             { src: process.env.PUBLIC_URL + '/gallery/2025_jeju_4.jpg', alt: '2025_jeju_4' },            
             { src: process.env.PUBLIC_URL + '/gallery/2025_jeju_6.jpg', alt: '2025_jeju_5' },
             { src: process.env.PUBLIC_URL + '/gallery/2025_jeju_5.jpg', alt: '2025_jeju_6' },
+        ],
+    },
+    {
+        year: 2025,
+        title: 'CVPR 2025',
+        description: '2025.06.11.',
+        images: [
+            { src: process.env.PUBLIC_URL + '/gallery/2025_cvpr_1.jpeg', alt: '2025_cvpr_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_cvpr_3.jpeg', alt: '2025_cvpr_2' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_cvpr_4.jpeg', alt: '2025_cvpr_3' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_cvpr_5.jpeg', alt: '2025_cvpr_4' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_cvpr_2.jpeg', alt: '2025_cvpr_5' },
         ],
     },
     {
