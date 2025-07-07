@@ -20,11 +20,16 @@ const albums = [
         title: 'CVPR 2025',
         description: '2025.06.11.',
         images: [
+            
             { src: process.env.PUBLIC_URL + '/gallery/2025_cvpr_1.jpeg', alt: '2025_cvpr_1' },
-            { src: process.env.PUBLIC_URL + '/gallery/2025_cvpr_3.jpeg', alt: '2025_cvpr_2' },
-            { src: process.env.PUBLIC_URL + '/gallery/2025_cvpr_4.jpeg', alt: '2025_cvpr_3' },
-            { src: process.env.PUBLIC_URL + '/gallery/2025_cvpr_5.jpeg', alt: '2025_cvpr_4' },
-            { src: process.env.PUBLIC_URL + '/gallery/2025_cvpr_2.jpeg', alt: '2025_cvpr_5' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_cvpr_9.jpeg', alt: '2025_cvpr_9' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_cvpr_2.jpeg', alt: '2025_cvpr_2' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_cvpr_3.jpeg', alt: '2025_cvpr_3' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_cvpr_4.jpeg', alt: '2025_cvpr_4' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_cvpr_5.jpeg', alt: '2025_cvpr_5' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_cvpr_6.jpeg', alt: '2025_cvpr_6' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_cvpr_7.jpeg', alt: '2025_cvpr_7' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_cvpr_8.jpeg', alt: '2025_cvpr_8' },            
         ],
     },
     {
