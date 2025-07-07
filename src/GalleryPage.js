@@ -18,7 +18,7 @@ const albums = [
     {
         year: 2025,
         title: 'CVPR 2025',
-        description: '2025.06.11.',
+        description: '2025.06.15.',
         images: [
             
             { src: process.env.PUBLIC_URL + '/gallery/2025_cvpr_1.jpeg', alt: '2025_cvpr_1' },
