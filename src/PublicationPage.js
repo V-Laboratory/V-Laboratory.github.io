@@ -4,6 +4,30 @@ import "./PublicationPage.css";
 const publications = [
     { 
         year: "Preprints", 
+        title: "iLRM: An Iterative Large 3D Reconstruction Model", 
+        journal: "arXiv:2507.23277", 
+        authors: "Gyeongjin Kang, Seungtae Nam, Xiangyu Sun, Sameh Khamis, Abdelrahman Mohamed, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2507.23277",
+            project: "https://gynjn.github.io/iLRM/",
+            code: "https://github.com/Gynjn/iLRM",
+            thumbs: process.env.PUBLIC_URL + '/thumb/iLRM.jpg'
+        } 
+    },
+    { 
+        year: "Preprints", 
+        title: "Moiré Zero: An Efficient and High-Performance Neural Architecture for Moiré Removal", 
+        journal: "arXiv:2507.22407", 
+        authors: "Seungryong Lee*, Woojeong Baek*, Younghyun Kim, Eunwoo Kim, Haru Moon, Donggon Yoo, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2507.22407",
+            project: "https://sngryonglee.github.io/MoireZero/",
+            code: "https://github.com/sngryongLee/Moire-Zero",
+            thumbs: process.env.PUBLIC_URL + '/thumb/Moire.jpg'
+        } 
+    },
+    { 
+        year: "Preprints", 
         title: "DiffuseSlide: Training-Free High Frame Rate Video Generation Diffusion", 
         journal: "arXiv:2506.01454", 
         authors: "Geunmin Hwang, Hyun-kyu Ko, Younghyun Kim, Seungryong Lee, Eunbyung Park",
