@@ -272,7 +272,7 @@ const TeamPage = () => {
             name: 'Geunmin Hwang', 
             desc: 'MS, 2023.03 - 2025.02',
             current: 'ReconLabs'
-        }
+        },
     ];
 
     return (

@@ -4,6 +4,16 @@ import "./PublicationPage.css";
 const publications = [
     { 
         year: "Preprints", 
+        title: "Uni3R: Unified 3D Reconstruction and Semantic Understanding via Generalizable Gaussian Splatting from Unposed Multi-View Images", 
+        journal: "arXiv:2508.03643", 
+        authors: "Xiangyu Sun*, Haoyi jiang*, Liu Liu, Seungtae Nam, Gyeongjin Kang, Xinjie wang, Wei Sui, Zhizhong Su, Wenyu Liu, Xinggang Wang, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2508.03643",
+            thumbs: process.env.PUBLIC_URL + '/thumb/Uni3R.jpg'
+        } 
+    },
+    { 
+        year: "Preprints", 
         title: "iLRM: An Iterative Large 3D Reconstruction Model", 
         journal: "arXiv:2507.23277", 
         authors: "Gyeongjin Kang, Seungtae Nam, Xiangyu Sun, Sameh Khamis, Abdelrahman Mohamed, Eunbyung Park",
