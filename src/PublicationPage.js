@@ -9,6 +9,7 @@ const publications = [
         authors: "Xiangyu Sun*, Haoyi jiang*, Liu Liu, Seungtae Nam, Gyeongjin Kang, Xinjie wang, Wei Sui, Zhizhong Su, Wenyu Liu, Xinggang Wang, Eunbyung Park",
         links: {
             paper: "https://arxiv.org/abs/2508.03643",
+            project: "https://xiangyu1sun.github.io/Uni3R/",
             code: "https://github.com/HorizonRobotics/Uni3R",
             thumbs: process.env.PUBLIC_URL + '/thumb/Uni3R.jpg'
         } 
