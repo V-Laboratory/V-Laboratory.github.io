@@ -305,32 +305,6 @@ const TeamPage = () => {
                                 </a>
                             </div>
                     </div>
-
-                    
-                    {/* <div className="details">
-                        <p className="prof-intro">
-                            
-                            
-                            <strong>Education</strong>
-                            <ul>
-                                <li>Ph.D., Computer Science at University of North Carolina at Chapel Hill, 2014.09 - 2019.12</li>
-                                <li>M.S., Computer Science at Seoul National University, 2009.03 - 2011.02</li>
-                                <li>B.S., Computer Science at Kyung Hee University, 2002.03 - 2009.02</li>
-                            </ul>
-                            <strong>Work Experience</strong>
-                            <ul>
-                                <li>Assistant Professor, <a href="https://cs.yonsei.ac.kr/csai/faculty/AI.do" target='_blank'>Yonsei University</a>, 2025.03 - Present </li>
-                                <li>Assistant Professor, <a href="https://ice.skku.edu/eng_ice/programs/departments/elec_intro.do" target="_blank">Sungkyunkwan University</a>, 2021.02 - 2025.02</li>
-                                <li>Applied Scientist, <a href="https://msturing.org" target="_blank">Microsoft Project Turing</a>, 2020.09 - 2021.02</li>
-                                <li>Research Scientist, <a href="http://nuro.ai/" target="_blank">Nuro</a>, 2019.06 - 2020.08</li>
-                                <li>Research Intern, <a href="https://deepmind.com/" target="_blank">Google DeepMind</a>, 2018.06 - 2018.10 </li>
-                                <li>Research Intern, <a href="https://www.microsoft.com/en-us/research/" target="_blank">Microsoft Research</a>, 2017.06 - 2017.08</li>
-                                <li>Research Intern, <a href="http://www.adobe.com/technology.html" target="_blank">Adobe Research</a>, 2016.06 - 2016.08</li>
-                                <li>Research Intern, <a href="https://www.hp.com/us-en/hp-labs.html"  target="_blank">HP Labs</a>, 2015.06 - 2015.08</li>
-                            </ul>
-                        </p>
-                        
-                    </div> */}
                 </div>
             </section>
 
