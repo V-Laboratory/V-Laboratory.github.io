@@ -271,7 +271,7 @@ const TeamPage = () => {
         },
         { 
             name: 'Seungjun Oh', 
-            desc: '2023.09 - 2025.08',
+            desc: 'MS, 2023.09 - 2025.08',
             current: 'Hanwha Vision'
         },
     ];
