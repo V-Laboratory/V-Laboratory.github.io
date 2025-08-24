@@ -7,10 +7,11 @@ const albums = [
         title: '2025 Summer Graduation Ceremony',
         description: '2025.08.23.',
         images: [
-            { src: process.env.PUBLIC_URL + '/gallery/2025_summer_ceremony_1.jpg', alt: '2025_jeju_1' },
-            { src: process.env.PUBLIC_URL + '/gallery/2025_summer_ceremony_2.jpg', alt: '2025_jeju_2' },
-            { src: process.env.PUBLIC_URL + '/gallery/2025_summer_ceremony_3.jpg', alt: '2025_jeju_3' },
-            { src: process.env.PUBLIC_URL + '/gallery/2025_summer_ceremony_4.jpg', alt: '2025_jeju_4' },            
+            { src: process.env.PUBLIC_URL + '/gallery/2025_summer_ceremony_1.jpg', alt: '2025_summer_ceremony_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_summer_ceremony_2.jpg', alt: '2025_summer_ceremony_2' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_summer_ceremony_3.jpg', alt: '2025_summer_ceremony_3' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_summer_ceremony_4.jpg', alt: '2025_summer_ceremony_4' },            
+            { src: process.env.PUBLIC_URL + '/gallery/2025_summer_ceremony_5.jpg', alt: '2025_summer_ceremony_4' },            
         ],
     },
     {
