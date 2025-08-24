@@ -72,14 +72,6 @@ const TeamPage = () => {
 
     const masterStudents = [
         { 
-            name: 'Seungjun Oh', 
-            img: process.env.PUBLIC_URL + '/team/SJO.jpeg',
-            desc: '2023.09 - Present',
-            email: 'asxc1324@skku.edu', 
-            scholar: 'https://scholar.google.com/citations?hl=en&user=HMnjBk0AAAAJ',
-            github: 'https://github.com/ohsngjun'  
-        },
-        { 
             name: 'Gyeongjin Kang', 
             img: process.env.PUBLIC_URL + '/team/GJK.jpg',
             desc: '2024.03 - Present', 
@@ -176,13 +168,11 @@ const TeamPage = () => {
             scholar: '',
             github: 'https://github.com/bwj2800'   
         },
-    ];
-
-    const undergraduateStudents = [
         { 
             name: 'Minseo Lee', 
             img: process.env.PUBLIC_URL + '/team/MSL.jpg',
             email: 'lms20031@skku.edu', 
+            desc: '2025.09 - Present',
             scholar: '',
             github: 'https://github.com/lms20031'   
         },
@@ -190,6 +180,7 @@ const TeamPage = () => {
             name: 'Jungwoo Kim', 
             img: process.env.PUBLIC_URL + '/team/JWK.jpeg',
             email: 'sug51689@gmail.com', 
+            desc: '2025.09 - Present',
             scholar: '',
             github: 'https://github.com/jungcow'   
         },
@@ -197,9 +188,14 @@ const TeamPage = () => {
             name: 'Joonhyuk Park', 
             img: process.env.PUBLIC_URL + '/team/JoonhyukPark.jpg',
             email: 'rchkl2380@gmail.com', 
+            desc: '2025.09 - Present',
             scholar: '',
             github: 'https://github.com/onyuc'   
         },
+    ];
+
+    const undergraduateStudents = [
+        
     ];
 
     const alumni = [
@@ -272,6 +268,11 @@ const TeamPage = () => {
             name: 'Geunmin Hwang', 
             desc: 'MS, 2023.03 - 2025.02',
             current: 'ReconLabs'
+        },
+        { 
+            name: 'Seungjun Oh', 
+            desc: '2023.09 - 2025.08',
+            current: 'Hanwha Vision'
         },
     ];
 
@@ -361,7 +362,7 @@ const TeamPage = () => {
                 </div>
             </section>
 
-            <section>
+            {/* <section>
                 <h2>Undergraduate Students</h2>
                 <div className="students">
                     {undergraduateStudents.map((student, index) => (
@@ -376,7 +377,7 @@ const TeamPage = () => {
                         </div>
                     ))}
                 </div>
-            </section>
+            </section> */}
 
 
             <section>
