@@ -1,4 +1,5 @@
-import React from 'react';
+import ReactMarkdown from "react-markdown";
+import remarkBreaks from "remark-breaks";
 import './TeamPage.css';
 
 const TeamPage = () => {
@@ -6,7 +7,7 @@ const TeamPage = () => {
         { 
             name: 'Joo Chan Lee', 
             img: process.env.PUBLIC_URL + '/team/JCL.png',
-            desc: "2020.03 - Present\nCo-supervised by Jong-Hwan Ko",
+            desc: "MS-PhD Integrated Student\nCo-supervised by [Jong-Hwan Ko](https://iris.skku.edu/professor/)",
             email: 'maincold2@skku.edu', 
             homepage: 'https://maincold2.github.io/',
             scholar: 'https://scholar.google.com/citations?user=WKCHKk8AAAAJ&hl=en',
@@ -15,7 +16,7 @@ const TeamPage = () => {
         { 
             name: 'Younggeun Lee', 
             img: process.env.PUBLIC_URL + '/team/YGL.jpeg',
-            desc: '2021.09 - Present',
+            desc: 'MS-PhD Integrated Student',
             email: 'dudrms514@skku.edu', 
             scholar: 'https://scholar.google.com/citations?hl=en&user=E4iEBFsAAAAJ',
             github: 'https://github.com/Younggeun-L' 
@@ -23,7 +24,7 @@ const TeamPage = () => {
         { 
             name: 'Seungtae Nam', 
             img: process.env.PUBLIC_URL + '/team/STN.png',
-            desc: '2022.03 - Present',
+            desc: 'PhD Student',
             email: 'stnamjef@yonsei.ac.kr', 
             scholar: 'https://scholar.google.com/citations?user=8NKPmmwCmrAC&hl=en',
             github: 'https://github.com/stnamjef'
@@ -31,7 +32,7 @@ const TeamPage = () => {
         { 
             name: 'Xiangyu Sun', 
             img: process.env.PUBLIC_URL + '/team/XYS.jpg',
-            desc: '2022.09 - Present',
+            desc: `PhD Student\nDoing internship at [Horizon Robotics](https://en.horizon.auto/)`,
             email: 'xiangyusun@skku.edu', 
             scholar: 'https://scholar.google.com/citations?user=VLzxTrAAAAAJ&hl=en',
             github: 'https://github.com/Xiangyu1Sun'  
@@ -39,7 +40,7 @@ const TeamPage = () => {
         { 
             name: 'Namgyu Kang', 
             img: process.env.PUBLIC_URL + '/team/NGK.jpg', 
-            desc: '2022.03 - Present',
+            desc: 'PhD Student',
             email: 'nkang@yonsei.ac.kr', 
             scholar: 'https://scholar.google.com/citations?hl=en&user=yb9y9k8AAAAJ',
             github: 'https://github.com/NamGyuKang' 
@@ -47,7 +48,7 @@ const TeamPage = () => {
         { 
             name: 'Byeonghyeon Lee', 
             img: process.env.PUBLIC_URL + '/team/BHL.jpg', 
-            desc: '2022.09 - Present',
+            desc: 'PhD Student',
             email: 'bhl@yonsei.ac.kr', 
             scholar: 'https://scholar.google.com/citations?user=_PhPccYAAAAJ&hl=en',
             github: 'https://github.com/benhenryL' 
@@ -55,7 +56,7 @@ const TeamPage = () => {
         { 
             name: 'Junyu Zhang', 
             img: process.env.PUBLIC_URL + '/team/JYJ.JPG',
-            desc: '2023.09 - Present',
+            desc: 'PhD Student',
             email: 'zhangjunyu@skku.edu', 
             scholar: 'https://scholar.google.com/citations?hl=en&user=3jrCsVoAAAAJ',
             github: 'https://github.com/BestJunYu'  
@@ -63,10 +64,34 @@ const TeamPage = () => {
         { 
             name: 'Younghyun Kim', 
             img: process.env.PUBLIC_URL + '/team/YHL.jpg',
-            desc: '2023.03 - Present',
+            desc: 'PhD Student',
             email: 'yhyun225@yonsei.ac.kr', 
             scholar: 'https://scholar.google.com/citations?hl=en&user=4M-6X7MAAAAJ',
             github: 'https://github.com/yhyun225'  
+        },
+        { 
+            name: 'Seungkwon Yang', 
+            img: process.env.PUBLIC_URL + '/team/SKY.jpg',
+            desc: 'MS-PhD Integrated Student',
+            email: 'skyang@yonsei.ac.kr', 
+            scholar: '',
+            github: 'https://github.com/yang-gwon2'
+        },
+                { 
+            name: 'Minseo Lee', 
+            img: process.env.PUBLIC_URL + '/team/MSL.jpg',
+            desc: 'MS-PhD Integrated Student',
+            email: 'lms@yonsei.ac.kr', 
+            scholar: '',
+            github: 'https://github.com/lms20031'   
+        },
+        { 
+            name: 'Jungwoo Kim', 
+            img: process.env.PUBLIC_URL + '/team/JWK.jpeg',
+            desc: 'MS-PhD Integrated Student',
+            email: 'jungwkim@yonsei.ac.kr',
+            scholar: '',
+            github: 'https://github.com/jungcow'   
         },
     ];
 
@@ -74,7 +99,7 @@ const TeamPage = () => {
         { 
             name: 'Gyeongjin Kang', 
             img: process.env.PUBLIC_URL + '/team/GJK.jpg',
-            desc: '2024.03 - Present', 
+            desc: 'MS Student', 
             email: 'ggggjin99@skku.edu',
             homepage: 'https://gynjn.github.io/info/', 
             scholar: 'https://scholar.google.com/citations?user=iyQ16vIAAAAJ&hl=en',
@@ -83,7 +108,7 @@ const TeamPage = () => {
         { 
             name: 'Dongheok Park', 
             img: process.env.PUBLIC_URL + '/team/DHP.jpg',
-            desc: '2024.03 - Present',
+            desc: 'MS Student',
             email: 'leao8869@skku.edu', 
             scholar: 'https://scholar.google.com/citations?user=UUtpFKgAAAAJ&hl=ko&oi=ao',
             github: 'https://github.com/DHPark98'  
@@ -91,7 +116,7 @@ const TeamPage = () => {
         { 
             name: 'Hyun-kyu Ko', 
             img: process.env.PUBLIC_URL + '/team/HKK.jpg',
-            desc: '2024.03 - Present',
+            desc: 'MS Student',
             email: 'laniko@skku.edu', 
             scholar: 'https://scholar.google.com/citations?hl=ko&user=lsi-8-QAAAAJ',
             github: 'https://github.com/Ko-Lani'  
@@ -99,7 +124,7 @@ const TeamPage = () => {
         { 
             name: 'Jisang Yoo', 
             img: process.env.PUBLIC_URL + '/team/JSY.jpg',
-            desc: '2024.03 - Present',
+            desc: 'MS Student',
             email: 'jisang1528@skku.edu', 
             scholar: 'https://scholar.google.com/citations?user=0mCLz_sAAAAJ&hl=ko&oi=sra',
             github: 'https://github.com/Yoo-jisang'  
@@ -107,7 +132,7 @@ const TeamPage = () => {
         { 
             name: 'Hye Jin Jeon', 
             img: process.env.PUBLIC_URL + '/team/HJJ.jpeg',
-            desc: '2024.03 - Present',
+            desc: 'MS Student',
             email: 'hyejin9877@skku.edu', 
             scholar: '',
             github: 'https://github.com/jeonhhyejin'  
@@ -115,7 +140,7 @@ const TeamPage = () => {
         { 
             name: 'Youbin Kim', 
             img: process.env.PUBLIC_URL + '/team/YBK.jpg',
-            desc: '2024.09 - Present',
+            desc: 'MS Student',
             email: 'ybin108@skku.edu', 
             scholar: 'https://scholar.google.com/citations?hl=en&user=RUiA8-wAAAAJ',
             github: 'https://github.com/Ubin108'  
@@ -123,7 +148,7 @@ const TeamPage = () => {
         { 
             name: 'Ji Hyeon Park', 
             img: process.env.PUBLIC_URL + '/team/JHP.jpg',
-            desc: '2024.09 - Present',
+            desc: 'MS Student',
             email: 'fairytale@skku.edu', 
             scholar: '',
             github: 'https://github.com/Kanadae'  
@@ -131,7 +156,7 @@ const TeamPage = () => {
         { 
             name: 'Seungryong Lee', 
             img: process.env.PUBLIC_URL + '/team/SRL.jpg',
-            desc: '2024.09 - Present',
+            desc: 'MS Student',
             email: 'leejicb@skku.edu', 
             scholar: '',
             github: 'https://github.com/twowindragon'  
@@ -139,7 +164,7 @@ const TeamPage = () => {
         { 
             name: 'Eunsoo Lee', 
             img: process.env.PUBLIC_URL + '/team/ESL.jpeg',
-            desc: '2024.09 - Present',
+            desc: 'MS Student',
             email: 'osoo0628@skku.edu', 
             scholar: '',
             github: 'https://github.com/esleeo'  
@@ -147,56 +172,32 @@ const TeamPage = () => {
         { 
             name: 'Jinho Park', 
             img: process.env.PUBLIC_URL + '/team/JHP.jpeg',
-            desc: '2025.03 - Present',
+            desc: 'MS Student',
             email: 'jinho99@.skku.edu', 
             scholar: '',
             github: 'https://github.com/zinosii'
         },
         { 
-            name: 'Seungkwon Yang', 
-            img: process.env.PUBLIC_URL + '/team/SKY.jpg',
-            desc: '2025.03 - Present',
-            email: 'skyang@yonsei.ac.kr', 
-            scholar: '',
-            github: 'https://github.com/yang-gwon2'
-        },
-        { 
             name: 'Woojeong Baek', 
             img: process.env.PUBLIC_URL + '/team/WJB.jpeg',
+            desc: 'MS Student', 
             email: 'bwj2800@yonsei.ac.kr',
-            desc: '2025.03 - Present', 
             scholar: '',
             github: 'https://github.com/bwj2800'   
         },
         { 
-            name: 'Minseo Lee', 
-            img: process.env.PUBLIC_URL + '/team/MSL.jpg',
-            email: 'lms@yonsei.ac.kr', 
-            desc: '2025.09 - Present',
-            scholar: '',
-            github: 'https://github.com/lms20031'   
-        },
-        { 
-            name: 'Jungwoo Kim', 
-            img: process.env.PUBLIC_URL + '/team/JWK.jpeg',
-            email: 'jungwkim@yonsei.ac.kr', 
-            desc: '2025.09 - Present',
-            scholar: '',
-            github: 'https://github.com/jungcow'   
-        },
-        { 
             name: 'Joonhyuk Park', 
             img: process.env.PUBLIC_URL + '/team/JoonhyukPark.jpg',
+            desc: 'MS Student',
             email: 'rchkl2380@yonsei.ac.kr', 
-            desc: '2025.09 - Present',
             scholar: '',
             github: 'https://github.com/onyuc'   
         },
         { 
             name: 'Hwasik Jeong', 
             img: process.env.PUBLIC_URL + '/team/HSJ.jpg',
+            desc: 'MS Student',
             email: '99hwasikk@yonsei.ac.kr ', 
-            desc: '2025.09 - Present',
             scholar: '',
             github: 'https://github.com/JeongHwaSik'   
         },
@@ -331,14 +332,13 @@ const TeamPage = () => {
                                 {student.scholar && <a href={student.scholar}><i className="ai ai-google-scholar" style={{ fontSize: '24px', color: 'black' }}></i></a>}
                                 {student.github && <a href={student.github}><i className="fa fa-github" style={{ fontSize: '24px', color: 'black' }}></i></a>}
                             </div>
-                            <p id='desc'>
-                                {student.desc.split("\n").map((line, i) => (
-                                    <React.Fragment key={i}>
-                                        {line}
-                                        <br />
-                                    </React.Fragment>
-                                ))}
-                            </p>
+                            <div id="desc">
+                                <ReactMarkdown remarkPlugins={[remarkBreaks]}>
+                                    {
+                                    student.desc.replace(/\r\n/g, "\n").replace(/\\n/g, "\n")
+                                    }
+                                </ReactMarkdown>
+                            </div>
                         </div>
                     ))}
                 </div>
@@ -357,14 +357,13 @@ const TeamPage = () => {
                                 {student.scholar && <a href={student.scholar}><i className="ai ai-google-scholar" style={{ fontSize: '24px', color: 'black' }}></i></a>}
                                 {student.github && <a href={student.github}><i className="fa fa-github" style={{ fontSize: '24px', color: 'black' }}></i></a>}
                             </div>
-                            <p id='desc'>
-                                {student.desc.split("\n").map((line, i) => (
-                                    <React.Fragment key={i}>
-                                        {line}
-                                        <br />
-                                    </React.Fragment>
-                                ))}
-                            </p>
+                            <div id="desc">
+                                <ReactMarkdown remarkPlugins={[remarkBreaks]}>
+                                    {
+                                    student.desc.replace(/\r\n/g, "\n").replace(/\\n/g, "\n")
+                                    }
+                                </ReactMarkdown>
+                            </div>
                         </div>
                     ))}
                 </div>

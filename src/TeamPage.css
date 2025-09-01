@@ -127,11 +127,21 @@
 }
 
 
-.member p#desc {
+.member #desc p {
     font-size: 0.8rem;
     color: #666666;
     font-style: italic;
     margin: 0;
+    margin-top: 3px;
+}
+
+.member #desc a {
+    font-size: 0.8rem;
+    color: #666666;
+    font-style: italic;
+    margin: 0;
+    margin-top: 3px;
+    text-decoration: underline
 }
 
 .member p {
