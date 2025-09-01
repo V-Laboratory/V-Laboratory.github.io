@@ -38,14 +38,6 @@ const TeamPage = () => {
             github: 'https://github.com/Xiangyu1Sun'  
         },
         { 
-            name: 'Namgyu Kang', 
-            img: process.env.PUBLIC_URL + '/team/NGK.jpg', 
-            desc: 'PhD Student',
-            email: 'nkang@yonsei.ac.kr', 
-            scholar: 'https://scholar.google.com/citations?hl=en&user=yb9y9k8AAAAJ',
-            github: 'https://github.com/NamGyuKang' 
-        },
-        { 
             name: 'Byeonghyeon Lee', 
             img: process.env.PUBLIC_URL + '/team/BHL.jpg', 
             desc: 'PhD Student',
@@ -245,8 +237,8 @@ const TeamPage = () => {
         },
         { 
             name: 'Namgyu Kang', 
-            desc: 'MS, 2022.03 - 2024.08',
-            current: 'PhD student at V-Lab, Yonsei'
+            desc: 'MS, 2022.03 - 2024.08 / PhD, 2024.09 - 2025.08, leaving for a new adventure. We wish you all the best!',
+            current: ''
         },
         { 
             name: 'Byeonghyeon Lee', 
