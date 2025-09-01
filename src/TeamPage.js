@@ -236,11 +236,6 @@ const TeamPage = () => {
             current: 'Inbody'
         },
         { 
-            name: 'Namgyu Kang', 
-            desc: 'MS, 2022.03 - 2024.08 / PhD, 2024.09 - 2025.08, leaving for a new adventure. We wish you all the best!',
-            current: ''
-        },
-        { 
             name: 'Byeonghyeon Lee', 
             desc: 'MS, 2022.09 - 2024.08', 
             current: 'PhD student at V-Lab, Yonsei'
@@ -274,6 +269,11 @@ const TeamPage = () => {
             name: 'Seungjun Oh', 
             desc: 'MS, 2023.09 - 2025.08',
             current: 'Hanwha Vision'
+        },
+        { 
+            name: 'Namgyu Kang', 
+            desc: 'MS, 2022.03 - 2024.08 / PhD, 2024.09 - 2025.08, leaving for a new adventure. We wish you all the best!',
+            current: ''
         },
     ];
 
