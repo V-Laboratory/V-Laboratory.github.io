@@ -171,7 +171,7 @@ const TeamPage = () => {
         { 
             name: 'Minseo Lee', 
             img: process.env.PUBLIC_URL + '/team/MSL.jpg',
-            email: 'lms20031@skku.edu', 
+            email: 'lms@yonsei.ac.kr', 
             desc: '2025.09 - Present',
             scholar: '',
             github: 'https://github.com/lms20031'   
@@ -179,7 +179,7 @@ const TeamPage = () => {
         { 
             name: 'Jungwoo Kim', 
             img: process.env.PUBLIC_URL + '/team/JWK.jpeg',
-            email: 'sug51689@gmail.com', 
+            email: 'jungwkim@yonsei.ac.kr', 
             desc: '2025.09 - Present',
             scholar: '',
             github: 'https://github.com/jungcow'   
@@ -187,10 +187,18 @@ const TeamPage = () => {
         { 
             name: 'Joonhyuk Park', 
             img: process.env.PUBLIC_URL + '/team/JoonhyukPark.jpg',
-            email: 'rchkl2380@gmail.com', 
+            email: 'rchkl2380@yonsei.ac.kr', 
             desc: '2025.09 - Present',
             scholar: '',
             github: 'https://github.com/onyuc'   
+        },
+        { 
+            name: 'Hwasik Jeong', 
+            img: process.env.PUBLIC_URL + '/team/HSJ.jpg',
+            email: '99hwasikk@yonsei.ac.kr ', 
+            desc: '2025.09 - Present',
+            scholar: '',
+            github: 'https://github.com/JeongHwaSik'   
         },
     ];
 
