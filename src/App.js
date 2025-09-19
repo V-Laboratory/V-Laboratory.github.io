@@ -58,7 +58,7 @@ const App = () => {
     const extendedImages = [images[images.length - 1], ...images, images[0]]; // Add last and first image for smooth looping
 
     const newsItems = [
-        { text: "[2025.09]", linkText: "OMG", url: "https://maincold2.github.io/omg/", extraText: " got accepted to NeurIPS 2025!"},
+        // { text: "[2025.09]", linkText: "OMG", url: "https://maincold2.github.io/omg/", extraText: " got accepted to NeurIPS 2025!"},
         { text: "[2025.08] Prof. Eunbyung Park will serve as an area chair for CVPR 2026 and ICLR 2026"},
         { text: "[2025.06] Prof. Eunbyung Park gave an invited talk at an RSS 2025 Workshop ", linkText: "Gaussian Representations for Robot Autonomy: Challenges and Opportunities", url: "https://sites.google.com/view/gmm-workshop-rss25/home" },
         { text: "[2025.04] Prof. Eunbyung Park gave an invited talk at ", linkText: "POSTECH CSE/GSAI Seminar", url: "https://ai.postech.ac.kr/seminar_info/view/id/678#u" },
