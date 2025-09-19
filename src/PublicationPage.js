@@ -64,18 +64,6 @@ const publications = [
     },
     { 
         year: "Preprints", 
-        title: "Optimized Minimal 3D Gaussian Splatting", 
-        journal: "arXiv:2503.16924", 
-        authors: "Joo Chan Lee, Jong Hwan Ko, Eunbyung Park" ,
-        links: {
-            paper: "https://arxiv.org/abs/2503.16924",
-            project: "https://maincold2.github.io/omg/",
-            code: "https://github.com/maincold2/OMG",
-            thumbs: process.env.PUBLIC_URL + '/thumb/OMG.jpg'
-        } 
-    },
-    { 
-        year: "Preprints", 
         title: "CompMarkGS: Robust Watermarking for Compression 3D Gaussian Splatting", 
         journal: "arXiv:2503.12836", 
         authors: "Sumin In, Youngdong Jang, Utae Jeong, MinHyuk Jang, Hyeongcheol Park, Eunbyung Park, Sangpil Kim" ,
@@ -88,12 +76,24 @@ const publications = [
         year: "Preprints", 
         title: "Aberration Correcting Vision Transformers for High-Fidelity Metalens Imaging", 
         journal: "arXiv:2412.04591", 
-        authors: "Byeonghyeon Lee, Youbin Kim, Yongjae Jo, Hyunsu Kim, Hyemi Park, Yangkyu Kim, Debabrata Mandal, Praneeth Chakravarthula, Inki Kim, Eunbyung Park" ,
+        authors: "Byeonghyeon Lee, Youbin Kim, Yongjae Jo, Hyunsu Kim, Hyemi Park, Yangkyu Kim, Debabrata Mandal, Praneeth Chakravarthula†, Inki Kim†, Eunbyung Park†" ,
         links: {
             paper: "https://arxiv.org/abs/2412.04591",
             project: "https://benhenryl.github.io/Metalens-Transformer",
             code: "https://github.com/benhenryL/Metalens-Transformer",
             thumbs: process.env.PUBLIC_URL + '/thumb/Metalens-Transformer.jpg'
+        } 
+    },
+    { 
+        year: "Preprints", 
+        title: "Optimized Minimal 3D Gaussian Splatting", 
+        journal: "NeurIPS 2025", 
+        authors: "Joo Chan Lee, Jong Hwan Ko†, Eunbyung Park†" ,
+        links: {
+            paper: "https://arxiv.org/abs/2503.16924",
+            project: "https://maincold2.github.io/omg/",
+            code: "https://github.com/maincold2/OMG",
+            thumbs: process.env.PUBLIC_URL + '/thumb/OMG.jpg'
         } 
     },
     { 
@@ -148,7 +148,7 @@ const publications = [
         year: 2025, 
         title: "PIG: Physics-Informed Gaussians as Adaptive Parametric Mesh Representations", 
         journal: "ICLR 2025", 
-        authors: "Namgyu Kang*, Jaemin Oh*, Youngjoon Hong, Eunbyung Park",
+        authors: "Namgyu Kang*, Jaemin Oh*, Youngjoon Hong†, Eunbyung Park†",
         links: {
             paper: "https://arxiv.org/abs/2412.05994",
             project: "https://namgyukang.github.io/Physics-Informed-Gaussians/",
@@ -241,7 +241,7 @@ const publications = [
         year: 2024, 
         title: "Continuous Memory Representation for Anomaly Detection", 
         journal: "ECCV 2024", 
-        authors: "Joo Chan Lee*, Taejune Kim*, Eunbyung Park, Simon S. Woo, Jong Hwan Ko",
+        authors: "Joo Chan Lee*, Taejune Kim*, Eunbyung Park†, Simon S. Woo†, Jong Hwan Ko†",
         links: {
             paper: "https://arxiv.org/abs/2402.18293",
             project: "https://tae-mo.github.io/crad/",
@@ -264,7 +264,7 @@ const publications = [
         year: 2024, 
         title: "Compact 3D Gaussian Representation for Radiance Field", 
         journal: "CVPR 2024 Highlight (acceptance rate = 3.6%)", 
-        authors: "Joo Chan Lee, Daniel Rho, Xiangyu Sun, Jong Hwan Ko, Eunbyung Park",
+        authors: "Joo Chan Lee, Daniel Rho, Xiangyu Sun, Jong Hwan Ko†, Eunbyung Park†",
         links: {
             paper: "https://arxiv.org/abs/2311.13681",
             project: "https://maincold2.github.io/c3dgs/",
@@ -287,7 +287,7 @@ const publications = [
         year: 2024, 
         title: "Coordinate-Aware Modulation for Neural Fields", 
         journal: "ICLR 2024 Spotlight (acceptance rate = 6.2%)", 
-        authors: "Joo Chan Lee, Daniel Rho, Seungtae Nam, Jong Hwan Ko, Eunbyung Park",
+        authors: "Joo Chan Lee, Daniel Rho, Seungtae Nam, Jong Hwan Ko†, Eunbyung Park†",
         links: {
             paper: "https://openreview.net/forum?id=4UiLqimGm5&noteId=4UiLqimGm5",
             project: "https://maincold2.github.io/cam/",
@@ -320,7 +320,7 @@ const publications = [
         year: 2024, 
         title: "Hydra: Multi-head Low-rank Adaptation for Parameter Efficient Fine-tuning", 
         journal: "Neural Networks, Elsevier, 2024", 
-        authors: "Sanghyeon Kim*, Hyunmo Yang*, Younghyun Kim*, Youngjoon Hong, Eunbyung Park",
+        authors: "Sanghyeon Kim*, Hyunmo Yang*, Younghyun Kim*, Youngjoon Hong†, Eunbyung Park†",
         links: {
             paper: "https://www.sciencedirect.com/science/article/abs/pii/S0893608024003381",
             code: "https://github.com/extremebird/Hydra",
@@ -356,7 +356,7 @@ const publications = [
         year: 2023, 
         title: "FFNeRV: Flow-Guided Frame-Wise Neural Representations for Videos", 
         journal: "ACM MM 2023", 
-        authors: "Joo Chan Lee, Daniel Rho, Jong Hwan Ko, Eunbyung Park",
+        authors: "Joo Chan Lee, Daniel Rho, Jong Hwan Ko†, Eunbyung Park†",
         links: {
             paper: "https://arxiv.org/abs/2212.12294",
             project: "https://maincold2.github.io/ffnerv/",
@@ -368,7 +368,7 @@ const publications = [
         year: 2023, 
         title: "Masked Wavelet Representation for Compact Neural Radiance Fields", 
         journal: "CVPR 2023", 
-        authors: "Daniel Rho*, Byeonghyeon Lee*, Seungtae Nam, Joo Chan Lee, Jong Hwan Ko, Eunbyung Park",
+        authors: "Daniel Rho*, Byeonghyeon Lee*, Seungtae Nam, Joo Chan Lee, Jong Hwan Ko†, Eunbyung Park†",
         links: {
             paper: "https://arxiv.org/abs/2212.09069",
             project: "https://daniel03c1.github.io/masked_wavelet_nerf/",
@@ -414,7 +414,7 @@ const publications = [
         year: 2022, 
         title: "Neural Residual Flow Fields for Efficient Video Representations", 
         journal: "ACCV 2022", 
-        authors: "Daniel Rho, Junwoo Cho, Jong Hwan Ko, Eunbyung Park",
+        authors: "Daniel Rho, Junwoo Cho, Jong Hwan Ko†, Eunbyung Park†",
         links: {
             paper: "https://arxiv.org/abs/2201.04329",
             code: "https://github.com/daniel03c1/eff_video_representation",
