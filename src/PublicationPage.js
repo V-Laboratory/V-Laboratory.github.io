@@ -85,7 +85,7 @@ const publications = [
         } 
     },
     { 
-        year: "Preprints", 
+        year: "2025", 
         title: "Optimized Minimal 3D Gaussian Splatting", 
         journal: "NeurIPS 2025", 
         authors: "Joo Chan Lee, Jong Hwan Ko†, Eunbyung Park†" ,
