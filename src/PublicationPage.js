@@ -4,6 +4,17 @@ import "./PublicationPage.css";
 const publications = [
     { 
         year: "Preprints", 
+        title: "Gather-Scatter Mamba: Accelerating Propagation with Efficient State Space Model", 
+        journal: "arXiv:2510.00862", 
+        authors: "Hyun-kyu Ko, Youbin Kim, Jihyeon Park, Dongheok Park, Gyeongjin Kang, Wonjun Cho, Hyung Yi, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2510.00862",
+            code: "https://github.com/Ko-Lani/GSMamba",
+            thumbs: process.env.PUBLIC_URL + '/thumb/GSMamba.jpg'
+        } 
+    },
+    { 
+        year: "Preprints", 
         title: "Uni3R: Unified 3D Reconstruction and Semantic Understanding via Generalizable Gaussian Splatting from Unposed Multi-View Images", 
         journal: "arXiv:2508.03643", 
         authors: "Xiangyu Sun*, Haoyi jiang*, Liu Liu, Seungtae Nam, Gyeongjin Kang, Xinjie wang, Wei Sui, Zhizhong Su, Wenyu Liu, Xinggang Wang, Eunbyung Park",
