@@ -189,9 +189,17 @@ const TeamPage = () => {
             name: 'Hwasik Jeong', 
             img: process.env.PUBLIC_URL + '/team/HSJ.jpg',
             desc: 'MS Student',
-            email: '99hwasikk@yonsei.ac.kr ', 
+            email: '99hwasikk@yonsei.ac.kr', 
             scholar: '',
             github: 'https://github.com/JeongHwaSik'   
+        },
+        { 
+            name: 'Soonmin Hwang', 
+            img: process.env.PUBLIC_URL + '/team/SMH.JPG',
+            desc: 'MS Student',
+            email: 'smsm0307@yonsei.ac.kr', 
+            scholar: 'https://scholar.google.com/citations?hl=ko&user=IjfOwv4AAAAJ',
+            github: 'https://github.com/smblue37'   
         },
     ];
 
