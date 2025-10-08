@@ -4,7 +4,7 @@ import "./PublicationPage.css";
 const publications = [
     { 
         year: "Preprints", 
-        title: "OMG4: Optimized Minimal 4D Gaussian Splatting", 
+        title: "Optimized Minimal 4D Gaussian Splatting", 
         journal: "arXiv:2510.00862", 
         authors: "Minseo Lee*, Byeonghyeon Lee*, Lucas Yunkyu Lee, Eunsoo Lee, Sangmin Kim, Seunghyeon Song, Joo Chan Lee, Jong Hwan Ko, Jaesik Park, Eunbyung Park",
         links: {
