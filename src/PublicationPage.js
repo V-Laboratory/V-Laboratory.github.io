@@ -4,6 +4,18 @@ import "./PublicationPage.css";
 const publications = [
     { 
         year: "Preprints", 
+        title: "OMG4: Optimized Minimal 4D Gaussian Splatting", 
+        journal: "arXiv:2510.00862", 
+        authors: "Minseo Lee*, Byeonghyeon Lee*, Lucas Yunkyu Lee, Eunsoo Lee, Sangmin Kim, Seunghyeon Song, Joo Chan Lee, Jong Hwan Ko, Jaesik Park, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2510.03857",
+            project: "https://minshirley.github.io/OMG4/",
+            code: "https://github.com/MinShirley/OMG4",
+            thumbs: process.env.PUBLIC_URL + '/thumb/OMG4.jpg'
+        } 
+    },
+    { 
+        year: "Preprints", 
         title: "Gather-Scatter Mamba: Accelerating Propagation with Efficient State Space Model", 
         journal: "arXiv:2510.00862", 
         authors: "Hyun-kyu Ko, Youbin Kim, Jihyeon Park, Dongheok Park, Gyeongjin Kang, Wonjun Cho, Hyung Yi, Eunbyung Park",
