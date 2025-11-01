@@ -41,7 +41,7 @@ const publications = [
         year: "Preprints", 
         title: "iLRM: An Iterative Large 3D Reconstruction Model", 
         journal: "arXiv:2507.23277", 
-        authors: "Gyeongjin Kang, Seungtae Nam, Xiangyu Sun, Sameh Khamis, Abdelrahman Mohamed, Eunbyung Park",
+        authors: "Gyeongjin Kang, Seungtae Nam, Seungkwon Yang, Xiangyu Sun, Sameh Khamis, Abdelrahman Mohamed, Eunbyung Park",
         links: {
             paper: "https://arxiv.org/abs/2507.23277",
             project: "https://gynjn.github.io/iLRM/",

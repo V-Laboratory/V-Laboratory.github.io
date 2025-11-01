@@ -75,7 +75,7 @@ const TeamPage = () => {
             desc: 'MS-PhD Integrated Student',
             email: 'lms@yonsei.ac.kr', 
             scholar: '',
-            github: 'https://github.com/lms20031'   
+            github: 'https://github.com/MinShirley'   
         },
         { 
             name: 'Jungwoo Kim', 
