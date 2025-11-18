@@ -4,6 +4,15 @@ import './GalleryPage.css';
 const albums = [
     {
         year: 2025,
+        title: 'KIBME 2025 Best Paper Award',
+        description: '2025.08.25.',
+        images: [
+            { src: process.env.PUBLIC_URL + '/gallery/2025_kibme_1.jpg', alt: '2025_kibme_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_kibme_2.jpg', alt: '2025_kibme_2' },            
+        ],
+    },
+    {
+        year: 2025,
         title: '2025 Summer Graduation Ceremony',
         description: '2025.08.25.',
         images: [
@@ -113,7 +122,7 @@ const albums = [
     },    
     {
         year: 2024,
-        title: 'JKAIA 2024',
+        title: 'JKAIA 2024 Best Paper Award',
         description: '2024.11.22.',
         images: [
             { src: process.env.PUBLIC_URL + '/gallery/2024_jkaia_1.jpeg', alt: '2024_jkaia_1' },

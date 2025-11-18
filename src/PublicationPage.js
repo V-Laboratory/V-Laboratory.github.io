@@ -51,18 +51,6 @@ const publications = [
     },
     { 
         year: "Preprints", 
-        title: "Moiré Zero: An Efficient and High-Performance Neural Architecture for Moiré Removal", 
-        journal: "arXiv:2507.22407", 
-        authors: "Seungryong Lee*, Woojeong Baek*, Younghyun Kim, Eunwoo Kim, Haru Moon, Donggon Yoo, Eunbyung Park",
-        links: {
-            paper: "https://arxiv.org/abs/2507.22407",
-            project: "https://sngryonglee.github.io/MoireZero/",
-            code: "https://github.com/sngryongLee/Moire-Zero",
-            thumbs: process.env.PUBLIC_URL + '/thumb/Moire.jpg'
-        } 
-    },
-    { 
-        year: "Preprints", 
         title: "DiffuseSlide: Training-Free High Frame Rate Video Generation Diffusion", 
         journal: "arXiv:2506.01454", 
         authors: "Geunmin Hwang, Hyun-kyu Ko, Younghyun Kim, Seungryong Lee, Eunbyung Park",
@@ -105,6 +93,18 @@ const publications = [
             project: "https://benhenryl.github.io/Metalens-Transformer",
             code: "https://github.com/benhenryL/Metalens-Transformer",
             thumbs: process.env.PUBLIC_URL + '/thumb/Metalens-Transformer.jpg'
+        } 
+    },
+    { 
+        year: "2026", 
+        title: "Moiré Zero: An Efficient and High-Performance Neural Architecture for Moiré Removal", 
+        journal: "WACV 2026", 
+        authors: "Seungryong Lee*, Woojeong Baek*, Younghyun Kim, Eunwoo Kim, Haru Moon, Donggon Yoo, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2507.22407",
+            project: "https://sngryonglee.github.io/MoireZero/",
+            code: "https://github.com/sngryongLee/Moire-Zero",
+            thumbs: process.env.PUBLIC_URL + '/thumb/Moire.jpg'
         } 
     },
     { 
