@@ -5,7 +5,7 @@ const albums = [
     {
         year: 2025,
         title: 'KIBME 2025 Best Paper Award',
-        description: '2025.08.25.',
+        description: '2025.11.13.',
         images: [
             { src: process.env.PUBLIC_URL + '/gallery/2025_kibme_1.jpg', alt: '2025_kibme_1' },
             { src: process.env.PUBLIC_URL + '/gallery/2025_kibme_2.jpg', alt: '2025_kibme_2' },            
