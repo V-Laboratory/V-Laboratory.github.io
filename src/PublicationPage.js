@@ -6,7 +6,7 @@ const publications = [
         year: "Preprints", 
         title: "Multi-view Pyramid Transformer: Look Coarser to See Broader", 
         journal: "arXiv:2512.07806", 
-        authors: "Gyeongjin Kang, Seungkwon Yang, Seungtae Nam, Younggeun Lee, Jungwoo Kim, Eunbyung Park",
+        authors: "Gyeongjin Kang*, Seungkwon Yang*, Seungtae Nam, Younggeun Lee, Jungwoo Kim, Eunbyung Park",
         links: {
             paper: "https://arxiv.org/abs/2512.07806",
             project: "https://gynjn.github.io/MVP/",
