@@ -65,7 +65,7 @@ const App = () => {
         { text: "[2025.08] Prof. Eunbyung Park will serve as an area chair for CVPR 2026 and ICLR 2026"},
         { text: "[2025.06] Prof. Eunbyung Park gave an invited talk at an RSS 2025 Workshop ", linkText: "Gaussian Representations for Robot Autonomy: Challenges and Opportunities", url: "https://sites.google.com/view/gmm-workshop-rss25/home" },
         { text: "[2025.04] Prof. Eunbyung Park gave an invited talk at ", linkText: "POSTECH CSE/GSAI Seminar", url: "https://ai.postech.ac.kr/seminar_info/view/id/678#u" },
-        { text: "[2025.04] Prof. Eunbyung Park served as an area chair for NeurIPS 2025"},
+        { text: "[2025.04] Prof. Eunbyung Park will serve as an area chair for NeurIPS 2025"},
         { text: "[2025.04]", linkText: "Generative Densification", url: "https://stnamjef.github.io/GenerativeDensification/", extraText: " was selected as a CVPR 2025 highlight!"},
         { text: "[2025.04] Prof. Eunbyung Park gave an invited talk at ", linkText: "AI Seminar Series at Dongguk University, 2025", url:"https://cs.dongguk.edu/article/noti/detail/1068"},
         { text: "[2025.03] Prof. Eunbyung Park gave an invited talk at ", linkText: "Colloquium on Immersive Media Engineering at SKKU, 2025", url:"https://meta.skku.edu/meta/seminar.do?mode=view&articleNo=189009"},
