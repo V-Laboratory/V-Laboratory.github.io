@@ -4,6 +4,18 @@ import "./PublicationPage.css";
 const publications = [
     { 
         year: "Preprints", 
+        title: "Multi-view Pyramid Transformer: Look Coarser to See Broader", 
+        journal: "arXiv:2512.07806", 
+        authors: "Gyeongjin Kang, Seungkwon Yang, Seungtae Nam, Younggeun Lee, Jungwoo Kim, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2512.07806",
+            project: "https://gynjn.github.io/MVP/",
+            code: "https://github.com/Gynjn/MVP",
+            thumbs: process.env.PUBLIC_URL + '/thumb/MVP.jpg'
+        } 
+    },
+    { 
+        year: "Preprints", 
         title: "Optimized Minimal 4D Gaussian Splatting", 
         journal: "arXiv:2510.03857", 
         authors: "Minseo Lee*, Byeonghyeon Lee*, Lucas Yunkyu Lee, Eunsoo Lee, Sangmin Kim, Seunghyeon Song, Joo Chan Lee, Jong Hwan Ko, Jaesik Park, Eunbyung Park",
