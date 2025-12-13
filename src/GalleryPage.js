@@ -22,6 +22,17 @@ const albums = [
     },
     {
         year: 2025,
+        title: '2025 AI Champion',
+        description: '2025.10.31.',
+        images: [
+            { src: process.env.PUBLIC_URL + '/gallery/2025_ai_champion_1.jpeg', alt: '2025_ai_champion_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_ai_champion_2.jpeg', alt: '2025_ai_champion_2' },            
+            { src: process.env.PUBLIC_URL + '/gallery/2025_ai_champion_3.jpeg', alt: '2025_ai_champion_3' },            
+            { src: process.env.PUBLIC_URL + '/gallery/2025_ai_champion_4.jpeg', alt: '2025_ai_champion_4' },            
+        ],
+    },
+    {
+        year: 2025,
         title: '2025 Summer Graduation Ceremony',
         description: '2025.08.25.',
         images: [
