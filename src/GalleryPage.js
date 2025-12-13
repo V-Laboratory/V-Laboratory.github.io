@@ -26,7 +26,7 @@ const albums = [
         description: '2025.10.31.',
         images: [
             { src: process.env.PUBLIC_URL + '/gallery/2025_ai_champion_1.jpeg', alt: '2025_ai_champion_1' },
-            // { src: process.env.PUBLIC_URL + '/gallery/2025_ai_champion_2.jpeg', alt: '2025_ai_champion_2' },            
+            { src: process.env.PUBLIC_URL + '/gallery/2025_ai_champion_2.jpeg', alt: '2025_ai_champion_2' },            
             { src: process.env.PUBLIC_URL + '/gallery/2025_ai_champion_3.jpeg', alt: '2025_ai_champion_3' },            
             { src: process.env.PUBLIC_URL + '/gallery/2025_ai_champion_4.jpeg', alt: '2025_ai_champion_4' },            
         ],
