@@ -85,6 +85,23 @@ const TeamPage = () => {
             scholar: '',
             github: 'https://github.com/jungcow'   
         },
+        // { 
+        //     name: 'Hyun-kyu Ko', 
+        //     img: process.env.PUBLIC_URL + '/team/HKK.jpg',
+        //     desc: 'PhD Student',
+        //     email: 'laniko@skku.edu', 
+        //     scholar: 'https://scholar.google.com/citations?hl=ko&user=lsi-8-QAAAAJ',
+        //     github: 'https://github.com/Ko-Lani'  
+        // },
+        // { 
+        //     name: 'Byeongjin Kang', 
+        //     img: process.env.PUBLIC_URL + '/team/BJK.jpg',
+        //     desc: 'MS-PhD Integrated Student',
+        //     email: 'qudwlskbj@gmail.com',
+        //     homepage: 'https://namul2.github.io/',
+        //     scholar: '',
+        //     github: 'https://github.com/Namul2'   
+        // },
     ];
 
     const masterStudents = [
@@ -98,20 +115,20 @@ const TeamPage = () => {
             github: 'https://github.com/Gynjn' 
         },
         { 
+            name: 'Hyun-kyu Ko', 
+            img: process.env.PUBLIC_URL + '/team/HKK.jpg',
+            desc: 'Ms Student',
+            email: 'laniko@skku.edu', 
+            scholar: 'https://scholar.google.com/citations?hl=ko&user=lsi-8-QAAAAJ',
+            github: 'https://github.com/Ko-Lani'  
+        },
+        { 
             name: 'Dongheok Park', 
             img: process.env.PUBLIC_URL + '/team/DHP.jpg',
             desc: 'MS Student',
             email: 'leao8869@skku.edu', 
             scholar: 'https://scholar.google.com/citations?user=UUtpFKgAAAAJ&hl=ko&oi=ao',
             github: 'https://github.com/DHPark98'  
-        },
-        { 
-            name: 'Hyun-kyu Ko', 
-            img: process.env.PUBLIC_URL + '/team/HKK.jpg',
-            desc: 'MS Student',
-            email: 'laniko@skku.edu', 
-            scholar: 'https://scholar.google.com/citations?hl=ko&user=lsi-8-QAAAAJ',
-            github: 'https://github.com/Ko-Lani'  
         },
         { 
             name: 'Jisang Yoo', 
@@ -283,6 +300,11 @@ const TeamPage = () => {
             desc: 'MS, 2022.03 - 2024.08 / PhD, 2024.09 - 2025.08, leaving for a new adventure. We wish you all the best!',
             current: ''
         },
+        // { 
+        //     name: 'Hyun-kyu Ko', 
+        //     desc: 'MS, 2024.03 - 2026.02',
+        //     current: 'PhD student at V-Lab, Yonsei'
+        // },
     ];
 
     return (

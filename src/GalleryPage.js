@@ -4,6 +4,15 @@ import './GalleryPage.css';
 const albums = [
     {
         year: 2025,
+        title: '2025 Year-end Party',
+        description: '2025.12.12.',
+        images: [
+            { src: process.env.PUBLIC_URL + '/gallery/2025_year_end_1.jpg', alt: '2025_year_end_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2025_year_end_2.jpg', alt: '2025_year_end_2' },            
+        ],
+    },
+    {
+        year: 2025,
         title: 'KIBME 2025 Best Paper Award',
         description: '2025.11.13.',
         images: [
