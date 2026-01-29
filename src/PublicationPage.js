@@ -4,6 +4,18 @@ import "./PublicationPage.css";
 const publications = [
     { 
         year: "Preprints", 
+        title: "OpenMonoGS-SLAM: Monocular Gaussian Splatting SLAM with Open-set Semantics", 
+        journal: "arXiv:2512.08625", 
+        authors: "Jisang Yoo, Gyeongjin Kang, Hyun-kyu Ko, Hyeonwoo Yu, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2512.08625",
+            project: "",
+            code: "",
+            thumbs: process.env.PUBLIC_URL + '/thumb/OpenMono.jpg'
+        } 
+    },
+    { 
+        year: "Preprints", 
         title: "Multi-view Pyramid Transformer: Look Coarser to See Broader", 
         journal: "arXiv:2512.07806", 
         authors: "Gyeongjin Kang*, Seungkwon Yang*, Seungtae Nam, Younggeun Lee, Jungwoo Kim, Eunbyung Park",
@@ -87,16 +99,6 @@ const publications = [
     },
     { 
         year: "Preprints", 
-        title: "CompMarkGS: Robust Watermarking for Compression 3D Gaussian Splatting", 
-        journal: "arXiv:2503.12836", 
-        authors: "Sumin In, Youngdong Jang, Utae Jeong, MinHyuk Jang, Hyeongcheol Park, Eunbyung Park, Sangpil Kim" ,
-        links: {
-            paper: "https://arxiv.org/abs/2503.12836",
-            thumbs: process.env.PUBLIC_URL + '/thumb/CompMarkGS.jpg'
-        } 
-    },
-    { 
-        year: "Preprints", 
         title: "Aberration Correcting Vision Transformers for High-Fidelity Metalens Imaging", 
         journal: "arXiv:2412.04591", 
         authors: "Byeonghyeon Lee, Youbin Kim, Yongjae Jo, Hyunsu Kim, Hyemi Park, Yangkyu Kim, Debabrata Mandal, Praneeth Chakravarthula†, Inki Kim†, Eunbyung Park†" ,
@@ -105,6 +107,16 @@ const publications = [
             project: "https://benhenryl.github.io/Metalens-Transformer",
             code: "https://github.com/benhenryL/Metalens-Transformer",
             thumbs: process.env.PUBLIC_URL + '/thumb/Metalens-Transformer.jpg'
+        } 
+    },
+    { 
+        year: "2026", 
+        title: "CompMarkGS: Robust Watermarking for Compression 3D Gaussian Splatting", 
+        journal: "ICLR 2026", 
+        authors: "Sumin In, Youngdong Jang, Utae Jeong, MinHyuk Jang, Hyeongcheol Park, Eunbyung Park, Sangpil Kim" ,
+        links: {
+            paper: "https://arxiv.org/abs/2503.12836",
+            thumbs: process.env.PUBLIC_URL + '/thumb/CompMarkGS.jpg'
         } 
     },
     { 
