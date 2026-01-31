@@ -57,49 +57,232 @@ const App = () => {
 
     const extendedImages = [images[images.length - 1], ...images, images[0]]; // Add last and first image for smooth looping
 
-    const newsItems = [        
-        { text: "[2025.11] Prof. Eunbyung Park will serve as an area chair for ICML 2026"},
-        { text: "[2025.11] LightMarkGS received the best paper award in KIBME 2025!"},
-        { text: "[2025.11]", linkText: "Moiré Zero", url: "https://sngryonglee.github.io/MoireZero/", extraText: " got accepted to WACV 2026!"},
-        { text: "[2025.09]", linkText: "OMG", url: "https://maincold2.github.io/omg/", extraText: " got accepted to NeurIPS 2025!"},
-        { text: "[2025.08] Prof. Eunbyung Park will serve as an area chair for CVPR 2026 and ICLR 2026"},
-        { text: "[2025.06] Prof. Eunbyung Park gave an invited talk at an RSS 2025 Workshop ", linkText: "Gaussian Representations for Robot Autonomy: Challenges and Opportunities", url: "https://sites.google.com/view/gmm-workshop-rss25/home" },
-        { text: "[2025.04] Prof. Eunbyung Park gave an invited talk at ", linkText: "POSTECH CSE/GSAI Seminar", url: "https://ai.postech.ac.kr/seminar_info/view/id/678#u" },
-        { text: "[2025.04] Prof. Eunbyung Park will serve as an area chair for NeurIPS 2025"},
-        { text: "[2025.04]", linkText: "Generative Densification", url: "https://stnamjef.github.io/GenerativeDensification/", extraText: " was selected as a CVPR 2025 highlight!"},
-        { text: "[2025.04] Prof. Eunbyung Park gave an invited talk at ", linkText: "AI Seminar Series at Dongguk University, 2025", url:"https://cs.dongguk.edu/article/noti/detail/1068"},
-        { text: "[2025.03] Prof. Eunbyung Park gave an invited talk at ", linkText: "Colloquium on Immersive Media Engineering at SKKU, 2025", url:"https://meta.skku.edu/meta/seminar.do?mode=view&articleNo=189009"},
-        { text: "[2025.02] Three papers got accepted to CVPR 2025!"},
-        { text: "[2025.01] Prof. Eunbyung Park gave an invited talk at", linkText: "Joint JPEG/MPEG Workshop", url: "https://jpeg.org" },
-        { text: "[2024.12] Two papers got accepted to ICLR 2025!" },
-        { text: "[2024.12] Three papers got accepted to AAAI 2025!"},
-        { text: "[2024.11] ", linkText: "DiffuseHigh", url: "https://arxiv.org/abs/2406.18459", extraText: " received the best paper award at JKAIA 2024!"},
-        { text: "[2024.10] Prof. Eunbyung Park gave an invited talk at SKKU AI Colloqium ", linkText: "2024 Recorded talk (Korean)", url: "https://www.youtube.com/watch?v=ooPSDSNikz4" },
-        { text: "[2024.09]", linkText: "PEFT Video Compression", url: "https://arxiv.org/abs/2405.08530", extraText: " work was selected as an oral presentation in ACCV 2024!"},
-        { text: "[2024.09]", linkText: "Freq-Mip-AA", url: "https://arxiv.org/abs/2406.13251", extraText: " is considered as a best paper candidate in ICIP 2024!"},
-        { text: "[2024.07] Two papers got accepted to ECCV 2024!"},
-        { text: "[2024.05] Our lab received the outstanding young scientist grant from National Research Foundation!"},
-        { text: "[2024.05] Our lab (with Prof ", linkText: "Inki Kim", url: "https://www.bionanophotonics-skku.com/pi", extraText: ") won the grant from Samsung Science & Technology Foundation!"},
-        { text: "[2024.04] Two CVPR 2024 papers selected as highlight!"},
-        { text: "[2024.02] Two papers got accepted to CVPR 2024!"},
-        { text: "[2024.01]", linkText: "CAM", url: "https://maincold2.github.io/cam/", extraText: " got accepted to ICLR 2024 as a spotlight!"},
-        { text: "[2023.11] Prof. Eunbyung Park gave an invited talk at GIST Colloquium"},
-        { text: "[2023.09]", linkText: "SPINN", url: "https://jwcho5576.github.io/spinn.github.io/", extraText: " got accepted to NeurIPS 2023 as a spotlight!"},
-        { text: "[2023.09] Two papers got accepted to NeurIPS 2023!"},
-        { text: "[2023.05] Prof. Eunbyung Park gave an invited talk at UNIST AI graduate seminar"},
-        { text: "[2023.02] Two papers got accepted to CVPR 2023!"},
-        { text: "[2023.02] Prof. Eunbyung Park gave an invited talk about SPINN at ", linkText: "CRUNCH Seminars at Brown University", url: "https://sites.brown.edu/crunch-group/"},
-        { text: "[2022.11] Prof. Eunbyung Park gave an invited talk at ", linkText: "2022 KSIAM Annual Meeting", url: "https://ksiam.org/Conference/ConferenceView.asp?AC=0&CODE=CC20220801&B_CATE=BBC1"},
-        { text: "[2022.11]", linkText: "PIXEL", url: "https://namgyukang.github.io/PIXEL/", extraText: " got accepted to AAAI 2023"},
-        { text: "[2022.09] NRFF was accepted to ACCV 2022"},
-        { text: "[2022.08] PIXEL was selected as a spotlight in", linkText: "DLDE-II (NeurIPS 2022 Workshop)", url: "https://dlde-2022.github.io/"},
-        { text: "[2022.08] SPINN received the best paper award in ", linkText: "CKAIA 2022", url: "http://aiassociation.kr/Conference/ConferenceView.asp?AC=0&CODE=CC20220601&B_CATE=BBC1"},
-        { text: "[2022.07] Streamable Neural Fields got accepted to ECCV 2022"},
-        { text: "[2022.05] Our lab received the ", linkText: "Basic Research Lab (BRL)", url: "https://www.brlskku.com/", extraText: " grant from the NRF"},
-        { text: "[2022.03] Prof. Eunbyung Park gave an invited talk at Samsung Research"},
-        { text: "[2021.09] Honor to be selected as a ", linkText: "EIRIC rising star", url: "https://www.eiric.or.kr/manpower/rising_view.php?Seq=34"},
-        { text: "[2021.06] Lab was founded"},
-        { text: "[2021.05] Prof. Eunbyung Park gave an invited talk at ", linkText: "AI Frontiers Summit 2021", url: "http://www.aifrontiers.org/"},
+    const newsItems = [
+        {
+            content: (<>
+                [2025.01] Ph.D. Seungtae Nam will join
+                {' '}<a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/" target="_blank" rel="noopener noreferrer">Microsoft Research Asia</a>{' '}
+                as a research intern this spring!
+            </>),
+        },
+
+        {
+            content: (<>
+                [2025.01] UC Irvine and Yonsei AI held an
+                {' '}<a href="https://ai-research-exchange-symposium-4ed6d910.base44.app/" target="_blank" rel="noopener noreferrer">AI Research Exchange Symposium</a>!
+            </>),
+        },
+
+        {
+            content: (<>
+                [2026.01] Prof. Eunbyung Park gave an invited talk at 
+                {' '}<a href="https://research.adobe.com/" target="_blank" rel="noopener noreferrer">Adobe Research</a>,
+                {' '}<a href="https://www.nuro.ai/" target="_blank" rel="noopener noreferrer">Nuro</a>, and
+                {' '}<a href="https://cse.ucsd.edu/" target="_blank" rel="noopener noreferrer">UCSD</a>
+            </>),
+        },
+
+        { content: <>[2025.11] Prof. Eunbyung Park will serve as an area chair for ICML 2026</> },
+        { content: <>[2025.11] LightMarkGS received the best paper award in KIBME 2025!</> },
+
+        {
+            content: (<>
+                [2025.11]
+                {' '}<a href="https://sngryonglee.github.io/MoireZero/" target="_blank" rel="noopener noreferrer">Moiré Zero</a>{' '}
+                got accepted to WACV 2026!
+            </>),
+        },
+        {
+            content: (<>
+                [2025.09]
+                {' '}<a href="https://maincold2.github.io/omg/" target="_blank" rel="noopener noreferrer">OMG</a>{' '}got accepted to NeurIPS 2025!
+            </>),
+        },
+
+        { content: <>[2025.08] Prof. Eunbyung Park will serve as an area chair for CVPR 2026 and ICLR 2026</> },
+
+        {
+            content: (<>
+                [2025.06] Prof. Eunbyung Park gave an invited talk at an RSS 2025 Workshop
+                {' '}<a href="https://sites.google.com/view/gmm-workshop-rss25/home" target="_blank" rel="noopener noreferrer">Gaussian Representations for Robot Autonomy: Challenges and Opportunities</a>
+            </>),
+        },
+
+        {
+            content: (<>
+                [2025.04] Prof. Eunbyung Park gave an invited talk at
+                {' '}<a href="https://ai.postech.ac.kr/seminar_info/view/id/678#u" target="_blank" rel="noopener noreferrer">POSTECH CSE/GSAI Seminar</a>
+            </>),
+        },
+
+        { content: <>[2025.04] Prof. Eunbyung Park will serve as an area chair for NeurIPS 2025</> },
+
+        {
+            content: (<>
+                [2025.04]
+                {' '}<a href="https://stnamjef.github.io/GenerativeDensification/" target="_blank" rel="noopener noreferrer">Generative Densification</a>{' '}
+                was selected as a CVPR 2025 highlight!
+            </>),
+        },
+
+        {
+            content: (<>
+                [2025.04] Prof. Eunbyung Park gave an invited talk at
+                {' '}<a href="https://cs.dongguk.edu/article/noti/detail/1068" target="_blank" rel="noopener noreferrer">AI Seminar Series at Dongguk University, 2025</a>
+            </>),
+        },
+
+        {
+            content: (<>
+                [2025.03] Prof. Eunbyung Park gave an invited talk at
+                {' '}<a href="https://meta.skku.edu/meta/seminar.do?mode=view&articleNo=189009" target="_blank" rel="noopener noreferrer">Colloquium on Immersive Media Engineering at SKKU, 2025</a>
+            </>),
+        },
+
+        { content: <>[2025.02] Three papers got accepted to CVPR 2025!</> },
+
+        {
+            content: (<>
+                [2025.01] Prof. Eunbyung Park gave an invited talk at
+                {' '}<a href="https://jpeg.org" target="_blank" rel="noopener noreferrer">Joint JPEG/MPEG Workshop</a>
+            </>),
+        },
+
+        { content: <>[2024.12] Two papers got accepted to ICLR 2025!</> },
+        { content: <>[2024.12] Three papers got accepted to AAAI 2025!</> },
+
+        {
+            content: (<>
+                [2024.11]
+                {' '}<a href="https://arxiv.org/abs/2406.18459" target="_blank" rel="noopener noreferrer">DiffuseHigh</a>{' '}
+                received the best paper award at JKAIA 2024!
+            </>),
+        },
+
+        {
+            content: (<>
+                [2024.10] Prof. Eunbyung Park gave an invited talk at SKKU AI Colloqium{' '}
+                <a href="https://www.youtube.com/watch?v=ooPSDSNikz4" target="_blank" rel="noopener noreferrer"> 2024 Recorded talk (Korean)</a>
+            </>),
+        },
+
+        {
+            content: (<>
+                [2024.09]
+                {' '}<a href="https://arxiv.org/abs/2405.08530" target="_blank" rel="noopener noreferrer">PEFT Video Compression</a>{' '}
+                work was selected as an oral presentation in ACCV 2024!
+            </>),
+        },
+
+        {
+            content: (<>
+                [2024.09]
+                {' '}<a href="https://arxiv.org/abs/2406.13251" target="_blank" rel="noopener noreferrer">Freq-Mip-AA</a>{' '}
+                is considered as a best paper candidate in ICIP 2024!
+            </>),
+        },
+
+        { content: <>[2024.07] Two papers got accepted to ECCV 2024!</> },
+        { content: <>[2024.05] Our lab received the outstanding young scientist grant from National Research Foundation!</> },
+
+        {
+            content: (<>
+                [2024.05] Our lab (with Prof
+                {' '}<a href="https://www.bionanophotonics-skku.com/pi" target="_blank" rel="noopener noreferrer">Inki Kim</a>
+                ) won the grant from Samsung Science & Technology Foundation!
+            </>),
+        },
+
+        { content: <>[2024.04] Two CVPR 2024 papers selected as highlight!</> },
+        { content: <>[2024.02] Two papers got accepted to CVPR 2024!</> },
+
+        {
+            content: (<>
+                [2024.01]
+                {' '}<a href="https://maincold2.github.io/cam/" target="_blank" rel="noopener noreferrer">CAM</a>{' '}
+                got accepted to ICLR 2024 as a spotlight!
+            </>),
+        },
+
+        { content: <>[2023.11] Prof. Eunbyung Park gave an invited talk at GIST Colloquium</> },
+
+        {
+            content: (<>
+                [2023.09]
+                {' '}<a href="https://jwcho5576.github.io/spinn.github.io/" target="_blank" rel="noopener noreferrer">SPINN</a>{' '}
+                got accepted to NeurIPS 2023 as a spotlight!
+            </>),
+        },
+
+        { content: <>[2023.09] Two papers got accepted to NeurIPS 2023!</> },
+        { content: <>[2023.05] Prof. Eunbyung Park gave an invited talk at UNIST AI graduate seminar</> },
+        { content: <>[2023.02] Two papers got accepted to CVPR 2023!</> },
+
+        {
+            content: (<>
+                [2023.02] Prof. Eunbyung Park gave an invited talk about SPINN at
+                {' '}<a href="https://sites.brown.edu/crunch-group/" target="_blank" rel="noopener noreferrer">CRUNCH Seminars at Brown University</a>
+            </>),
+        },
+
+        {
+            content: (<>
+                [2022.11] Prof. Eunbyung Park gave an invited talk at
+                {' '}<a href="https://ksiam.org/Conference/ConferenceView.asp?AC=0&CODE=CC20220801&B_CATE=BBC1" target="_blank" rel="noopener noreferrer">2022 KSIAM Annual Meeting</a>
+            </>),
+        },
+
+        {
+            content: (<>
+                [2022.11]
+                {' '}<a href="https://namgyukang.github.io/PIXEL/" target="_blank" rel="noopener noreferrer">PIXEL</a>{' '}
+                got accepted to AAAI 2023
+            </>),
+        },
+
+        { content: <>[2022.09] NRFF was accepted to ACCV 2022</> },
+
+        {
+            content: (<>
+                [2022.08] PIXEL was selected as a spotlight in
+                {' '}<a href="https://dlde-2022.github.io/" target="_blank" rel="noopener noreferrer">DLDE-II (NeurIPS 2022 Workshop)</a>
+            </>),
+        },
+
+        {
+            content: (<>
+                [2022.08] SPINN received the best paper award in
+                {' '}<a href="http://aiassociation.kr/Conference/ConferenceView.asp?AC=0&CODE=CC20220601&B_CATE=BBC1" target="_blank" rel="noopener noreferrer">CKAIA 2022</a>
+            </>),
+        },
+
+        { content: <>[2022.07] Streamable Neural Fields got accepted to ECCV 2022</> },
+
+        {
+            content: (<>
+                [2022.05] Our lab received the
+                {' '}<a href="https://www.brlskku.com/" target="_blank" rel="noopener noreferrer">Basic Research Lab (BRL)</a>{' '}
+                grant from the NRF
+            </>),
+        },
+
+        { content: <>[2022.03] Prof. Eunbyung Park gave an invited talk at Samsung Research</> },
+
+        {
+            content: (<>
+                [2021.09] Honor to be selected as a
+                {' '}<a href="https://www.eiric.or.kr/manpower/rising_view.php?Seq=34" target="_blank" rel="noopener noreferrer">EIRIC rising star</a>
+            </>),
+        },
+
+        { content: <>[2021.06] Lab was founded</> },
+
+        {
+            content: (<>
+                [2021.05] Prof. Eunbyung Park gave an invited talk at
+                {' '}<a href="http://www.aifrontiers.org/" target="_blank" rel="noopener noreferrer">AI Frontiers Summit 2021</a>
+            </>),
+        },
     ];
 
     const itemsPerPage = 10;
@@ -178,79 +361,38 @@ const App = () => {
                     <Route
                         path="/"
                         element={
-                            <>
-                                {/* <main className="main">
-                                    <div className="carousel">
-                                        <div className="carousel-images">
-                                            {images.map((image, index) => (
-                                                <img
-                                                    key={index}
-                                                    src={image.src}
-                                                    alt={image.alt}
-                                                    className="carousel-image"
-                                                    style={{
-                                                        opacity: index === currentIndex ? 1 : 0,
-                                                        transition: 'opacity 0.5s ease-in-out',
-                                                        position: 'absolute',
-                                                        width: '100%',
-                                                        height: '100%',
-                                                    }}
-                                                />
-                                            ))}
-                                        </div>
-                                        <div className="carousel-indicators">
-                                            {images.map((_, index) => (
-                                                <span
-                                                    key={index}
-                                                    className={`indicator ${index === currentIndex ? 'active' : ''}`}
-                                                    onClick={() => {
-                                                        setIsTransitioning(true);
-                                                        setTimeout(() => {
-                                                            setCurrentIndex(index);
-                                                            setIsTransitioning(false);
-                                                        }, 500);
-                                                    }}
-                                                ></span>
-                                            ))}
-                                        </div>
-                                    </div>
-                                </main> */}
-                                <Carousel images={images} />
+                        <>
+                            <Carousel images={images} />
 
+                            <section className="news">
+                            <h2>News</h2>
+                            <ul className="news-list">
+                                {currentNewsItems.map((item, index) => (
+                                <li key={index}>{item.content}</li>
+                                ))}
+                            </ul>
 
-                                <section className="news">
-                                    <h2>News</h2>
-                                    <ul className="news-list">
-                                        {currentNewsItems.map((item, index) => (
-                                            <li key={index}>
-                                                {item.text} <a href={item.url} target="_blank" rel="noopener noreferrer">{item.linkText}</a>
-                                                {item.extraText}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                    <div className="pagination">
-                                        {Array.from({ length: totalPages }, (_, index) => (
-                                            <button
-                                                key={index}
-                                                className={`pagination-button ${
-                                                    currentPage === index + 1 ? 'active' : ''
-                                                }`}
-                                                onClick={() => setCurrentPage(index + 1)}
-                                            >
-                                                {index + 1}
-                                            </button>
-                                        ))}
-                                    </div>
-                                </section>
-                            </>
+                            <div className="pagination">
+                                {Array.from({ length: totalPages }, (_, index) => (
+                                <button
+                                    key={index}
+                                    className={`pagination-button ${currentPage === index + 1 ? 'active' : ''}`}
+                                    onClick={() => setCurrentPage(index + 1)}
+                                >
+                                    {index + 1}
+                                </button>
+                                ))}
+                            </div>
+                            </section>
+                        </>
                         }
                     />
                     <Route path="/team" element={<TeamPage />} />
                     <Route path="/publication" element={<PublicationPage />} />
                     <Route path="/gallery" element={<GalleryPage />} />
                     <Route path="/contact" element={<ContactPage />} />
-                    <Route path="*" element={<Navigate to="/" />} /> {}
-                </Routes>
+                    <Route path="*" element={<Navigate to="/" />} />
+                    </Routes>
 
                 <footer className="footer">
                     <p>Yonsei University</p>
