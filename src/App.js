@@ -60,7 +60,7 @@ const App = () => {
     const newsItems = [
         {
             content: (<>
-                [2025.01] Ph.D. Seungtae Nam will join
+                [2026.01] Ph.D. Seungtae Nam will join
                 {' '}<a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/" target="_blank" rel="noopener noreferrer">Microsoft Research Asia</a>{' '}
                 as a research intern this spring!
             </>),
@@ -68,7 +68,7 @@ const App = () => {
 
         {
             content: (<>
-                [2025.01] UC Irvine and Yonsei AI held an
+                [2026.01] UC Irvine and Yonsei AI held an
                 {' '}<a href="https://ai-research-exchange-symposium-4ed6d910.base44.app/" target="_blank" rel="noopener noreferrer">AI Research Exchange Symposium</a>!
             </>),
         },
