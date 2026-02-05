@@ -3,6 +3,16 @@ import './GalleryPage.css';
 
 const albums = [
     {
+        year: 2026,
+        title: 'IPIU 2026',
+        description: '2026.02.05.',
+        images: [
+            { src: process.env.PUBLIC_URL + '/gallery/2026_ipiu_1.jpeg', alt: '2026_ipiu_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2026_ipiu_2.jpeg', alt: '2026_ipiu_2' },            
+            { src: process.env.PUBLIC_URL + '/gallery/2026_ipiu_3.jpeg', alt: '2026_ipiu_3' },            
+        ],
+    },
+    {
         year: 2025,
         title: '2025 Year-end Party',
         description: '2025.12.12.',

@@ -50,7 +50,7 @@ const TeamPage = () => {
             img: process.env.PUBLIC_URL + '/team/JYJ.JPG',
             desc: 'PhD Student',
             email: 'zhangjunyu@skku.edu', 
-            scholar: 'https://scholar.google.com/citations?hl=en&user=3jrCsVoAAAAJ',
+            // scholar: 'https://scholar.google.com/citations?hl=en&user=3jrCsVoAAAAJ',
             github: 'https://github.com/BestJunYu'  
         },
         { 
@@ -85,23 +85,29 @@ const TeamPage = () => {
             scholar: '',
             github: 'https://github.com/jungcow'   
         },
-        // { 
-        //     name: 'Hyun-kyu Ko', 
-        //     img: process.env.PUBLIC_URL + '/team/HKK.jpg',
-        //     desc: 'PhD Student',
-        //     email: 'laniko@skku.edu', 
-        //     scholar: 'https://scholar.google.com/citations?hl=ko&user=lsi-8-QAAAAJ',
-        //     github: 'https://github.com/Ko-Lani'  
-        // },
-        // { 
-        //     name: 'Byeongjin Kang', 
-        //     img: process.env.PUBLIC_URL + '/team/BJK.jpg',
-        //     desc: 'MS-PhD Integrated Student',
-        //     email: 'qudwlskbj@gmail.com',
-        //     homepage: 'https://namul2.github.io/',
-        //     scholar: '',
-        //     github: 'https://github.com/Namul2'   
-        // },
+        { 
+            name: 'Hyun-kyu Ko', 
+            img: process.env.PUBLIC_URL + '/team/HKK.jpg',
+            desc: 'PhD Student',
+            email: 'laniko@skku.edu', 
+            scholar: 'https://scholar.google.com/citations?hl=ko&user=lsi-8-QAAAAJ',
+            github: 'https://github.com/Ko-Lani'  
+        },
+        { 
+            name: 'Byeongjin Kang', 
+            img: process.env.PUBLIC_URL + '/team/BJK.jpg',
+            desc: 'MS-PhD Integrated Student',
+            email: 'qudwlskbj@gmail.com',
+            homepage: 'https://namul2.github.io/',
+            scholar: '',
+            github: 'https://github.com/Namul2'   
+        },
+        { 
+            name: 'Minjun Kim', 
+            img: process.env.PUBLIC_URL + '/team/MJK.jpg',
+            desc: 'MS-PhD Integrated Student',
+            github: 'https://github.com/greentiramisu'   
+        },
     ];
 
     const masterStudents = [
@@ -113,38 +119,6 @@ const TeamPage = () => {
             homepage: 'https://gynjn.github.io/info/', 
             scholar: 'https://scholar.google.com/citations?user=iyQ16vIAAAAJ&hl=en',
             github: 'https://github.com/Gynjn' 
-        },
-        { 
-            name: 'Hyun-kyu Ko', 
-            img: process.env.PUBLIC_URL + '/team/HKK.jpg',
-            desc: 'Ms Student',
-            email: 'laniko@skku.edu', 
-            scholar: 'https://scholar.google.com/citations?hl=ko&user=lsi-8-QAAAAJ',
-            github: 'https://github.com/Ko-Lani'  
-        },
-        { 
-            name: 'Dongheok Park', 
-            img: process.env.PUBLIC_URL + '/team/DHP.jpg',
-            desc: 'MS Student',
-            email: 'leao8869@skku.edu', 
-            scholar: 'https://scholar.google.com/citations?user=UUtpFKgAAAAJ&hl=ko&oi=ao',
-            github: 'https://github.com/DHPark98'  
-        },
-        { 
-            name: 'Jisang Yoo', 
-            img: process.env.PUBLIC_URL + '/team/JSY.jpg',
-            desc: 'MS Student',
-            email: 'jisang1528@skku.edu', 
-            scholar: 'https://scholar.google.com/citations?user=0mCLz_sAAAAJ&hl=ko&oi=sra',
-            github: 'https://github.com/Yoo-jisang'  
-        },
-        { 
-            name: 'Hye Jin Jeon', 
-            img: process.env.PUBLIC_URL + '/team/HJJ.jpeg',
-            desc: 'MS Student',
-            email: 'hyejin9877@skku.edu', 
-            scholar: '',
-            github: 'https://github.com/jeonhhyejin'  
         },
         { 
             name: 'Youbin Kim', 
@@ -300,11 +274,26 @@ const TeamPage = () => {
             desc: 'MS, 2022.03 - 2024.08 / PhD, 2024.09 - 2025.08, leaving for a new adventure. We wish you all the best!',
             current: ''
         },
-        // { 
-        //     name: 'Hyun-kyu Ko', 
-        //     desc: 'MS, 2024.03 - 2026.02',
-        //     current: 'PhD student at V-Lab, Yonsei'
-        // },
+        { 
+            name: 'Dongheok Park', 
+            desc: 'MS, 2024.03 - 2026.02',
+            current: '' 
+        },
+        { 
+            name: 'Hyun-kyu Ko', 
+            desc: 'MS, 2024.03 - 2026.02',
+            current: 'PhD student at V-Lab, Yonsei'
+        },
+        { 
+            name: 'Jisang Yoo',
+            desc: 'MS, 2024.03 - 2026.02',
+            current: 'Kakao Mobility'
+        },
+        { 
+            name: 'Hye Jin Jeon', 
+            desc: 'MS, 2024.03 - 2026.02',
+            current: 'Samsung Electronics' 
+        },
     ];
 
     return (
