@@ -9,7 +9,7 @@ const publications = [
         authors: "Jisang Yoo, Gyeongjin Kang, Hyun-kyu Ko, Hyeonwoo Yu, Eunbyung Park",
         links: {
             paper: "https://arxiv.org/abs/2512.08625",
-            project: "",
+            project: "https://jisang1528.github.io/OpenMonoGS-SLAM/",
             code: "",
             thumbs: process.env.PUBLIC_URL + '/thumb/OpenMono.jpg'
         } 
