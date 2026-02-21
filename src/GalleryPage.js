@@ -4,6 +4,22 @@ import './GalleryPage.css';
 const albums = [
     {
         year: 2026,
+        title: '2026 Winter Graduation Ceremony',
+        description: '2026.02.21.',
+        images: [
+            { src: process.env.PUBLIC_URL + '/gallery/2026_winter_ceremony_1.jpg', alt: '2026_winter_ceremony_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2026_winter_ceremony_2.jpg', alt: '2026_winter_ceremony_2' },            
+            { src: process.env.PUBLIC_URL + '/gallery/2026_winter_ceremony_3.jpg', alt: '2026_winter_ceremony_3' },
+            { src: process.env.PUBLIC_URL + '/gallery/2026_winter_ceremony_4.jpg', alt: '2026_winter_ceremony_4' },            
+            { src: process.env.PUBLIC_URL + '/gallery/2026_winter_ceremony_5.jpg', alt: '2026_winter_ceremony_5' },            
+            { src: process.env.PUBLIC_URL + '/gallery/2026_winter_ceremony_6.jpg', alt: '2026_winter_ceremony_6' },      
+            { src: process.env.PUBLIC_URL + '/gallery/2026_winter_ceremony_7.jpg', alt: '2026_winter_ceremony_7' },     
+            { src: process.env.PUBLIC_URL + '/gallery/2026_winter_ceremony_8.jpg', alt: '2026_winter_ceremony_8' },     
+            { src: process.env.PUBLIC_URL + '/gallery/2026_winter_ceremony_9.jpg', alt: '2026_winter_ceremony_9' },           
+        ],
+    },
+    {
+        year: 2026,
         title: 'IPIU 2026',
         description: '2026.02.05.',
         images: [

@@ -16,18 +16,6 @@ const publications = [
     },
     { 
         year: "Preprints", 
-        title: "Multi-view Pyramid Transformer: Look Coarser to See Broader", 
-        journal: "arXiv:2512.07806", 
-        authors: "Gyeongjin Kang*, Seungkwon Yang*, Seungtae Nam, Younggeun Lee, Jungwoo Kim, Eunbyung Park",
-        links: {
-            paper: "https://arxiv.org/abs/2512.07806",
-            project: "https://gynjn.github.io/MVP/",
-            code: "https://github.com/Gynjn/MVP",
-            thumbs: process.env.PUBLIC_URL + '/thumb/MVP.jpg'
-        } 
-    },
-    { 
-        year: "Preprints", 
         title: "Optimized Minimal 4D Gaussian Splatting", 
         journal: "arXiv:2510.03857", 
         authors: "Minseo Lee*, Byeonghyeon Lee*, Lucas Yunkyu Lee, Eunsoo Lee, Sangmin Kim, Seunghyeon Song, Joo Chan Lee, Jong Hwan Ko, Jaesik Park, Eunbyung Park",
@@ -48,31 +36,7 @@ const publications = [
             code: "https://github.com/Ko-Lani/GSMamba",
             thumbs: process.env.PUBLIC_URL + '/thumb/GSMamba.jpg'
         } 
-    },
-    { 
-        year: "Preprints", 
-        title: "Uni3R: Unified 3D Reconstruction and Semantic Understanding via Generalizable Gaussian Splatting from Unposed Multi-View Images", 
-        journal: "arXiv:2508.03643", 
-        authors: "Xiangyu Sun*, Haoyi jiang*, Liu Liu, Seungtae Nam, Gyeongjin Kang, Xinjie wang, Wei Sui, Zhizhong Su, Wenyu Liu, Xinggang Wang, Eunbyung Park",
-        links: {
-            paper: "https://arxiv.org/abs/2508.03643",
-            project: "https://xiangyu1sun.github.io/Uni3R/",
-            code: "https://github.com/HorizonRobotics/Uni3R",
-            thumbs: process.env.PUBLIC_URL + '/thumb/Uni3R.jpg'
-        } 
-    },
-    { 
-        year: "Preprints", 
-        title: "iLRM: An Iterative Large 3D Reconstruction Model", 
-        journal: "arXiv:2507.23277", 
-        authors: "Gyeongjin Kang, Seungtae Nam, Seungkwon Yang, Xiangyu Sun, Sameh Khamis, Abdelrahman Mohamed, Eunbyung Park",
-        links: {
-            paper: "https://arxiv.org/abs/2507.23277",
-            project: "https://gynjn.github.io/iLRM/",
-            code: "https://github.com/Gynjn/iLRM",
-            thumbs: process.env.PUBLIC_URL + '/thumb/iLRM.jpg'
-        } 
-    },
+    },    
     { 
         year: "Preprints", 
         title: "DiffuseSlide: Training-Free High Frame Rate Video Generation Diffusion", 
@@ -107,6 +71,42 @@ const publications = [
             project: "https://benhenryl.github.io/Metalens-Transformer",
             code: "https://github.com/benhenryL/Metalens-Transformer",
             thumbs: process.env.PUBLIC_URL + '/thumb/Metalens-Transformer.jpg'
+        } 
+    },
+    { 
+        year: "2026", 
+        title: "Multi-view Pyramid Transformer: Look Coarser to See Broader", 
+        journal: "CVPR 2026", 
+        authors: "Gyeongjin Kang*, Seungkwon Yang*, Seungtae Nam, Younggeun Lee, Jungwoo Kim, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2512.07806",
+            project: "https://gynjn.github.io/MVP/",
+            code: "https://github.com/Gynjn/MVP",
+            thumbs: process.env.PUBLIC_URL + '/thumb/MVP.jpg'
+        } 
+    },
+        { 
+        year: "2026", 
+        title: "Uni3R: Unified 3D Reconstruction and Semantic Understanding via Generalizable Gaussian Splatting from Unposed Multi-View Images", 
+        journal: "CVPR 2026", 
+        authors: "Xiangyu Sun*, Haoyi jiang*, Liu Liu, Seungtae Nam, Gyeongjin Kang, Xinjie wang, Wei Sui, Zhizhong Su, Wenyu Liu, Xinggang Wang, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2508.03643",
+            project: "https://xiangyu1sun.github.io/Uni3R/",
+            code: "https://github.com/HorizonRobotics/Uni3R",
+            thumbs: process.env.PUBLIC_URL + '/thumb/Uni3R.jpg'
+        } 
+    },
+    { 
+        year: "2026", 
+        title: "iLRM: An Iterative Large 3D Reconstruction Model", 
+        journal: "CVPR 2026", 
+        authors: "Gyeongjin Kang, Seungtae Nam, Seungkwon Yang, Xiangyu Sun, Sameh Khamis, Abdelrahman Mohamed, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2507.23277",
+            project: "https://gynjn.github.io/iLRM/",
+            code: "https://github.com/Gynjn/iLRM",
+            thumbs: process.env.PUBLIC_URL + '/thumb/iLRM.jpg'
         } 
     },
     { 
