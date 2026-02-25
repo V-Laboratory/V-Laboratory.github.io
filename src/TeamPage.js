@@ -187,7 +187,7 @@ const TeamPage = () => {
         { 
             name: 'Soonmin Hwang', 
             img: process.env.PUBLIC_URL + '/team/SMH.JPG',
-            desc: 'MS Student',
+            desc: 'MS Student\nDoing internship at [KETI](https://www.keti.re.kr/main/main.php)',
             email: 'smsm0307@yonsei.ac.kr', 
             scholar: 'https://scholar.google.com/citations?hl=ko&user=IjfOwv4AAAAJ',
             github: 'https://github.com/smblue37'   
