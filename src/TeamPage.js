@@ -277,7 +277,7 @@ const TeamPage = () => {
         { 
             name: 'Dongheok Park', 
             desc: 'MS, 2024.03 - 2026.02',
-            current: '' 
+            current: 'POSCO' 
         },
         { 
             name: 'Hyun-kyu Ko', 
