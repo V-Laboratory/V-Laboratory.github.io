@@ -89,7 +89,7 @@ const TeamPage = () => {
             name: 'Hyun-kyu Ko', 
             img: process.env.PUBLIC_URL + '/team/HKK.jpg',
             desc: 'PhD Student',
-            email: 'laniko@skku.edu', 
+            email: 'laniko@yonsei.ac.kr', 
             scholar: 'https://scholar.google.com/citations?hl=ko&user=lsi-8-QAAAAJ',
             github: 'https://github.com/Ko-Lani'  
         },
@@ -97,7 +97,7 @@ const TeamPage = () => {
             name: 'Byeongjin Kang', 
             img: process.env.PUBLIC_URL + '/team/BJK.jpg',
             desc: 'MS-PhD Integrated Student',
-            email: 'qudwlskbj@gmail.com',
+            email: 'namul2@yonsei.ac.kr',
             homepage: 'https://namul2.github.io/',
             scholar: '',
             github: 'https://github.com/Namul2'   
@@ -106,7 +106,15 @@ const TeamPage = () => {
             name: 'Minjun Kim', 
             img: process.env.PUBLIC_URL + '/team/MJK.jpg',
             desc: 'MS-PhD Integrated Student',
+            email: 'mnjnmkmn@yonsei.ac.kr',
             github: 'https://github.com/greentiramisu'   
+        },
+        { 
+            name: 'Woonho Ko', 
+            img: process.env.PUBLIC_URL + '/team/WHK.jpeg',
+            desc: 'MS-PhD Integrated Student',
+            email: 'heesuk9898@yonsei.ac.kr',
+            github: 'https://github.com/kowoonho'   
         },
     ];
 
