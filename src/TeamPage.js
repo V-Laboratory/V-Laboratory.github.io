@@ -112,7 +112,7 @@ const TeamPage = () => {
         { 
             name: 'Woonho Ko', 
             img: process.env.PUBLIC_URL + '/team/WHK.jpeg',
-            desc: 'MS-PhD Integrated Student',
+            desc: 'PhD Student',
             email: 'heesuk9898@yonsei.ac.kr',
             github: 'https://github.com/kowoonho'   
         },
