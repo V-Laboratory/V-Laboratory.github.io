@@ -114,6 +114,7 @@ const TeamPage = () => {
             img: process.env.PUBLIC_URL + '/team/WHK.jpeg',
             desc: 'PhD Student',
             email: 'heesuk9898@yonsei.ac.kr',
+            scholar: 'https://scholar.google.com/citations?user=bl538r8AAAAJ',
             github: 'https://github.com/kowoonho'   
         },
     ];
