@@ -120,15 +120,15 @@ const TeamPage = () => {
     ];
 
     const masterStudents = [
-        { 
-            name: 'Gyeongjin Kang', 
-            img: process.env.PUBLIC_URL + '/team/GJK.jpg',
-            desc: 'MS Student', 
-            email: 'ggggjin99@skku.edu',
-            homepage: 'https://gynjn.github.io/info/', 
-            scholar: 'https://scholar.google.com/citations?user=iyQ16vIAAAAJ&hl=en',
-            github: 'https://github.com/Gynjn' 
-        },
+        // { 
+        //     name: 'Gyeongjin Kang', 
+        //     img: process.env.PUBLIC_URL + '/team/GJK.jpg',
+        //     desc: 'MS Student', 
+        //     email: 'ggggjin99@skku.edu',
+        //     homepage: 'https://gynjn.github.io/info/', 
+        //     scholar: 'https://scholar.google.com/citations?user=iyQ16vIAAAAJ&hl=en',
+        //     github: 'https://github.com/Gynjn' 
+        // },
         { 
             name: 'Youbin Kim', 
             img: process.env.PUBLIC_URL + '/team/YBK.jpg',
@@ -280,8 +280,8 @@ const TeamPage = () => {
         },
         { 
             name: 'Namgyu Kang', 
-            desc: 'MS, 2022.03 - 2024.08 / PhD, 2024.09 - 2025.08, leaving for a new adventure. We wish you all the best!',
-            current: ''
+            desc: 'MS, 2022.03 - 2024.08 / PhD, 2024.09 - 2025.08',
+            current: 'PhD student at Yonsei Quantum Computing Group, Yonsei'
         },
         { 
             name: 'Dongheok Park', 
@@ -302,6 +302,11 @@ const TeamPage = () => {
             name: 'Hye Jin Jeon', 
             desc: 'MS, 2024.03 - 2026.02',
             current: 'Samsung Electronics' 
+        },
+        { 
+            name: 'Gyeongjin Kang',
+            desc: 'MS, 2024.03 - 2026.02',
+            current: '' 
         },
     ];
 

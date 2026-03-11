@@ -61,7 +61,7 @@ const App = () => {
         { content: <>[2026.02] Three papers got accepted to CVPR 2026!</> },
         {
             content: (<>
-                [2026.01] Ph.D. Seungtae Nam will join
+                [2026.01] Ph.D. student Seungtae Nam will join
                 {' '}<a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/" target="_blank" rel="noopener noreferrer">Microsoft Research Asia</a>{' '}
                 as a research intern this spring!
             </>),
