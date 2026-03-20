@@ -5,7 +5,7 @@ const publications = [
     { 
         year: "Preprints", 
         title: "3DreamBooth: High-Fidelity 3D Subject-Driven Video Generation Model", 
-        journal: "arXiv:2512.08625", 
+        journal: "arXiv:2603.18524", 
         authors: "Hyun-kyu Ko*, Jihyeon Park*, Younghyun Kim, Dongheok Park, Eunbyung Park",
         links: {
             paper: "https://arxiv.org/abs/2603.18524",
