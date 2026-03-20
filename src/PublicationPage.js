@@ -4,6 +4,30 @@ import "./PublicationPage.css";
 const publications = [
     { 
         year: "Preprints", 
+        title: "3DreamBooth: High-Fidelity 3D Subject-Driven Video Generation Model", 
+        journal: "arXiv:2512.08625", 
+        authors: "Hyun-kyu Ko, Jihyeon Park, Younghyun Kim, Dongheok Park, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2603.18524",
+            project: "https://ko-lani.github.io/3DreamBooth/",
+            code: "https://github.com/Ko-Lani/3DreamBooth",
+            thumbs: process.env.PUBLIC_URL + '/thumb/3Dream.jpg'
+        } 
+    },
+    { 
+        year: "Preprints", 
+        title: "ILV: Iterative Latent Volumes for Fast and Accurate Sparse-View CT Reconstruction", 
+        journal: "arXiv:2603.14915", 
+        authors: "Seungryong Lee, Woojeong Baek, Joosang Lee, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2603.14915",
+            project: "https://sngryonglee.github.io/ILV/",
+            code: "https://github.com/sngryongLee/ILV",
+            thumbs: process.env.PUBLIC_URL + '/thumb/ILV.jpg'
+        } 
+    },
+    { 
+        year: "Preprints", 
         title: "OpenMonoGS-SLAM: Monocular Gaussian Splatting SLAM with Open-set Semantics", 
         journal: "arXiv:2512.08625", 
         authors: "Jisang Yoo, Gyeongjin Kang, Hyun-kyu Ko, Hyeonwoo Yu, Eunbyung Park",
