@@ -221,6 +221,18 @@
     /* color: #5582d6; */
 }
 
+.alumnus .name a {
+    all: unset;
+    cursor: pointer;
+}
+
+.alumnus .name a:visited {
+    color: black;
+}
+
+.alumnus .name a:hover {
+    text-decoration: underline;
+}
 
 @media (max-width: 768px) {
     .member img {

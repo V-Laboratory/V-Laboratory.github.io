@@ -90,6 +90,7 @@ const TeamPage = () => {
             img: process.env.PUBLIC_URL + '/team/HKK.jpg',
             desc: 'PhD Student',
             email: 'laniko@yonsei.ac.kr', 
+            homepage: 'https://ko-lani.github.io/',
             scholar: 'https://scholar.google.com/citations?hl=ko&user=lsi-8-QAAAAJ',
             github: 'https://github.com/Ko-Lani'  
         },
@@ -120,15 +121,6 @@ const TeamPage = () => {
     ];
 
     const masterStudents = [
-        // { 
-        //     name: 'Gyeongjin Kang', 
-        //     img: process.env.PUBLIC_URL + '/team/GJK.jpg',
-        //     desc: 'MS Student', 
-        //     email: 'ggggjin99@skku.edu',
-        //     homepage: 'https://gynjn.github.io/info/', 
-        //     scholar: 'https://scholar.google.com/citations?user=iyQ16vIAAAAJ&hl=en',
-        //     github: 'https://github.com/Gynjn' 
-        // },
         { 
             name: 'Youbin Kim', 
             img: process.env.PUBLIC_URL + '/team/YBK.jpg',
@@ -212,6 +204,7 @@ const TeamPage = () => {
             name: 'Daniel Rho', 
             desc: 'MS, 2020.09 - 2022.08 (co-advised by Jong Hwan Ko)',
             current: 'PhD student at UNC Chapel Hill',
+            homepage: 'https://daniel03c1.github.io/'
         },
         { 
             name: 'Hanbit Yoon',
@@ -306,7 +299,8 @@ const TeamPage = () => {
         { 
             name: 'Gyeongjin Kang',
             desc: 'MS, 2024.03 - 2026.02',
-            current: '' 
+            current: '',
+            homepage: 'https://gynjn.github.io/info/' 
         },
     ];
 
@@ -418,7 +412,15 @@ const TeamPage = () => {
                     {alumni.map((alumnus, index) => (
                         <div key={index} className="alumnus">
                             <p className="alumnus-info">
-                                <span className="name">{alumnus.name}</span>
+                                <span className="name">
+                                    {alumnus.homepage ? (
+                                        <a href={alumnus.homepage} target="_blank" rel="noopener noreferrer">
+                                            {alumnus.name}
+                                        </a>
+                                    ) : (
+                                        alumnus.name
+                                    )}
+                                </span>
                                 <span className="desc">{alumnus.desc}</span>
                                 <span className="current">{alumnus.current}</span>
                             </p>

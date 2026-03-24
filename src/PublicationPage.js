@@ -4,6 +4,30 @@ import "./PublicationPage.css";
 const publications = [
     { 
         year: "Preprints", 
+        title: "Group3D: MLLM-Driven Semantic Grouping for Open-Vocabulary 3D Object Detection", 
+        journal: "arXiv:2603.21944", 
+        authors: "Youbin Kim, Jinho Park, Hogun Park, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2603.21944",
+            project: "https://ubin108.github.io/Group3D/",
+            code: "https://github.com/Ubin108/Group3D",
+            thumbs: process.env.PUBLIC_URL + '/thumb/Group3D.jpg'
+        } 
+    },
+    { 
+        year: "Preprints", 
+        title: "Two Experts Are Better Than One Generalist: Decoupling Geometry and Appearance for Feed-Forward 3D Gaussian Splatting", 
+        journal: "arXiv:2603.21064", 
+        authors: "Hwasik Jeong*, Seungryong Lee*, Gyeongjin Kang, Seungkwon Yang, Xiangyu Sun, Seungtae Nam, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2603.21064",
+            project: "https://hwasikjeong.github.io/2Xplat/",
+            code: "https://github.com/HwasikJeong/2Xplat",
+            thumbs: process.env.PUBLIC_URL + '/thumb/2Xplat.jpg'
+        } 
+    },
+    { 
+        year: "Preprints", 
         title: "3DreamBooth: High-Fidelity 3D Subject-Driven Video Generation Model", 
         journal: "arXiv:2603.18524", 
         authors: "Hyun-kyu Ko*, Jihyeon Park*, Younghyun Kim, Dongheok Park, Eunbyung Park",
