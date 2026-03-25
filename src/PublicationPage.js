@@ -16,7 +16,7 @@ const publications = [
     },
     { 
         year: "Preprints", 
-        title: "Two Experts Are Better Than One Generalist: Decoupling Geometry and Appearance for Feed-Forward 3D Gaussian Splatting", 
+        title: "2Xplat: Two Experts Are Better Than One Generalist", 
         journal: "arXiv:2603.21064", 
         authors: "Hwasik Jeong*, Seungryong Lee*, Gyeongjin Kang, Seungkwon Yang, Xiangyu Sun, Seungtae Nam, Eunbyung Park",
         links: {
