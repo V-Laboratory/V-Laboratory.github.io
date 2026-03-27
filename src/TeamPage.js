@@ -166,7 +166,7 @@ const TeamPage = () => {
             img: process.env.PUBLIC_URL + '/team/WJB.jpeg',
             desc: 'MS Student', 
             email: 'bwj2800@yonsei.ac.kr',
-            scholar: '',
+            scholar: 'https://scholar.google.com/citations?user=-1yRZjYAAAAJ',
             github: 'https://github.com/bwj2800'   
         },
         { 
@@ -183,7 +183,7 @@ const TeamPage = () => {
             desc: 'MS Student',
             email: '99hwasikk@yonsei.ac.kr', 
             scholar: '',
-            github: 'https://github.com/JeongHwaSik'   
+            github: 'https://github.com/HwasikJeong'   
         },
         { 
             name: 'Soonmin Hwang', 
