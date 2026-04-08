@@ -1,8 +1,7 @@
 /* GalleryPage.css */
 .gallery-page {
     text-align: center;
-    margin: 20px;
-    padding: 110px 0px 40px;
+    padding: 110px 0px 60px;
     font-family: "Lora", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -11,49 +10,234 @@
     margin: 0 auto;
 }
 
+/* ── Year filter ── */
+.year-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 20px;
+    gap: 2px;
+}
+
+@media (max-width: 768px) {
+    .year-navigation {
+        margin: 0 0 24px;
+    }
+}
+
+.category-button,
+.year-pagination-button {
+    background-color: transparent;
+    border: none;
+    padding: 8px 16px;
+    font-family: "Lora", serif;
+    font-size: 0.95rem;
+    cursor: pointer;
+    color: #888;
+    position: relative;
+    transition: color 0.25s ease;
+    outline: none;
+    letter-spacing: 0.02em;
+}
+
+.category-button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #5582d6;
+    transition: width 0.25s ease;
+    border-radius: 2px;
+}
+
+.category-button.active {
+    color: #5582d6;
+}
+
+.category-button.active::after {
+    width: calc(100% - 24px);
+}
+
+.category-button:hover {
+    color: #5582d6;
+}
+
+.category-button:hover::after {
+    width: calc(100% - 24px);
+}
+
+.year-pagination-button {
+    font-size: 1.3rem;
+    color: #bbb;
+    padding: 8px 8px;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.year-pagination-button:hover {
+    color: #5582d6;
+    transform: scale(1.2);
+}
+
+/* ── Gallery grid ── */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 20px;
 }
 
 .gallery-item {
     cursor: pointer;
-    text-align: center;
-    
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
 .gallery-item:hover {
-    transform: scale(1.03);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-4px);
+}
+
+/* Fixed-ratio thumbnail with overlay */
+.album-thumbnail {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #f0f0f0;
 }
 
 .album-thumbnail img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     border-radius: 8px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    display: block;
+}
+
+.album-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(85, 130, 214, 0.0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: background 0.35s ease;
+}
+
+.overlay-icon {
+    color: white;
+    font-size: 2rem;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.gallery-item:hover .album-thumbnail img {
+    transform: scale(1.04);
+    filter: brightness(0.88);
+}
+
+.gallery-item:hover .album-overlay {
+    background: rgba(40, 70, 140, 0.25);
+}
+
+.gallery-item:hover .overlay-icon {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .album-title {
     font-size: 17px;
-    margin: 5px;
+    margin: 10px 2px 3px;
+    font-weight: 600;
+    color: #1a1a1a;
+    line-height: 1.4;
 }
 
 .album-description {
     font-size: 13px;
-    color: #1f1f1f;
-    margin: 5px;
+    color: #555;
+    margin: 0 2px 4px;
+    font-weight: 400;
 }
 
+/* ── Numbered pagination ── */
+.album-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    gap: 4px;
+}
+
+.page-number {
+    background: transparent;
+    border: none;
+    font-family: "Lora", serif;
+    font-size: 0.9rem;
+    color: #888;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+.page-number:hover {
+    background: #eef1fb;
+    color: #5582d6;
+}
+
+.page-number.active {
+    background: #5582d6;
+    color: white;
+    font-weight: 600;
+}
+
+.page-arrow {
+    background: transparent;
+    border: none;
+    font-size: 1.4rem;
+    color: #bbb;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease, background 0.2s ease;
+    outline: none;
+    line-height: 1;
+}
+
+.page-arrow:hover:not(:disabled) {
+    color: #5582d6;
+    background: #eef1fb;
+}
+
+.page-arrow:disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+/* ── Modal ── */
 .modal {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.82);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,19 +248,12 @@
     position: relative;
     width: 70%;
     height: 90%;
-    background-color: rgb(233, 233, 233);
-    border-radius: 8px;
+    background-color: #efefef;
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.modal-content button {
-    transition: scale 0.3s ease;
-}
-
-.modal-content button:hover{
-    scale: 1.1;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
 }
 
 .image-container {
@@ -84,112 +261,73 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 60px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .modal-image {
     max-width: 100%;
     max-height: 80vh;
     object-fit: contain;
-    margin: auto;
+    border-radius: 4px;
 }
 
 .close-button {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 12px;
+    right: 16px;
     background: transparent;
     border: none;
-    color: black;
-    font-size: 24px;
+    color: #555;
+    font-size: 26px;
     cursor: pointer;
+    line-height: 1;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
-.prev-button, .next-button {
+.close-button:hover {
+    color: #1a1a1a;
+    transform: scale(1.15);
+}
+
+.prev-button,
+.next-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: 10%;
-    margin-right: 10%;
     background: transparent;
     border: none;
     cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .prev-button {
-    left: 10px;
+    left: 12px;
 }
 
 .next-button {
-    right: 10px;
+    right: 12px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background: rgba(0, 0, 0, 0.08);
+    transform: translateY(-50%) scale(1.1);
 }
 
 .nav-icon {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
+    display: block;
 }
 
 .image-caption {
-    padding: 10px;
+    padding: 5px;
     text-align: center;
-    font-size: 14px;
-}
-
-.year-navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-}
-
-@media (max-width: 768px) {
-    .year-navigation {
-        margin: 0;
-    }
-}
-
-.year-navigation img {
-    margin: 0 10px;
-    padding: 10px 20px;
-    width: 2%;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    transition: scale 0.3s ease;
-}
-
-.year-navigation img:hover {
-    scale: 1.2;
-}
-
-.year-navigation h2 {
-    margin: 0;
-    font-size: 24px;
-}
-
-
-.category-button,
-.year-pagination-button {
-    background-color: transparent;
-    border: none;
-    padding: 10px 15px;
-    margin: 0 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    color: #555;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
-    outline: none;
-}
-
-.category-button.active {
-    border-bottom: 2px solid #5582d6;;
-    color: #5582d6;;
-}
-
-.category-button:hover,
-.year-pagination-button:hover {
-    color: #5582d6;;
-}
-
-.year-pagination-button {
-    font-weight: bold;
+    font-size: 13px;
+    color: #777;
+    font-style: italic;
 }

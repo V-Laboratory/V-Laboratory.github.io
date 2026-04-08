@@ -4,6 +4,15 @@ import './GalleryPage.css';
 const albums = [
     {
         year: 2026,
+        title: 'Spring Group Photo',
+        description: '2026.04.01.',
+        images: [
+            { src: process.env.PUBLIC_URL + '/gallery/2026_spring_1.jpg', alt: '2026_spring_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2026_spring_2.jpg', alt: '2026_spring_2' },
+        ],
+    },
+    {
+        year: 2026,
         title: '2026 Winter Graduation Ceremony',
         description: '2026.02.21.',
         images: [
@@ -87,7 +96,6 @@ const albums = [
         title: 'CVPR 2025',
         description: '2025.06.15.',
         images: [
-            
             { src: process.env.PUBLIC_URL + '/gallery/2025_cvpr_1.jpeg', alt: '2025_cvpr_1' },
             { src: process.env.PUBLIC_URL + '/gallery/2025_cvpr_9.jpeg', alt: '2025_cvpr_9' },
             { src: process.env.PUBLIC_URL + '/gallery/2025_cvpr_2.jpeg', alt: '2025_cvpr_2' },
@@ -245,18 +253,18 @@ const albums = [
     },
 ];
 
+const PAGE_SIZE = 9;
+
 const GalleryPage = () => {
     const distinctYears = [...new Set(albums.map((album) => album.year))].sort((a, b) => b - a);
     const [yearPage, setYearPage] = useState(0);
-    const totalPages = Math.ceil(distinctYears.length / 5);
+    const totalYearPages = Math.ceil(distinctYears.length / 5);
     const visibleYears = distinctYears.slice(yearPage * 5, yearPage * 5 + 5);
 
     const [currentCategory, setCurrentCategory] = useState("ALL");
     const [selectedAlbum, setSelectedAlbum] = useState(null);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
     const [albumPage, setAlbumPage] = useState(0);
-    const pageSize = 20;
 
     useEffect(() => {
         setAlbumPage(0);
@@ -267,19 +275,17 @@ const GalleryPage = () => {
         setCurrentImageIndex(0);
     };
 
-    const closeAlbum = () => {
-        setSelectedAlbum(null);
-    };
+    const closeAlbum = () => setSelectedAlbum(null);
 
     const handleNextImage = () => {
-        setCurrentImageIndex((prevIndex) =>
-            prevIndex === selectedAlbum.images.length - 1 ? 0 : prevIndex + 1
+        setCurrentImageIndex((prev) =>
+            prev === selectedAlbum.images.length - 1 ? 0 : prev + 1
         );
     };
 
     const handlePrevImage = () => {
-        setCurrentImageIndex((prevIndex) =>
-            prevIndex === 0 ? selectedAlbum.images.length - 1 : prevIndex - 1
+        setCurrentImageIndex((prev) =>
+            prev === 0 ? selectedAlbum.images.length - 1 : prev - 1
         );
     };
 
@@ -288,15 +294,31 @@ const GalleryPage = () => {
             ? albums
             : albums.filter((album) => album.year === currentCategory);
 
-    let currentAlbums = filteredAlbums;
-    let totalAlbumPages = 1;
-    if (currentCategory === "ALL") {
-        totalAlbumPages = Math.ceil(filteredAlbums.length / pageSize);
-        currentAlbums = filteredAlbums.slice(albumPage * pageSize, albumPage * pageSize + pageSize);
-    }
+    const totalAlbumPages = currentCategory === "ALL"
+        ? Math.ceil(filteredAlbums.length / PAGE_SIZE)
+        : 1;
+
+    const currentAlbums = currentCategory === "ALL"
+        ? filteredAlbums.slice(albumPage * PAGE_SIZE, albumPage * PAGE_SIZE + PAGE_SIZE)
+        : filteredAlbums;
+
+    // Build page number list (show max 5 page buttons)
+    const getPageNumbers = () => {
+        const pages = [];
+        const maxVisible = 5;
+        let start = Math.max(0, albumPage - Math.floor(maxVisible / 2));
+        let end = start + maxVisible;
+        if (end > totalAlbumPages) {
+            end = totalAlbumPages;
+            start = Math.max(0, end - maxVisible);
+        }
+        for (let i = start; i < end; i++) pages.push(i);
+        return pages;
+    };
 
     return (
         <div className="gallery-page">
+            {/* Year filter */}
             <div className="year-navigation">
                 <button
                     className={`category-button ${currentCategory === "ALL" ? "active" : ""}`}
@@ -306,7 +328,7 @@ const GalleryPage = () => {
                 </button>
                 {yearPage > 0 && (
                     <button className="year-pagination-button" onClick={() => setYearPage(yearPage - 1)}>
-                        {"<"}
+                        &#8249;
                     </button>
                 )}
                 {visibleYears.map((year) => (
@@ -318,13 +340,14 @@ const GalleryPage = () => {
                         {year}
                     </button>
                 ))}
-                {yearPage < totalPages - 1 && (
+                {yearPage < totalYearPages - 1 && (
                     <button className="year-pagination-button" onClick={() => setYearPage(yearPage + 1)}>
-                        {">"}
+                        &#8250;
                     </button>
                 )}
             </div>
 
+            {/* Album grid */}
             <div className="gallery-grid">
                 {currentAlbums.map((album, index) => (
                     <div key={index} className="gallery-item" onClick={() => openAlbum(album)}>
@@ -337,36 +360,40 @@ const GalleryPage = () => {
                 ))}
             </div>
 
-            {/* {currentCategory === "ALL" && totalAlbumPages > 1 && (
+            {/* Numbered pagination */}
+            {currentCategory === "ALL" && totalAlbumPages > 1 && (
                 <div className="album-pagination">
-                    {albumPage > 0 && (
-                        <button className="prev-button" onClick={() => setAlbumPage(albumPage - 1)}>
-                            <img
-                                src={process.env.PUBLIC_URL + '/icon/left-arrow.png'}
-                                alt="Previous"
-                                className="nav-icon"
-                            />
-                        </button>              
-                    )}
-                    <span>{albumPage + 1} / {totalAlbumPages}</span>
-                    {albumPage < totalAlbumPages - 1 && (
-                        <button className="next-button" onClick={() => setAlbumPage(albumPage + 1)}>
-                            <img
-                                src={process.env.PUBLIC_URL + '/icon/right-arrow.png'}
-                                alt="Next"
-                                className="nav-icon"
-                            />
+                    <button
+                        className="page-arrow"
+                        onClick={() => setAlbumPage(albumPage - 1)}
+                        disabled={albumPage === 0}
+                    >
+                        &#8249;
+                    </button>
+                    {getPageNumbers().map((page) => (
+                        <button
+                            key={page}
+                            className={`page-number ${albumPage === page ? "active" : ""}`}
+                            onClick={() => setAlbumPage(page)}
+                        >
+                            {page + 1}
                         </button>
-                    )}
+                    ))}
+                    <button
+                        className="page-arrow"
+                        onClick={() => setAlbumPage(albumPage + 1)}
+                        disabled={albumPage === totalAlbumPages - 1}
+                    >
+                        &#8250;
+                    </button>
                 </div>
-            )} */}
+            )}
 
+            {/* Modal */}
             {selectedAlbum && (
-                <div className="modal">
-                    <div className="modal-content">
-                        <button className="close-button" onClick={closeAlbum}>
-                            &times;
-                        </button>
+                <div className="modal" onClick={closeAlbum}>
+                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                        <button className="close-button" onClick={closeAlbum}>&times;</button>
                         <button className="prev-button" onClick={handlePrevImage}>
                             <img
                                 src={process.env.PUBLIC_URL + '/icon/left-arrow.png'}
@@ -389,9 +416,7 @@ const GalleryPage = () => {
                             />
                         </button>
                         <div className="image-caption">
-                            <p>
-                                {currentImageIndex + 1} / {selectedAlbum.images.length}
-                            </p>
+                            <p>{currentImageIndex + 1} / {selectedAlbum.images.length}</p>
                         </div>
                     </div>
                 </div>
