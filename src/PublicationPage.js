@@ -136,7 +136,7 @@ const publications = [
         { 
         year: "2026", 
         title: "Uni3R: Unified 3D Reconstruction and Semantic Understanding via Generalizable Gaussian Splatting from Unposed Multi-View Images", 
-        journal: "CVPR 2026", 
+        journal: "CVPR 2026 Highlight", 
         authors: "Xiangyu Sun*, Haoyi jiang*, Liu Liu, Seungtae Nam, Gyeongjin Kang, Xinjie wang, Wei Sui, Zhizhong Su, Wenyu Liu, Xinggang Wang, Eunbyung Park",
         links: {
             paper: "https://arxiv.org/abs/2508.03643",
