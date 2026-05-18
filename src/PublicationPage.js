@@ -110,15 +110,32 @@ const publications = [
         } 
     },
     { 
-        year: "Preprints", 
-        title: "Aberration Correcting Vision Transformers for High-Fidelity Metalens Imaging", 
-        journal: "arXiv:2412.04591", 
-        authors: "Byeonghyeon Lee, Youbin Kim, Yongjae Jo, Hyunsu Kim, Hyemi Park, Yangkyu Kim, Debabrata Mandal, Praneeth Chakravarthula†, Inki Kim†, Eunbyung Park†" ,
+        year: "2026", 
+        title: "Contrastive Flow Map Matching", 
+        journal: "ICML 2026", 
+        authors: "Junyu Zhang, Daochang Liu, Younghyun Kim, Jong Hwan Ko, Shichao Zhang, Chang Xu, Eunbyung Park" ,
         links: {
-            paper: "https://arxiv.org/abs/2412.04591",
-            project: "https://benhenryl.github.io/Metalens-Transformer",
-            code: "https://github.com/benhenryL/Metalens-Transformer",
-            thumbs: process.env.PUBLIC_URL + '/thumb/Metalens-Transformer.jpg'
+            paper: "https://icml.cc/virtual/2026/poster/62800",
+            thumbs: process.env.PUBLIC_URL + '/thumb/CFMM.jpeg'
+        } 
+    },
+    { 
+        year: "2026", 
+        title: "Improved Residual Learning in Diffusion Models", 
+        journal: "TPAMI 2026", 
+        authors: "Junyu Zhang, Daochang Liu, Eunbyung Park, Shichao Zhang, Chang Xu",
+        links: {
+            paper: "https://ieeexplore.ieee.org/document/11505044",
+            thumbs: process.env.PUBLIC_URL + '/thumb/ImprovedRes.jpg'
+        } 
+    },
+    { 
+        year: "2026", 
+        title: "Partial-Path Rectification in Diffusion Sampling", 
+        journal: "TMM 2026", 
+        authors: "Junyu Zhang, Daochang Liu, Jong Hwan Ko, Eunbyung Park, Shichao Zhang, Chang Xu",
+        links: {
+            thumbs: process.env.PUBLIC_URL + '/thumb/Partial-Path.jpeg'
         } 
     },
     { 
@@ -133,7 +150,7 @@ const publications = [
             thumbs: process.env.PUBLIC_URL + '/thumb/MVP.jpg'
         } 
     },
-        { 
+    { 
         year: "2026", 
         title: "Uni3R: Unified 3D Reconstruction and Semantic Understanding via Generalizable Gaussian Splatting from Unposed Multi-View Images", 
         journal: "CVPR 2026 Highlight", 

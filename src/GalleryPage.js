@@ -4,6 +4,16 @@ import './GalleryPage.css';
 const albums = [
     {
         year: 2026,
+        title: 'Teacher\'s Day',
+        description: '2026.05.15.',
+        images: [
+            { src: process.env.PUBLIC_URL + '/gallery/2026_teacher_1.jpeg', alt: '2026_teacher_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2026_teacher_2.jpeg', alt: '2026_teacher_2' },
+            { src: process.env.PUBLIC_URL + '/gallery/2026_teacher_3.jpeg', alt: '2026_teacher_3' },
+        ],
+    },
+    {
+        year: 2026,
         title: 'Spring Group Photo',
         description: '2026.04.01.',
         images: [
