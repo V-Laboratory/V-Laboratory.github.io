@@ -130,7 +130,7 @@ const TeamPage = () => {
             github: 'https://github.com/Ubin108'  
         },
         { 
-            name: 'Ji Hyeon Park', 
+            name: 'Jihyeon Park', 
             img: process.env.PUBLIC_URL + '/team/JHP.jpg',
             desc: 'MS Student',
             email: 'fairytale@skku.edu', 
@@ -292,7 +292,7 @@ const TeamPage = () => {
             current: 'Kakao Mobility'
         },
         { 
-            name: 'Hye Jin Jeon', 
+            name: 'Hyejin Jeon', 
             desc: 'MS, 2024.03 - 2026.02',
             current: 'Samsung Electronics' 
         },
