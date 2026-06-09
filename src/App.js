@@ -60,12 +60,29 @@ const App = () => {
     const newsItems = [
         {
             content: (<>
+                [2026.06] Prof. Eunbyung Park gave a lightning talk at 
+                {' '}<a href="https://cvpr26-acworkshop.github.io/" target="_blank" rel="noopener noreferrer">CVPR AC Workshop 2026</a>
+            </>),
+        },
+        {
+            content: (<>
+                [2026.04] Prof. Eunbyung Park gave an invited talk at 
+                {' '}<a href="https://skb.skku.edu/robot/notice.do?mode=view&articleNo=214553&article.offset=0&articleLimit=10" target="_blank" rel="noopener noreferrer">Intelligent Robotics Seminar Series, SKKU</a>
+            </>),
+        },
+        {
+            content: (<>
                 [2026.04]
                 {' '}<a href="https://icml.cc/virtual/2026/poster/62800" target="_blank" rel="noopener noreferrer">CFMM</a>{' '}
                 got accepted to ICML 2026!
             </>),
         },
-
+        {
+            content: (<>
+                [2026.03] Prof. Eunbyung Park gave a keynote talk at 
+                {' '}<a href="https://sites.google.com/view/iimc2026/home" target="_blank" rel="noopener noreferrer">IEEE VR 2026, IIMC Workshop</a>
+            </>),
+        },
         { content: <>[2026.02] Three papers got accepted to CVPR 2026!</> },
         {
             content: (<>
@@ -90,10 +107,16 @@ const App = () => {
                 {' '}<a href="https://cse.ucsd.edu/" target="_blank" rel="noopener noreferrer">UCSD</a>
             </>),
         },
+        {
+            content: (<>
+                [2025.11] Prof. Eunbyung Park gave an invited talk at 
+                {' '}<a href="https://kphysicalai.com/kr/s1.php?s=31" target="_blank" rel="noopener noreferrer">Physical AI International Forum</a>
+            </>),
+        },
 
         { content: <>[2025.11] Prof. Eunbyung Park will serve as an area chair for ICML 2026</> },
         { content: <>[2025.11] LightMarkGS received the best paper award in KIBME 2025!</> },
-
+        
         {
             content: (<>
                 [2025.11]
@@ -101,10 +124,18 @@ const App = () => {
                 got accepted to WACV 2026!
             </>),
         },
+
         {
             content: (<>
                 [2025.09]
                 {' '}<a href="https://maincold2.github.io/omg/" target="_blank" rel="noopener noreferrer">OMG</a>{' '}got accepted to NeurIPS 2025!
+            </>),
+        },
+
+        {
+            content: (<>
+                [2025.08] Prof. Eunbyung Park gave an invited talk at 
+                {' '}<a href="https://kcvs.kr/?act=info.workshop&pseq=8" target="_blank" rel="noopener noreferrer">KCCV 2025</a>
             </>),
         },
 
@@ -116,7 +147,6 @@ const App = () => {
                 {' '}<a href="https://sites.google.com/view/gmm-workshop-rss25/home" target="_blank" rel="noopener noreferrer">Gaussian Representations for Robot Autonomy: Challenges and Opportunities</a>
             </>),
         },
-
         {
             content: (<>
                 [2025.04] Prof. Eunbyung Park gave an invited talk at

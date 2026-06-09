@@ -4,6 +4,18 @@ import "./PublicationPage.css";
 const publications = [
     { 
         year: "Preprints", 
+        title: "VGenST-Bench: A Benchmark for Spatio-Temporal Reasoning via Active Video Synthesis", 
+        journal: "arXiv:2605.22570", 
+        authors: "Jinho Park, Youbin Kim, Hogun Park, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2605.22570",
+            project: "https://zinosii.github.io/VGenST-Bench/",
+            code: "https://github.com/zinosii/VGenST-Bench",
+            thumbs: process.env.PUBLIC_URL + '/thumb/VgenST.jpg'
+        } 
+    },
+    { 
+        year: "Preprints", 
         title: "Group3D: MLLM-Driven Semantic Grouping for Open-Vocabulary 3D Object Detection", 
         journal: "arXiv:2603.21944", 
         authors: "Youbin Kim, Jinho Park, Hogun Park, Eunbyung Park",
@@ -181,6 +193,7 @@ const publications = [
         authors: "Sumin In, Youngdong Jang, Utae Jeong, MinHyuk Jang, Hyeongcheol Park, Eunbyung Park, Sangpil Kim" ,
         links: {
             paper: "https://arxiv.org/abs/2503.12836",
+            code: "https://github.com/kuai-lab/iclr26_CompMarkGS",
             thumbs: process.env.PUBLIC_URL + '/thumb/CompMarkGS.jpg'
         } 
     },
