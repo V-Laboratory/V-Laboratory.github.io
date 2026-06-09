@@ -548,6 +548,12 @@ const publications = [
     },
 ];
 
+const handleImageLoad = (e) => {
+    const img = e.target;
+    const modalContent = img.parentElement;
+    modalContent.style.height = img.offsetHeight + 'px';
+};
+
 const groupedPublications = publications.reduce((acc, pub) => {
     acc[pub.year] = acc[pub.year] || [];
     acc[pub.year].push(pub);
@@ -683,7 +689,12 @@ const PublicationPage = () => {
                         <span className="close" onClick={closeModal}>
                             &times;
                         </span>
-                        <img src={currentImage} alt="Modal Thumbnail" className="modal-image" />
+                        <img 
+                            src={currentImage} 
+                            alt="Modal Thumbnail" 
+                            className="modal-image"
+                            onLoad={handleImageLoad}
+                        />
                     </div>
                 </div>
             )}
