@@ -4,6 +4,19 @@ import './GalleryPage.css';
 const albums = [
     {
         year: 2026,
+        title: 'CVPR 2026',
+        description: '2026.06.06.',
+        images: [
+            { src: process.env.PUBLIC_URL + '/gallery/2026_cvpr_1.jpeg', alt: '2026_cvpr_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2026_cvpr_2.jpeg', alt: '2026_cvpr_2' },
+            { src: process.env.PUBLIC_URL + '/gallery/2026_cvpr_3.jpeg', alt: '2026_cvpr_3' },
+            { src: process.env.PUBLIC_URL + '/gallery/2026_cvpr_4.jpeg', alt: '2026_cvpr_4' },    
+            { src: process.env.PUBLIC_URL + '/gallery/2026_cvpr_5.jpeg', alt: '2026_cvpr_5' },    
+            { src: process.env.PUBLIC_URL + '/gallery/2026_cvpr_6.jpeg', alt: '2026_cvpr_6' },    
+        ],
+    },
+    {
+        year: 2026,
         title: 'Teacher\'s Day',
         description: '2026.05.15.',
         images: [
