@@ -118,6 +118,14 @@ const TeamPage = () => {
             scholar: 'https://scholar.google.com/citations?user=bl538r8AAAAJ',
             github: 'https://github.com/kowoonho'   
         },
+        { 
+            name: 'Minhyeok Roh', 
+            img: process.env.PUBLIC_URL + '/team/MHR.jpg',
+            desc: 'MS-PhD Integrated Student',
+            email: 'mhroh01@naver.com', 
+            scholar: '',
+            github: 'https://github.com/minhyeok2001'   
+        },
     ];
 
     const masterStudents = [

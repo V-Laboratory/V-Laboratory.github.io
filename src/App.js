@@ -58,6 +58,7 @@ const App = () => {
     const extendedImages = [images[images.length - 1], ...images, images[0]]; // Add last and first image for smooth looping
 
     const newsItems = [
+        { content: <>[2026.06] Two papers got accepted to ECCV 2026!</> },
         {
             content: (<>
                 [2026.06] Prof. Eunbyung Park gave a lightning talk at 

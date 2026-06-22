@@ -16,18 +16,6 @@ const publications = [
     },
     { 
         year: "Preprints", 
-        title: "Group3D: MLLM-Driven Semantic Grouping for Open-Vocabulary 3D Object Detection", 
-        journal: "arXiv:2603.21944", 
-        authors: "Youbin Kim, Jinho Park, Hogun Park, Eunbyung Park",
-        links: {
-            paper: "https://arxiv.org/abs/2603.21944",
-            project: "https://ubin108.github.io/Group3D/",
-            code: "https://github.com/Ubin108/Group3D",
-            thumbs: process.env.PUBLIC_URL + '/thumb/Group3D.jpg'
-        } 
-    },
-    { 
-        year: "Preprints", 
         title: "2Xplat: Two Experts Are Better Than One Generalist", 
         journal: "arXiv:2603.21064", 
         authors: "Hwasik Jeong*, Seungryong Lee*, Gyeongjin Kang, Seungkwon Yang, Xiangyu Sun, Seungtae Nam, Eunbyung Park",
@@ -121,6 +109,30 @@ const publications = [
             thumbs: process.env.PUBLIC_URL + '/thumb/3D-4DGS.jpg'
         } 
     },
+    { 
+        year: "2026", 
+        title: "Group3D: MLLM-Driven Semantic Grouping for Open-Vocabulary 3D Object Detection", 
+        journal: "ECCV 2026", 
+        authors: "Youbin Kim, Jinho Park, Hogun Park, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2603.21944",
+            project: "https://ubin108.github.io/Group3D/",
+            code: "https://github.com/Ubin108/Group3D",
+            thumbs: process.env.PUBLIC_URL + '/thumb/Group3D.jpg'
+        } 
+    },
+    // { 
+    //     year: "2026", 
+    //     title: "Raymap-Guided Coupling for Drift-Robust Unposed Feed-Forward 3D Reconstruction", 
+    //     journal: "ECCV 2026", 
+    //     authors: "Xiangyu Sun, Liu Liu, Seungkwon Yang, Jingbing Han, Seungtae Nam, Zhizhong Su, Eunbyung Park",
+    //     links: {
+    //         paper: "",
+    //         project: "",
+    //         code: "",
+    //         thumbs: process.env.PUBLIC_URL + '/thumb/Raymap.jpg'
+    //     } 
+    // },
     { 
         year: "2026", 
         title: "Contrastive Flow Map Matching", 

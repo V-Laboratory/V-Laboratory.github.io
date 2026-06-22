@@ -4,6 +4,18 @@ import './GalleryPage.css';
 const albums = [
     {
         year: 2026,
+        title: 'Jeju MT',
+        description: '2026.06.19. - 06.21.',
+        images: [
+            { src: process.env.PUBLIC_URL + '/gallery/2026_jeju_1.jpg', alt: '2026_jeju_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2026_jeju_2.jpg', alt: '2026_jeju_2' },
+            { src: process.env.PUBLIC_URL + '/gallery/2026_jeju_3.jpg', alt: '2026_jeju_3' },
+            { src: process.env.PUBLIC_URL + '/gallery/2026_jeju_4.jpg', alt: '2025_jeju_4' },  
+            { src: process.env.PUBLIC_URL + '/gallery/2026_jeju_5.jpg', alt: '2025_jeju_5' },     
+        ],
+    },
+    {
+        year: 2026,
         title: 'CVPR 2026',
         description: '2026.06.06.',
         images: [
