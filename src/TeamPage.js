@@ -15,7 +15,7 @@ const TeamPage = () => {
         { 
             name: 'Seungtae Nam', 
             img: process.env.PUBLIC_URL + '/team/STN.png',
-            desc: 'PhD Student',
+            desc: 'PhD Student\nDoing internship at [Microsoft \nResearch Asia](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/)',
             email: 'stnamjef@yonsei.ac.kr', 
             scholar: 'https://scholar.google.com/citations?user=8NKPmmwCmrAC&hl=en',
             github: 'https://github.com/stnamjef'
