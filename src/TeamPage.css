@@ -169,14 +169,19 @@
     margin-top: 5px;
 }
 
-.student-links i {
+.student-links i,
+.bio i,
+.student-links svg,
+.bio svg {
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }
 
-.student-links i:hover {
+.student-links i:hover,
+.bio i:hover,
+.student-links a:hover svg,
+.bio a:hover svg {
     transform: scale(1.2);
-    color: #007bff;
 }
 
 

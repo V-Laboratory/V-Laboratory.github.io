@@ -110,6 +110,20 @@ const publications = [
         } 
     },
     { 
+        year: "Preprints", 
+        title: "Aberration Correcting Vision Transformers for High-Fidelity Metalens Imaging", 
+        journal: "arXiv:2412.04591", 
+        authors: "Byeonghyeon Lee, Youbin Kim, Yongjae Jo, Hyunsu Kim, Hyemi Park, Yangkyu Kim, Debabrata Mandal, Praneeth Chakravarthula, Inki Kim, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2412.04591",
+            project: "https://benhenryl.github.io/Metalens-Transformer/",
+            code: "https://github.com/benhenryL/Metalens-Transformer",
+            thumbs: process.env.PUBLIC_URL + '/thumb/Metalens-Transformer.jpg'
+        } 
+    },
+
+
+    { 
         year: "2026", 
         title: "Group3D: MLLM-Driven Semantic Grouping for Open-Vocabulary 3D Object Detection", 
         journal: "ECCV 2026", 

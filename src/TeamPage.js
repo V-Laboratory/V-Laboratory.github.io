@@ -5,15 +5,6 @@ import './TeamPage.css';
 const TeamPage = () => {
     const phDStudents = [
         { 
-            name: 'Joo Chan Lee', 
-            img: process.env.PUBLIC_URL + '/team/JCL.png',
-            desc: "MS-PhD Integrated Student\nCo-supervised by [Jong-Hwan Ko](https://iris.skku.edu/professor/)",
-            email: 'maincold2@skku.edu', 
-            homepage: 'https://maincold2.github.io/',
-            scholar: 'https://scholar.google.com/citations?user=WKCHKk8AAAAJ&hl=en',
-            github: 'https://github.com/maincold2' 
-        },
-        { 
             name: 'Younggeun Lee', 
             img: process.env.PUBLIC_URL + '/team/YGL.jpeg',
             desc: 'MS-PhD Integrated Student',
@@ -129,38 +120,6 @@ const TeamPage = () => {
     ];
 
     const masterStudents = [
-        { 
-            name: 'Youbin Kim', 
-            img: process.env.PUBLIC_URL + '/team/YBK.jpg',
-            desc: 'MS Student',
-            email: 'ybin108@skku.edu', 
-            scholar: 'https://scholar.google.com/citations?hl=en&user=RUiA8-wAAAAJ',
-            github: 'https://github.com/Ubin108'  
-        },
-        { 
-            name: 'Jihyeon Park', 
-            img: process.env.PUBLIC_URL + '/team/JHP.jpg',
-            desc: 'MS Student',
-            email: 'fairytale@skku.edu', 
-            scholar: '',
-            github: 'https://github.com/Kanadae'  
-        },
-        { 
-            name: 'Seungryong Lee', 
-            img: process.env.PUBLIC_URL + '/team/SRL.jpg',
-            desc: 'MS Student',
-            email: 'leejicb@skku.edu', 
-            scholar: '',
-            github: 'https://github.com/sngryongLee'  
-        },
-        { 
-            name: 'Eunsoo Lee', 
-            img: process.env.PUBLIC_URL + '/team/ESL.jpeg',
-            desc: 'MS Student',
-            email: 'osoo0628@skku.edu', 
-            scholar: '',
-            github: 'https://github.com/esleeo'  
-        },
         { 
             name: 'Jinho Park', 
             img: process.env.PUBLIC_URL + '/team/JHP.jpeg',
@@ -307,8 +266,34 @@ const TeamPage = () => {
         { 
             name: 'Gyeongjin Kang',
             desc: 'MS, 2024.03 - 2026.02',
-            current: 'NAVER LABS',
+            current: 'Researcher at V-Lab, Yonsei',
             homepage: 'https://gynjn.github.io/info/' 
+        },
+        { 
+            name: 'Joo Chan Lee', 
+            desc: "PhD, 2020.03 - 2026.08 (co-advised by Jong Hwan Ko)",
+            current: 'Samsung Research', 
+            homepage: 'https://maincold2.github.io/',
+        },
+        { 
+            name: 'Youbin Kim', 
+            desc: 'MS, 2024.09 - 2026.08',
+            current: 'Samsung Electronics',  
+        },
+        { 
+            name: 'Jihyeon Park', 
+            desc: 'MS, 2024.09 - 2026.08',
+            current: 'Samsung Electronics',  
+        },
+        { 
+            name: 'Seungryong Lee', 
+            desc: 'MS, 2024.09 - 2026.08',
+            current: 'Samsung Electronics',  
+        },
+        { 
+            name: 'Eunsoo Lee', 
+            desc: 'MS, 2024.09 - 2026.08',
+            current: 'Samsung Electronics',  
         },
     ];
 
@@ -337,8 +322,10 @@ const TeamPage = () => {
                                 <a href="https://www.linkedin.com/in/eunbyung-park-286384b4/">
                                     <i className="fa fa-linkedin" style={{ fontSize: '24px', color: 'black' }}></i>
                                 </a>
-                                <a href="https://twitter.com/silverbottlep">
-                                    <i className="fa fa-twitter" style={{ fontSize: '24px', color: 'black' }}></i>
+                                <a href="https://x.com/silverbottlep">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="black">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.26 5.632 5.904-5.632Zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                    </svg>
                                 </a>
                             </div>
                     </div>
