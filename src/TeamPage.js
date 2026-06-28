@@ -21,14 +21,6 @@ const TeamPage = () => {
             github: 'https://github.com/stnamjef'
         },
         { 
-            name: 'Xiangyu Sun', 
-            img: process.env.PUBLIC_URL + '/team/XYS.jpg',
-            desc: `PhD Student\nDoing internship at [Horizon Robotics](https://en.horizon.auto/)`,
-            email: 'xiangyusun@skku.edu', 
-            scholar: 'https://scholar.google.com/citations?user=VLzxTrAAAAAJ&hl=en',
-            github: 'https://github.com/Xiangyu1Sun'  
-        },
-        { 
             name: 'Byeonghyeon Lee', 
             img: process.env.PUBLIC_URL + '/team/BHL.jpg', 
             desc: 'PhD Student',
@@ -274,6 +266,11 @@ const TeamPage = () => {
             desc: "PhD, 2020.03 - 2026.08 (co-advised by Jong Hwan Ko)",
             current: 'Samsung Research', 
             homepage: 'https://maincold2.github.io/',
+        },
+        { 
+            name: 'Xiangyu Sun', 
+            desc: 'PhD, 2022.09 - 2026.02',
+            current: 'Horizon Robotics',             
         },
         { 
             name: 'Youbin Kim', 
