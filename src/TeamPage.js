@@ -269,7 +269,7 @@ const TeamPage = () => {
         },
         { 
             name: 'Xiangyu Sun', 
-            desc: 'PhD, 2022.09 - 2026.02',
+            desc: 'PhD, 2022.09 - 2026.08',
             current: 'Horizon Robotics',             
         },
         { 
