@@ -121,8 +121,6 @@ const publications = [
             thumbs: process.env.PUBLIC_URL + '/thumb/Metalens-Transformer.jpg'
         } 
     },
-
-
     { 
         year: "2026", 
         title: "Group3D: MLLM-Driven Semantic Grouping for Open-Vocabulary 3D Object Detection", 
@@ -141,9 +139,6 @@ const publications = [
         journal: "ECCV 2026", 
         authors: "Xiangyu Sun, Liu Liu, Seungkwon Yang, Jingbing Han, Seungtae Nam, Zhizhong Su, Eunbyung Park",
         links: {
-            paper: "",
-            project: "",
-            code: "",
             thumbs: process.env.PUBLIC_URL + '/thumb/NoDrift3R.jpg'
         } 
     },
