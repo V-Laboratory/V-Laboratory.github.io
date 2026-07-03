@@ -135,18 +135,18 @@ const publications = [
             thumbs: process.env.PUBLIC_URL + '/thumb/Group3D.jpg'
         } 
     },
-    // { 
-    //     year: "2026", 
-    //     title: "Raymap-Guided Coupling for Drift-Robust Unposed Feed-Forward 3D Reconstruction", 
-    //     journal: "ECCV 2026", 
-    //     authors: "Xiangyu Sun, Liu Liu, Seungkwon Yang, Jingbing Han, Seungtae Nam, Zhizhong Su, Eunbyung Park",
-    //     links: {
-    //         paper: "",
-    //         project: "",
-    //         code: "",
-    //         thumbs: process.env.PUBLIC_URL + '/thumb/Raymap.jpg'
-    //     } 
-    // },
+    { 
+        year: "2026", 
+        title: "NoDrift3R: Raymap-Guided Coupling for Drift-Robust Unposed Feed-Forward 3D Reconstruction", 
+        journal: "ECCV 2026", 
+        authors: "Xiangyu Sun, Liu Liu, Seungkwon Yang, Jingbing Han, Seungtae Nam, Zhizhong Su, Eunbyung Park",
+        links: {
+            paper: "",
+            project: "",
+            code: "",
+            thumbs: process.env.PUBLIC_URL + '/thumb/NoDrift3R.jpg'
+        } 
+    },
     { 
         year: "2026", 
         title: "Contrastive Flow Map Matching", 
