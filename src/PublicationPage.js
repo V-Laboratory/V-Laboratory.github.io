@@ -139,6 +139,8 @@ const publications = [
         journal: "ECCV 2026", 
         authors: "Xiangyu Sun, Liu Liu, Seungkwon Yang, Jingbing Han, Seungtae Nam, Zhizhong Su, Eunbyung Park",
         links: {
+            paper: "https://arxiv.org/abs/2607.07168",
+            project: "https://xiangyu1sun.github.io/NoDrift3R-project-page/",
             thumbs: process.env.PUBLIC_URL + '/thumb/NoDrift3R.jpg'
         } 
     },
