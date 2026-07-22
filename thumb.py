@@ -9,7 +9,7 @@ def pdf_to_thumbnail(pdf_path, output_path):
     except Exception as e:
         print(f"Error generating thumbnail: {e}")
 
-pdf_path = "/home/vlab/1440 1.pdf"
+pdf_path = "/home/vlab/2606.29513v1.pdf"
 output_path = "./thumbnail.jpg"
 
 pdf_to_thumbnail(pdf_path, output_path)

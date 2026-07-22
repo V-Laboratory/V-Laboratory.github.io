@@ -4,6 +4,17 @@ import "./PublicationPage.css";
 const publications = [
     { 
         year: "Preprints", 
+        title: "Scenes as Objects, Not Primitives: Instance-Structured 3D Tokenization from Unposed Views", 
+        journal: "arXiv:2606.29513", 
+        authors: "Mijin Yoo, In Cho, Subin Jeon, Jiwoo Lee, Eunbyung Park, Seon Joo Kim",
+        links: {
+            paper: "https://arxiv.org/abs/2606.29513",
+            project: "https://yoomimi.github.io/instok3d/",
+            thumbs: process.env.PUBLIC_URL + '/thumb/Instok3d.jpg'
+        } 
+    },
+    { 
+        year: "Preprints", 
         title: "VGenST-Bench: A Benchmark for Spatio-Temporal Reasoning via Active Video Synthesis", 
         journal: "arXiv:2605.22570", 
         authors: "Jinho Park, Youbin Kim, Hogun Park, Eunbyung Park",
@@ -139,8 +150,6 @@ const publications = [
         journal: "ECCV 2026", 
         authors: "Xiangyu Sun, Liu Liu, Seungkwon Yang, Jingbing Han, Seungtae Nam, Zhizhong Su, Eunbyung Park",
         links: {
-            paper: "https://arxiv.org/abs/2607.07168",
-            project: "https://xiangyu1sun.github.io/NoDrift3R-project-page/",
             thumbs: process.env.PUBLIC_URL + '/thumb/NoDrift3R.jpg'
         } 
     },
