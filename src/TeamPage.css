@@ -59,7 +59,7 @@
 .profile-img {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 .details {
@@ -119,10 +119,10 @@
 .member img {
     width: 200px;
     height: 200px;
-    border-radius: 100%;
+    border-radius: 9%;
     object-fit: cover;
     object-position: top;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0px 3px rgba(0, 0, 0, 0.5);
     margin-bottom: 15px;
 }
 

@@ -7,7 +7,7 @@ const TeamPage = () => {
         { 
             name: 'Younggeun Lee', 
             img: process.env.PUBLIC_URL + '/team/YGL.jpeg',
-            desc: 'MS-PhD Integrated Student',
+            desc: 'MS-PhD Integrated Student\nIntern at [CJ 4DPLEX](https://www.cj4dplex.com/)',
             email: 'dudrms514@skku.edu', 
             scholar: 'https://scholar.google.com/citations?hl=en&user=E4iEBFsAAAAJ',
             github: 'https://github.com/Younggeun-L' 
@@ -15,7 +15,7 @@ const TeamPage = () => {
         { 
             name: 'Seungtae Nam', 
             img: process.env.PUBLIC_URL + '/team/STN.png',
-            desc: 'PhD Student\nDoing internship at [Microsoft \nResearch Asia](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/)',
+            desc: 'PhD Student\nIntern at [Microsoft \nResearch Asia](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/)',
             email: 'stnamjef@yonsei.ac.kr', 
             scholar: 'https://scholar.google.com/citations?user=8NKPmmwCmrAC&hl=en',
             github: 'https://github.com/stnamjef'
@@ -45,14 +45,6 @@ const TeamPage = () => {
             github: 'https://github.com/yhyun225'  
         },
         { 
-            name: 'Seungkwon Yang', 
-            img: process.env.PUBLIC_URL + '/team/SKY.jpg',
-            desc: 'MS-PhD Integrated Student',
-            email: 'skyang@yonsei.ac.kr', 
-            scholar: '',
-            github: 'https://github.com/yang-gwon2'
-        },
-                { 
             name: 'Minseo Lee', 
             img: process.env.PUBLIC_URL + '/team/MSL.jpg',
             desc: 'MS-PhD Integrated Student',
@@ -71,7 +63,7 @@ const TeamPage = () => {
         { 
             name: 'Hyun-kyu Ko', 
             img: process.env.PUBLIC_URL + '/team/HKK.jpg',
-            desc: 'PhD Student',
+            desc: 'PhD Student\nVisiting Student at [UC Irvine](https://uci.edu/)',
             email: 'laniko@yonsei.ac.kr', 
             homepage: 'https://ko-lani.github.io/',
             scholar: 'https://scholar.google.com/citations?hl=ko&user=lsi-8-QAAAAJ',
@@ -80,7 +72,7 @@ const TeamPage = () => {
         { 
             name: 'Byeongjin Kang', 
             img: process.env.PUBLIC_URL + '/team/BJK.jpg',
-            desc: 'MS-PhD Integrated Student',
+            desc: 'MS-PhD Integrated Student\nIntern at [KETI](https://www.keti.re.kr/main/main.php)',
             email: 'namul2@yonsei.ac.kr',
             homepage: 'https://namul2.github.io/',
             scholar: '',
@@ -109,14 +101,30 @@ const TeamPage = () => {
             scholar: '',
             github: 'https://github.com/minhyeok2001'   
         },
+        { 
+            name: 'Hyebin Kim', 
+            img: process.env.PUBLIC_URL + '/team/HBK.jpg',
+            desc: 'PhD Student',
+            email: 'hyebinny5600@gmail.com', 
+            scholar: '',
+            github: 'https://github.com/hyebinny'   
+        },
     ];
 
     const masterStudents = [
         { 
+            name: 'Seungkwon Yang', 
+            img: process.env.PUBLIC_URL + '/team/SKY.jpg',
+            desc: 'MS Student',
+            email: 'skyang@yonsei.ac.kr', 
+            scholar: '',
+            github: 'https://github.com/yang-gwon2'
+        },
+        { 
             name: 'Jinho Park', 
             img: process.env.PUBLIC_URL + '/team/JHP.jpeg',
             desc: 'MS Student',
-            email: 'jinho99@.skku.edu', 
+            email: 'jinho99@g.skku.edu', 
             scholar: '',
             github: 'https://github.com/zinosii'
         },
@@ -134,7 +142,7 @@ const TeamPage = () => {
             desc: 'MS Student',
             email: 'rchkl2380@yonsei.ac.kr', 
             scholar: '',
-            github: 'https://github.com/onyuc'   
+            github: 'https://github.com/joonh-park'   
         },
         { 
             name: 'Hwasik Jeong', 
@@ -147,7 +155,7 @@ const TeamPage = () => {
         { 
             name: 'Soonmin Hwang', 
             img: process.env.PUBLIC_URL + '/team/SMH.JPG',
-            desc: 'MS Student\nDoing internship at [KETI](https://www.keti.re.kr/main/main.php)',
+            desc: 'MS Student\nIntern at [KETI](https://www.keti.re.kr/main/main.php)',
             email: 'smsm0307@yonsei.ac.kr', 
             scholar: 'https://scholar.google.com/citations?hl=ko&user=IjfOwv4AAAAJ',
             github: 'https://github.com/smblue37'   
@@ -223,7 +231,7 @@ const TeamPage = () => {
         { 
             name: 'Geunmin Hwang', 
             desc: 'MS, 2023.03 - 2025.02',
-            current: 'ReconLabs'
+            current: 'Krafton'
         },
         { 
             name: 'Seungjun Oh', 
@@ -238,7 +246,7 @@ const TeamPage = () => {
         { 
             name: 'Dongheok Park', 
             desc: 'MS, 2024.03 - 2026.02',
-            current: 'POSCO' 
+            current: 'POSCO DX' 
         },
         { 
             name: 'Hyun-kyu Ko', 
@@ -248,7 +256,7 @@ const TeamPage = () => {
         { 
             name: 'Jisang Yoo',
             desc: 'MS, 2024.03 - 2026.02',
-            current: 'Kakao Mobility'
+            current: 'Hyundai Motor Company'
         },
         { 
             name: 'Hyejin Jeon', 
@@ -307,7 +315,7 @@ const TeamPage = () => {
                         />
                         <a className='prof-name' href='https://silverbottlep.github.io/' style={{ fontSize: '1em' }}>Eunbyung Park</a>
                         <div className='bio'>
-                                <a href="epark@yonsei.ac.kr">
+                                <a href="mailto:epark@yonsei.ac.kr">
                                     <i className="fa fa-envelope-o" style={{ fontSize: '24px', color: 'black' }}></i>
                                 </a>
                                 <a href="https://silverbottlep.github.io/index.html">

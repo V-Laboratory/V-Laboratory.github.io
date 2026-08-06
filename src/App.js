@@ -392,7 +392,7 @@ const App = () => {
                             <Link to="/team" onClick={() => setIsMenuOpen(false)}>Team</Link>
                             <Link to="/publication" onClick={() => setIsMenuOpen(false)}>Publication</Link>
                             <Link to="/gallery" onClick={() => setIsMenuOpen(false)}>Gallery</Link>
-                            <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+                            {/*<Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>*/}
                         </div>
                     </div>
                 </nav>
@@ -403,7 +403,7 @@ const App = () => {
                         element={
                         <>
                             <Carousel images={images} />
-
+                            {/* News 
                             <section className="news">
                             <h2>News</h2>
                             <ul className="news-list">
@@ -424,6 +424,7 @@ const App = () => {
                                 ))}
                             </div>
                             </section>
+                            */}
                         </>
                         }
                     />

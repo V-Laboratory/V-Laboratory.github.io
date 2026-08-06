@@ -70,6 +70,7 @@
     border: 1px solid #ccc;
     cursor: pointer;
     transition: transform 0.2s;
+    display: none;
 }
 
 .publication-details {
