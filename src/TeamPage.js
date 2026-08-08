@@ -27,14 +27,6 @@ const TeamPage = () => {
             email: 'bhl@yonsei.ac.kr', 
             scholar: 'https://scholar.google.com/citations?user=_PhPccYAAAAJ&hl=en',
             github: 'https://github.com/benhenryL' 
-        },        
-        { 
-            name: 'Junyu Zhang', 
-            img: process.env.PUBLIC_URL + '/team/JYJ.JPG',
-            desc: 'PhD Student',
-            email: 'zhangjunyu@skku.edu', 
-            // scholar: 'https://scholar.google.com/citations?hl=en&user=3jrCsVoAAAAJ',
-            github: 'https://github.com/BestJunYu'  
         },
         { 
             name: 'Younghyun Kim', 
@@ -299,6 +291,12 @@ const TeamPage = () => {
             name: 'Eunsoo Lee', 
             desc: 'MS, 2024.09 - 2026.08',
             current: 'Samsung Electronics',  
+        },
+        { 
+            name: 'Junyu Zhang', 
+            desc: 'PhD, 2023.09 - 2026.08',
+            current: 'PostDoc at SNU',
+            
         },
     ];
 
