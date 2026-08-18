@@ -4,6 +4,15 @@ import './GalleryPage.css';
 const albums = [
     {
         year: 2026,
+        title: '2026 Summer Graduation Ceremony',
+        description: '2026.08.16.',
+        images: [
+            { src: process.env.PUBLIC_URL + '/gallery/2026_summer_ceremony_1.jpeg', alt: '2026_summer_ceremony_1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2026_summer_ceremony_2.jpeg', alt: '2026_summer_ceremony_2' }, 
+        ],
+    },
+    {
+        year: 2026,
         title: 'Jeju MT',
         description: '2026.06.19. - 06.21.',
         images: [
