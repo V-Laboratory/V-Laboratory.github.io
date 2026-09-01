@@ -89,7 +89,7 @@ const TeamPage = () => {
             name: 'Minhyeok Roh', 
             img: process.env.PUBLIC_URL + '/team/MHR.jpg',
             desc: 'MS-PhD Integrated Student',
-            email: 'mhroh01@naver.com', 
+            email: 'mhroh01@yonsei.ac.kr', 
             scholar: '',
             github: 'https://github.com/minhyeok2001'   
         },
@@ -151,6 +151,13 @@ const TeamPage = () => {
             email: 'smsm0307@yonsei.ac.kr', 
             scholar: 'https://scholar.google.com/citations?hl=ko&user=IjfOwv4AAAAJ',
             github: 'https://github.com/smblue37'   
+        },
+        { 
+            name: 'Yeonguk Suh', 
+            img: process.env.PUBLIC_URL + '/team/YUS.JPG',
+            desc: 'MS Student',
+            email: '000.uk@yonsei.ac.kr',
+            github: 'https://github.com/000uk' 
         },
     ];
 
