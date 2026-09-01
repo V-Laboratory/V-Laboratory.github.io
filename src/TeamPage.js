@@ -154,7 +154,7 @@ const TeamPage = () => {
         },
         { 
             name: 'Yeonguk Suh', 
-            img: process.env.PUBLIC_URL + '/team/YUS.JPG',
+            img: process.env.PUBLIC_URL + '/team/YUS.jpeg',
             desc: 'MS Student',
             email: '000.uk@yonsei.ac.kr',
             github: 'https://github.com/000uk' 
