@@ -151,14 +151,7 @@ const TeamPage = () => {
             email: 'smsm0307@yonsei.ac.kr', 
             scholar: 'https://scholar.google.com/citations?hl=ko&user=IjfOwv4AAAAJ',
             github: 'https://github.com/smblue37'   
-        },
-        { 
-            name: 'Yeonguk Suh', 
-            img: process.env.PUBLIC_URL + '/team/YUS.jpeg',
-            desc: 'MS Student',
-            email: '000.uk@yonsei.ac.kr',
-            github: 'https://github.com/000uk' 
-        },
+        }
     ];
 
     const undergraduateStudents = [

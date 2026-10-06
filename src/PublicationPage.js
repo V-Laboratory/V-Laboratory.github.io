@@ -4,17 +4,6 @@ import "./PublicationPage.css";
 const publications = [
     { 
         year: "Preprints", 
-        title: "Scenes as Objects, Not Primitives: Instance-Structured 3D Tokenization from Unposed Views", 
-        journal: "arXiv:2606.29513", 
-        authors: "Mijin Yoo, In Cho, Subin Jeon, Jiwoo Lee, Eunbyung Park, Seon Joo Kim",
-        links: {
-            paper: "https://arxiv.org/abs/2606.29513",
-            project: "https://yoomimi.github.io/instok3d/",
-            thumbs: process.env.PUBLIC_URL + '/thumb/Instok3d.jpg'
-        } 
-    },
-    { 
-        year: "Preprints", 
         title: "VGenST-Bench: A Benchmark for Spatio-Temporal Reasoning via Active Video Synthesis", 
         journal: "arXiv:2605.22570", 
         authors: "Jinho Park, Youbin Kim, Hogun Park, Eunbyung Park",
@@ -75,18 +64,6 @@ const publications = [
     },
     { 
         year: "Preprints", 
-        title: "Optimized Minimal 4D Gaussian Splatting", 
-        journal: "arXiv:2510.03857", 
-        authors: "Minseo Lee*, Byeonghyeon Lee*, Lucas Yunkyu Lee, Eunsoo Lee, Sangmin Kim, Seunghyeon Song, Joo Chan Lee, Jong Hwan Ko, Jaesik Park, Eunbyung Park",
-        links: {
-            paper: "https://arxiv.org/abs/2510.03857",
-            project: "https://minshirley.github.io/OMG4/",
-            code: "https://github.com/MinShirley/OMG4",
-            thumbs: process.env.PUBLIC_URL + '/thumb/OMG4.jpg'
-        } 
-    },
-    { 
-        year: "Preprints", 
         title: "Gather-Scatter Mamba: Accelerating Propagation with Efficient State Space Model", 
         journal: "arXiv:2510.00862", 
         authors: "Hyun-kyu Ko, Youbin Kim, Jihyeon Park, Dongheok Park, Gyeongjin Kang, Wonjun Cho, Hyung Yi, Eunbyung Park",
@@ -130,6 +107,45 @@ const publications = [
             project: "https://benhenryl.github.io/Metalens-Transformer/",
             code: "https://github.com/benhenryL/Metalens-Transformer",
             thumbs: process.env.PUBLIC_URL + '/thumb/Metalens-Transformer.jpg'
+        } 
+    },
+    { 
+        year: "2026", 
+        title: "3D Consistency Tokens", 
+        journal: "NeurIPS 2026", 
+        authors: "Seungtae Nam*, Jungwoo Kim*, Gyeongjin Kang, Younggeun Lee, Seungkwon Yang, Eunbyung Park",
+        links: {
+        }
+    },
+    { 
+        year: "2026", 
+        title: "U-MVP: Encode Locally, Decode Globally for Feed-Forward 3D Gaussian Splatting", 
+        journal: "NeurIPS 2026", 
+        authors: "Seungkwon Yang*, Gyeongjin Kang*, Hwasik Jeong, Byeongjin Kang, Hyeongbhin Cho, Eunbyung Park",
+        links: {
+        }
+    },
+    { 
+        year: "2026", 
+        title: "Scenes as Objects, Not Primitives: Instance-Structured 3D Tokenization from Unposed Views", 
+        journal: "NeurIPS 2026", 
+        authors: "Mijin Yoo, In Cho, Subin Jeon, Jiwoo Lee, Eunbyung Park, Seon Joo Kim",
+        links: {
+            paper: "https://arxiv.org/abs/2606.29513",
+            project: "https://yoomimi.github.io/instok3d/",
+            thumbs: process.env.PUBLIC_URL + '/thumb/Instok3d.jpg'
+        }
+    },
+    { 
+        year: "2026", 
+        title: "Optimized Minimal 4D Gaussian Splatting", 
+        journal: "NeurIPS 2026", 
+        authors: "Minseo Lee*, Byeonghyeon Lee*, Lucas Yunkyu Lee, Eunsoo Lee, Sangmin Kim, Seunghyeon Song, Joo Chan Lee, Jong Hwan Ko, Jaesik Park, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2510.03857",
+            project: "https://minshirley.github.io/OMG4/",
+            code: "https://github.com/MinShirley/OMG4",
+            thumbs: process.env.PUBLIC_URL + '/thumb/OMG4.jpg'
         } 
     },
     { 
