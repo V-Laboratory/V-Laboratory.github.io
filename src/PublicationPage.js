@@ -4,6 +4,27 @@ import "./PublicationPage.css";
 const publications = [
     { 
         year: "Preprints", 
+        title: "FineSplat: Fine Patches, Local Groups, Detailed Splats", 
+        journal: "arXiv:2610.25011", 
+        authors: "Hyebin Kim*, Hwasik Jeong*, Joonhyuk Park, Gyeongjin Kang, Jungwoo Kim, Younghyun Kim, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2610.25011",
+            project: "https://hyebinny.github.io/FineSplat/",
+            code: "https://github.com/hyebinny/FineSplat",
+        } 
+    },
+    { 
+        year: "Preprints", 
+        title: "Dusting the Phantom: Gaussian Allocation for Fading Dynamic Content", 
+        journal: "arXiv:2610.21302", 
+        authors: "Minhyeok Roh, Minseo Lee, Jun Young Jeong, Byeonghyeon Lee, Lucas Yunkyu Lee, Jaesik Park, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2610.21302",
+            project: "https://zinosii.github.io/VGenST-Bench/",
+        } 
+    },
+    { 
+        year: "Preprints", 
         title: "VGenST-Bench: A Benchmark for Spatio-Temporal Reasoning via Active Video Synthesis", 
         journal: "arXiv:2605.22570", 
         authors: "Jinho Park, Youbin Kim, Hogun Park, Eunbyung Park",
@@ -98,9 +119,9 @@ const publications = [
         } 
     },
     { 
-        year: "Preprints", 
+        year: "2027", 
         title: "Aberration Correcting Vision Transformers for High-Fidelity Metalens Imaging", 
-        journal: "arXiv:2412.04591", 
+        journal: "WACV 2027", 
         authors: "Byeonghyeon Lee, Youbin Kim, Yongjae Jo, Hyunsu Kim, Hyemi Park, Yangkyu Kim, Debabrata Mandal, Praneeth Chakravarthula, Inki Kim, Eunbyung Park",
         links: {
             paper: "https://arxiv.org/abs/2412.04591",
