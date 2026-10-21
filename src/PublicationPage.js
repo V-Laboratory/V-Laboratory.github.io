@@ -20,7 +20,7 @@ const publications = [
         authors: "Minhyeok Roh, Minseo Lee, Jun Young Jeong, Byeonghyeon Lee, Lucas Yunkyu Lee, Jaesik Park, Eunbyung Park",
         links: {
             paper: "https://arxiv.org/abs/2610.21302",
-            project: "https://zinosii.github.io/VGenST-Bench/",
+            project: "https://minhyeok2001.github.io/Dusting-the-Phantom/",
         } 
     },
     { 
